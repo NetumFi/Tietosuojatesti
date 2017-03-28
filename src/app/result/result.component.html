@@ -1,0 +1,21 @@
+<div *ngIf="percentage >= 75">
+  <br/>
+  <div>
+    Onneksi olkoon {{user.name}}, sait {{userPoints}} / {{maxPoints}} pistettä ja olet läpäissyt testin! Sinulla on nyt tarvittavat perustiedot tietosuojan osalta, ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
+  </div>
+  <br/>
+  <div>
+    Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
+  </div>
+  <br/>
+  <button (click)="backToBeginning()">Tulosta</button>
+</div>
+<div *ngIf="percentage < 75">
+  <br/>
+  <div>
+    Testituloksesi {{userPoints}} / {{maxPoints}} pistettä ei valitettavasti riittänyt testin läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin, jonka saat esille täältä.
+  </div>
+  <br/>
+  <button (click)="backToBeginning()">Haluan kokeilla testiä uudelleen</button> <button (click)="backToBeginning()">Opiskelen vielä lisää</button>
+</div>
+

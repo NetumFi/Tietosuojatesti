@@ -1,0 +1,36 @@
+<div>
+  <br/>
+  <table>
+    <tr><td>Nimi:</td><td><input required #userName="ngModel" name="userName" type="text" [(ngModel)]="user.name"></td></tr>
+    <tr><td>Tehtävänimike:</td><td><input type="text" [(ngModel)]="user.title"></td></tr>
+    <tr><td>Organisaatio:</td><td><input type="text" [(ngModel)]="user.organization"></td></tr>
+  </table>
+  <br/>
+  <div>
+    <div>
+      <strong>Vastausohjeet</strong>
+    </div>
+    <br/>
+    <div>
+      Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.
+    </div>
+    <br/>
+    <div>
+      Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.
+    </div>
+    <br/>
+    <div>
+      Jos testisi ei mennyt läpi, voit opiskella lisää tai voit halutessasi myös kokeilla saman tien uudelleen.
+    </div>
+    <br/>
+    <div>
+      Jatka testiin painamalla Seuraava.
+    </div>
+  </div>
+  <br/>
+  <div>
+<!--    <button (click)="previousPage()">Edellinen</button> -->
+    <button [disabled]="userName.invalid" (click)="nextPage()">Seuraava</button>
+  </div>
+</div>
+

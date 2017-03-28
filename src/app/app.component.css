@@ -1,0 +1,19 @@
+body /deep/ {
+  font-size: .8em;
+  font-family: Arial,Helvetica,Sans-serif;
+}
+
+button /deep/ * {
+  background: #F5F5F5 /*url(../images/forms/button.png) repeat-x 0 0*/;
+  border-color: #DEDEDE #BFBFBF #BFBFBF #DEDEDE;
+  color: #34404F;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+}
+
+button:hover, button:focus /deep/ * {
+  background: #DFF4FF;
+  border: 1px solid #A7CEDF;
+  color: #369;
+}

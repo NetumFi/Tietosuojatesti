@@ -1,0 +1,13 @@
+<div *ngIf="question != null && question !== undefined">
+  <h3><strong>{{index + 1}}. Kysymys</strong></h3>
+  {{question.text}}
+  <br/>
+  <br/>
+  <div *ngFor="let answer of answers">
+    <input type="checkbox" [(ngModel)]="answer.checked" (click)="save()" /> {{getOptionText(answer.optionId)}}
+  </div>
+
+  <br/>
+<!--  <button (click)="previousPage()">Edellinen</button> -->
+  <button (click)="nextPage()">Seuraava</button>
+</div>
