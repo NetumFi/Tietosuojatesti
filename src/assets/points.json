@@ -1,182 +1,50 @@
 [
   {
     "optionId": "001",
-    "pointsIfChecked": -1
+    "pointsIfChecked": 1
   },
   {
     "optionId": "002",
-    "pointsIfChecked": 1
+    "pointsIfChecked": -1
   },
   {
     "optionId": "003",
-    "pointsIfChecked": 1
+    "pointsIfChecked": -1
   },
   {
     "optionId": "004",
-    "pointsIfChecked": 1
+    "pointsIfChecked": -1
   },
   {
     "optionId": "011",
-    "pointsIfChecked": -1
+    "pointsIfChecked": 1
   },
   {
     "optionId": "012",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "013",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "014",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "015",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "021",
     "pointsIfChecked": -1
   },
   {
-    "optionId": "022",
+    "optionId": "013",
+    "pointsIfChecked": -1
+  },
+  {
+    "optionId": "014",
+    "pointsIfChecked": -1
+  },
+  {
+    "optionId": "021",
     "pointsIfChecked": 1
   },
   {
+    "optionId": "022",
+    "pointsIfChecked": -1
+  },
+  {
     "optionId": "023",
-    "pointsIfChecked": 1
+    "pointsIfChecked": -1
   },
   {
     "optionId": "024",
     "pointsIfChecked": 1
-  },
-  {
-    "optionId": "031",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "032",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "033",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "034",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "035",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "041",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "042",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "043",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "044",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "051",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "052",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "053",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "054",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "055",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "061",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "062",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "063",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "064",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "071",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "072",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "073",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "074",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "075",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "081",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "082",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "083",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "084",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "091",
-    "pointsIfChecked": -1
-  },
-  {
-    "optionId": "092",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "093",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "094",
-    "pointsIfChecked": 1
-  },
-  {
-    "optionId": "095",
-    "pointsIfChecked": 1
   }
-  ]
+]

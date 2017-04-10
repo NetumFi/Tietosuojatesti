@@ -1,196 +1,55 @@
 [
   {
     "id": "q1",
-    "text": "Ensimmäinen kysymys",
+    "text": "Miksi tietosuojasta on tullut entistä tärkeämpi osa-alue?",
     "choices": [
       { "id": "001",
-        "text": "Vaihtoehto 1"
+        "text": "Oikea vastaus 1"
       },
       { "id": "002",
-        "text": "Vaihtoehto 2"
+        "text": "Väärä vastaus"
       },
       { "id": "003",
-        "text": "Vaihtoehto 3"
+        "text": "Väärä vastaus"
       },
       { "id": "004",
-        "text": "Vaihtoehto 4"
+        "text": "Väärä vastaus"
       }
     ]
   },
   {
     "id": "q2",
-    "text": "Toinen kysymys",
+    "text": "Mitä tietosuoja mielestäsi tarkoittaa?",
     "choices": [
       { "id": "011",
-        "text": "Vaihtoehto a"
+        "text": "Oikea vastaus 1"
       },
       { "id": "012",
-        "text": "Vaihtoehto b"
+        "text": "Väärä vastaus"
       },
       { "id": "013",
-        "text": "Vaihtoehto c"
+        "text": "Väärä vastaus"
       },
       { "id": "014",
-        "text": "Vaihtoehto d"
-      },
-      { "id": "015",
-        "text": "Vaihtoehto e"
+        "text": "Väärä vastaus"
       }
     ]
   },
   {
     "id": "q3",
-    "text": "Kolmas kysymys",
+    "text": "Millä seuraavista keinoista edistät tietosuojan toteutumista?",
     "choices": [
       { "id": "021",
-        "text": "Vaihtoehto 1"
+        "text": "Oikea vastaus 1"
       },
       { "id": "022",
-        "text": "Vaihtoehto 2"
+        "text": "Väärä vastaus"
       },
       { "id": "023",
-        "text": "Vaihtoehto 3"
+        "text": "Väärä vastaus"
       },
       { "id": "024",
-        "text": "Vaihtoehto 4"
-      }
-    ]
-  },
-  {
-    "id": "q4",
-    "text": "Neljäs kysymys",
-    "choices": [
-      { "id": "031",
-        "text": "Vaihtoehto a"
-      },
-      { "id": "032",
-        "text": "Vaihtoehto b"
-      },
-      { "id": "033",
-        "text": "Vaihtoehto c"
-      },
-      { "id": "034",
-        "text": "Vaihtoehto d"
-      },
-      { "id": "035",
-        "text": "Vaihtoehto e"
-      }
-    ]
-  },
-  {
-    "id": "q5",
-    "text": "Viides kysymys",
-    "choices": [
-      { "id": "041",
-        "text": "Vaihtoehto 1"
-      },
-      { "id": "042",
-        "text": "Vaihtoehto 2"
-      },
-      { "id": "043",
-        "text": "Vaihtoehto 3"
-      },
-      { "id": "044",
-        "text": "Vaihtoehto 4"
-      }
-    ]
-  },
-  {
-    "id": "q6",
-    "text": "Kuudes kysymys",
-    "choices": [
-      { "id": "051",
-        "text": "Vaihtoehto a"
-      },
-      { "id": "052",
-        "text": "Vaihtoehto b"
-      },
-      { "id": "053",
-        "text": "Vaihtoehto c"
-      },
-      { "id": "054",
-        "text": "Vaihtoehto d"
-      },
-      { "id": "055",
-        "text": "Vaihtoehto e"
-      }
-    ]
-  },
-  {
-    "id": "q7",
-    "text": "Seitsemäs kysymys",
-    "choices": [
-      { "id": "061",
-        "text": "Vaihtoehto 1"
-      },
-      { "id": "062",
-        "text": "Vaihtoehto 2"
-      },
-      { "id": "063",
-        "text": "Vaihtoehto 3"
-      },
-      { "id": "064",
-        "text": "Vaihtoehto 4"
-      }
-    ]
-  },
-  {
-    "id": "q8",
-    "text": "Kahdeksas kysymys",
-    "choices": [
-      { "id": "071",
-        "text": "Vaihtoehto a"
-      },
-      { "id": "072",
-        "text": "Vaihtoehto b"
-      },
-      { "id": "073",
-        "text": "Vaihtoehto c"
-      },
-      { "id": "074",
-        "text": "Vaihtoehto d"
-      },
-      { "id": "085",
-        "text": "Vaihtoehto e"
-      }
-    ]
-  },
-  {
-    "id": "q9",
-    "text": "Yhdeksäs kysymys",
-    "choices": [
-      { "id": "081",
-        "text": "Vaihtoehto 1"
-      },
-      { "id": "082",
-        "text": "Vaihtoehto 2"
-      },
-      { "id": "083",
-        "text": "Vaihtoehto 3"
-      },
-      { "id": "084",
-        "text": "Vaihtoehto 4"
-      }
-    ]
-  },
-  {
-    "id": "q10",
-    "text": "Kymmenes kysymys",
-    "choices": [
-      { "id": "091",
-        "text": "Vaihtoehto a"
-      },
-      { "id": "092",
-        "text": "Vaihtoehto b"
-      },
-      { "id": "093",
-        "text": "Vaihtoehto c"
-      },
-      { "id": "094",
-        "text": "Vaihtoehto d"
-      },
-      { "id": "095",
-        "text": "Vaihtoehto e"
+        "text": "Oikea vastaus 2"
       }
     ]
   }
