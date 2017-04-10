@@ -10,6 +10,7 @@ import { QuestionsComponent } from './questions/questions.component';
 import { ResultComponent } from './result/result.component';
 import { RouterModule } from '@angular/router';
 import { QuestionService } from './question.service';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -31,6 +32,7 @@ const appRoutes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ButtonsModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
   providers: [QuestionService],

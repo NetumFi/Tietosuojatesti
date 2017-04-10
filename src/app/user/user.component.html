@@ -1,10 +1,39 @@
 <div>
-  <br/>
-  <table>
-    <tr><td>Nimi:</td><td><input required #userName="ngModel" name="userName" type="text" [(ngModel)]="user.name"></td></tr>
-    <tr><td>Tehtävänimike:</td><td><input type="text" [(ngModel)]="user.title"></td></tr>
-    <tr><td>Organisaatio:</td><td><input type="text" [(ngModel)]="user.organization"></td></tr>
-  </table>
+  <div class="form-group required row" [class.has-danger]="userName.invalid && userName.touched">
+    <label for="userName" class="col-2 col-form-label">Nimi:</label>
+    <div class="col-4">
+      <input
+        required
+        #userName="ngModel"
+        id="userName"
+        type="text"
+        [(ngModel)]="user.name"
+        class="form-control form-control-danger">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="userTitle" class="col-2 col-form-label">Tehtävänimike:</label>
+    <div class="col-4">
+      <input
+        id="userTitle"
+        type="text"
+        [(ngModel)]="user.title"
+        class="form-control">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="userOrganization" class="col-2 col-form-label">Organisaatio:</label>
+    <div class="col-4">
+      <input
+        id="userOrganization"
+        type="text"
+        [(ngModel)]="user.organization"
+        class="form-control">
+    </div>
+  </div>
+
   <br/>
   <div>
     <div>
@@ -29,8 +58,7 @@
   </div>
   <br/>
   <div>
-<!--    <button (click)="previousPage()">Edellinen</button> -->
-    <button [disabled]="userName.invalid" (click)="nextPage()">Seuraava</button>
+    <button type="button" class="btn btn-primary" [disabled]="userName.invalid" (click)="nextPage()">Seuraava</button>
   </div>
 </div>
 

@@ -7,15 +7,18 @@
   <div>
     Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
   </div>
-  <br/>
-  <button (click)="backToBeginning()">Tulosta</button>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="backToBeginning()">Tulosta</button>
+  </div>
 </div>
 <div *ngIf="percentage < 75">
   <br/>
   <div>
     Testituloksesi {{userPoints}} / {{maxPoints}} pistettä ei valitettavasti riittänyt testin läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin, jonka saat esille täältä.
   </div>
-  <br/>
-  <button (click)="backToBeginning()">Haluan kokeilla testiä uudelleen</button> <button (click)="backToBeginning()">Opiskelen vielä lisää</button>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="backToBeginning()">Haluan kokeilla testiä uudelleen</button>
+    <button type="button" class="btn btn-primary" (click)="backToBeginning()">Opiskelen vielä lisää</button>
+  </div>
 </div>
 
