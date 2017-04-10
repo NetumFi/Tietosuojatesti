@@ -10,6 +10,7 @@ import { ResultComponent } from './result/result.component';
 import { QuestionService } from './question.service';
 import { questionServiceStub } from './question.service.mock';
 import { FormsModule } from '@angular/forms';
+import { Observable } from 'rxjs/Observable';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -26,6 +27,7 @@ describe('AppComponent', () => {
       providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
     });
     TestBed.compileComponents();
+    questionServiceStub.questions = Observable.of([{}, {}]);
   }));
 
   it('should create the app', async(() => {
@@ -34,16 +36,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app works!'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-//    expect(app.title).toEqual('app works!');
-  }));
-
-  it('should render title in a h2 tag', async(() => {
+  it('should show the total amount of pages', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi 1/13');
+    expect(compiled.querySelector('h2').textContent).toContain(' 1/5');
   }));
 });

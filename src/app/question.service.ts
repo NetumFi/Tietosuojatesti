@@ -19,12 +19,14 @@ export class QuestionService {
 
   private user: User = { name: '', title: '', organization: '' };
 
-  private questions: Observable<Question[]> = null;
+  questions: Observable<Question[]>;
+
   private questionsSize = 0;
 
   private pageNumber: BehaviorSubject<number> = new BehaviorSubject(1);
 
   constructor(public http: Http) {
+    this.questions = this.loadQuestions();
   }
 
   getPageNumber() {
@@ -36,34 +38,12 @@ export class QuestionService {
   }
 
    getQuestion(index): Observable<Question> {
-    if (this.questions == null) {
-      this.loadQuestions();
-    }
     return this.questions.map(questions => {
       this.questionsSize = questions.length;
       if (this.isValidIndex(index)) {
         return questions[index];
       }
       return null;
-    });
-  }
-
-   getGivenAnswers2(question: Observable<Question>): Observable<Answer[]> {
-    return question.map(q => {
-      const answers: Answer[] = [];
-      q.choices.forEach((option: Option) => {
-        this.answers.filter((answer: Answer) => {
-          return option.id === answer.optionId;
-        }).forEach((answer: Answer) => {
-          answers.push(answer);
-        });
-      });
-      if (answers.length === 0) {
-        q.choices.forEach((option: Option) => {
-          answers.push({'optionId': option.id, 'checked': false});
-        });
-      }
-      return answers;
     });
   }
 
@@ -170,7 +150,7 @@ export class QuestionService {
   }
 
   private loadQuestions() {
-    this.questions = this.http.get('assets/questions.json')
+    return this.http.get('assets/questions.json')
       .map(response => response.json());
   }
 
