@@ -4,7 +4,7 @@ import { QuestionService } from '../question.service';
 import { User } from './user.model';
 
 @Component({
-  selector: 'app-user',
+  selector: 'olx-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })

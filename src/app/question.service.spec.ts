@@ -4,8 +4,8 @@ import { TestBed, async, inject } from '@angular/core/testing';
 import { QuestionService } from './question.service';
 import { HttpModule, Response, ResponseOptions, XHRBackend } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
-import { mockAnswers1, mockAnswers2, mockPointsJson, mockQuestionsJson } from './jsonresponse.mock';
-import {Answer} from "./questions/questions.model";
+import { mockPointsJson, mockQuestionsJson } from './jsonresponse.mock';
+import { Answer } from './questions/questions.model';
 
 describe('QuestionService', () => {
   beforeEach(async(() => {

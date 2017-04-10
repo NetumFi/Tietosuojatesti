@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { QuestionService } from '../question.service';
 
 @Component({
-  selector: 'app-result',
+  selector: 'olx-result',
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })

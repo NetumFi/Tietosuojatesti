@@ -1,11 +1,9 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
-
 import { IntroComponent } from './intro.component';
-import {QuestionService} from "../question.service";
-import {questionServiceStub} from "../question.service.mock";
+import { QuestionService } from '../question.service';
+import { questionServiceStub } from '../question.service.mock';
 
 describe('IntroComponent', () => {
   let component: IntroComponent;

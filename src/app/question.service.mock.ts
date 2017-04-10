@@ -1,4 +1,5 @@
-import {Observable} from "rxjs";
+import { Observable } from 'rxjs/Observable';
+
 export const questionServiceStub = {
   getQuestion: any => Observable.of({ id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}] }),
   getGivenAnswers: any => [],
