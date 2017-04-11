@@ -1,5 +1,6 @@
 body {
-  background: url(/assets/images/VM_Etusivu_2236x420_171014.jpg) no-repeat 50% 12px white;
+  background: url(/assets/images/VM_Etusivu_2236x420_171014.jpg) no-repeat 50% top;
+
   font-family: "Gotham XNarrow 5r", "Gotham XNarrow A", "Gotham XNarrow B", Helvetica, Arial, sans-serif;
 }
 
