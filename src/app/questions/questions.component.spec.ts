@@ -5,6 +5,8 @@ import { questionServiceStub } from '../question.service.mock';
 import { QuestionService } from '../question.service';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
+import { TimerComponent } from '../timer/timer.component';
+import { TimePipe } from '../time.pipe';
 
 describe('QuestionsComponent', () => {
   let component: QuestionsComponent;
@@ -13,7 +15,7 @@ describe('QuestionsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule, FormsModule ],
-      declarations: [ QuestionsComponent ],
+      declarations: [ QuestionsComponent, TimerComponent, TimePipe ],
       providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
     })
     .compileComponents();

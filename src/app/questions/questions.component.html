@@ -1,4 +1,5 @@
 <div *ngIf="question != null && question !== undefined">
+  <olx-timer [seconds]="600"></olx-timer>
   <h3>{{index + 1}}. Kysymys</h3>
   {{question.text}}
   <br/>

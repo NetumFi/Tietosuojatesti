@@ -11,6 +11,8 @@ import { ResultComponent } from './result/result.component';
 import { RouterModule } from '@angular/router';
 import { QuestionService } from './question.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TimePipe } from './time.pipe';
+import { TimerComponent } from './timer/timer.component';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -22,11 +24,13 @@ const appRoutes = [
 
 @NgModule({
   declarations: [
+    TimePipe,
     AppComponent,
     IntroComponent,
     UserComponent,
     QuestionsComponent,
-    ResultComponent
+    ResultComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,
