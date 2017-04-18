@@ -7,6 +7,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 import { TimerComponent } from '../timer/timer.component';
 import { TimePipe } from '../time.pipe';
+import { QuestionComponent } from '../question/question.component';
 
 describe('QuestionsComponent', () => {
   let component: QuestionsComponent;
@@ -15,7 +16,7 @@ describe('QuestionsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule, FormsModule ],
-      declarations: [ QuestionsComponent, TimerComponent, TimePipe ],
+      declarations: [ QuestionsComponent, TimerComponent, TimePipe, QuestionComponent ],
       providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
     })
     .compileComponents();
@@ -24,6 +25,8 @@ describe('QuestionsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(QuestionsComponent);
     component = fixture.componentInstance;
+    component.question = { id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}] };
+    component.answers = [{ optionId: 'o', checked: false}];
     fixture.detectChanges();
   });
 

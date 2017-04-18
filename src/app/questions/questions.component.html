@@ -1,17 +1,7 @@
 <div *ngIf="question != null && question !== undefined">
   <olx-timer [seconds]="600"></olx-timer>
   <h3>{{index + 1}}. Kysymys</h3>
-  {{question.text}}
-  <br/>
-  <br/>
-  <div *ngFor="let answer of answers" class="form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" [(ngModel)]="answer.checked" (click)="save()" />
-      {{getOptionText(answer.optionId)}}
-    </label>
-
-  </div>
-
+  <olx-question [question]="question" [answers]="answers" (onSave)="save($event)"></olx-question>
   <div>
     <button type="button" class="btn btn-primary" (click)="nextPage()">Seuraava</button>
   </div>

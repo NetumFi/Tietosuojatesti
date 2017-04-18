@@ -19,14 +19,13 @@ export class QuestionService {
 
   private user: User = { name: '', title: '', organization: '' };
 
-  questions: Observable<Question[]>;
-
-  private questionsSize = 0;
-
   private pageNumber: BehaviorSubject<number> = new BehaviorSubject(1);
 
-  constructor(public http: Http) {
-    this.questions = this.loadQuestions();
+  constructor(public http: Http) { }
+
+  getQuestions(): Observable<Question[]> {
+    return this.http.get('assets/questions.json')
+      .map(response => response.json());
   }
 
   getPageNumber() {
@@ -37,15 +36,6 @@ export class QuestionService {
     this.pageNumber.next(pageNumber);
   }
 
-   getQuestion(index): Observable<Question> {
-    return this.questions.map(questions => {
-      this.questionsSize = questions.length;
-      if (this.isValidIndex(index)) {
-        return questions[index];
-      }
-      return null;
-    });
-  }
 
   getGivenAnswers(question: Question): Answer[] {
     const answers: Answer[] = [];
@@ -81,18 +71,6 @@ export class QuestionService {
     });
   }
 
-  hasMoreQuestions(index) {
-    return this.isValidIndex(index) && this.isValidIndex(index + 1);
-  }
-
-  hasPreviousQuestions(index) {
-    return this.isValidIndex(index) && this.isValidIndex(index - 1);
-  }
-
-  private isValidIndex(index) {
-    return index != null && index !== undefined && index >= 0 && index < this.questionsSize;
-  }
-
   getUser() {
     return this.user;
   }
@@ -123,7 +101,7 @@ export class QuestionService {
       this.loadPoints();
     }
     const optionIds: string[] = [];
-    this.questions.subscribe(questions => {
+    this.getQuestions().subscribe(questions => {
       questions.forEach(question => {
         question.choices.forEach(option => optionIds.push(option.id));
       });
@@ -147,11 +125,6 @@ export class QuestionService {
       }
       return percentage;
     });
-  }
-
-  private loadQuestions() {
-    return this.http.get('assets/questions.json')
-      .map(response => response.json());
   }
 
   private loadPoints() {

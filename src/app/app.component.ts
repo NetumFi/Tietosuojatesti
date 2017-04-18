@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.pageNumber = this.questionService.getPageNumber();
-    this.questions = this.questionService.questions;
+    this.questions = this.questionService.getQuestions();
     this.amountOfPages = this.questions.map(questions => questions.length + 3);
   }
 

@@ -13,6 +13,7 @@ import { QuestionService } from './question.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
+import { QuestionComponent } from './question/question.component';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -30,7 +31,8 @@ const appRoutes = [
     UserComponent,
     QuestionsComponent,
     ResultComponent,
-    TimerComponent
+    TimerComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
