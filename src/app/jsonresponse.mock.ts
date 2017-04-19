@@ -4,16 +4,20 @@ export const mockQuestionsJson = [
         'text': 'Ensimmäinen kysymys',
         'choices': [
           { 'id': '001',
-            'text': 'Vaihtoehto 1'
+            'text': 'Vaihtoehto 1',
+            'correct': false
           },
           { 'id': '002',
-            'text': 'Vaihtoehto 2'
+            'text': 'Vaihtoehto 2',
+            'correct': true
           },
           { 'id': '003',
-            'text': 'Vaihtoehto 3'
+            'text': 'Vaihtoehto 3',
+            'correct': true
           },
           { 'id': '004',
-            'text': 'Vaihtoehto 4'
+            'text': 'Vaihtoehto 4',
+            'correct': true
           }
         ]
       },
@@ -22,59 +26,25 @@ export const mockQuestionsJson = [
         'text': 'Toinen kysymys',
         'choices': [
           { 'id': '011',
-            'text': 'Vaihtoehto a'
+            'text': 'Vaihtoehto a',
+            'correct': false
           },
           { 'id': '012',
-            'text': 'Vaihtoehto b'
+            'text': 'Vaihtoehto b',
+            'correct': true
           },
           { 'id': '013',
-            'text': 'Vaihtoehto c'
+            'text': 'Vaihtoehto c',
+            'correct': true
           },
           { 'id': '014',
-            'text': 'Vaihtoehto d'
+            'text': 'Vaihtoehto d',
+            'correct': true
           },
           { 'id': '015',
-            'text': 'Vaihtoehto e'
+            'text': 'Vaihtoehto e',
+            'correct': true
           }
         ]
-      }
-];
-
-export const mockPointsJson = [
-      {
-        'optionId': '001',
-        'pointsIfChecked': -1
-      },
-      {
-        'optionId': '002',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '003',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '004',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '011',
-        'pointsIfChecked': -1
-      },
-      {
-        'optionId': '012',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '013',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '014',
-        'pointsIfChecked': 1
-      },
-      {
-        'optionId': '015',
-        'pointsIfChecked': 1
       }
 ];
