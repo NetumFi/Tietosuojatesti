@@ -5,19 +5,19 @@
     "choices": [
       { "id": "001",
         "text": "Oikea vastaus 1",
-        "pointsIfChecked": 1
+        "correct": true
       },
       { "id": "002",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "003",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "004",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       }
     ]
   },
@@ -27,19 +27,19 @@
     "choices": [
       { "id": "011",
         "text": "Oikea vastaus 1",
-        "pointsIfChecked": 1
+        "correct": true
       },
       { "id": "012",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "013",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "014",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       }
     ]
   },
@@ -49,20 +49,20 @@
     "choices": [
       { "id": "021",
         "text": "Oikea vastaus 1",
-        "pointsIfChecked": 1
+        "correct": true
       },
       { "id": "022",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "023",
         "text": "Väärä vastaus",
-        "pointsIfChecked": -1
+        "correct": false
       },
       { "id": "024",
         "text": "Oikea vastaus 2",
-        "pointsIfChecked": 1
-      }
+        "correct": true
+     }
     ]
   }
 ]

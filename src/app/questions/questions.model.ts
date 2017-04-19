@@ -1,7 +1,7 @@
 export interface Option {
   id: string;
   text: string;
-  pointsIfChecked: number;
+  correct: boolean;
 }
 
 export interface Question {
