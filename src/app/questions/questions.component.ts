@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { QuestionService } from '../question.service';
-import { Answer, Question } from './questions.model';
+import { Answer, Option, Question } from './questions.model';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
@@ -21,6 +21,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   hasNextQuestion = false;
   hasPreviousQuestion = false;
   subscription: Subscription;
+  userPoints = 0;
+  maxPoints = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -41,7 +43,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .map(questions => questions[this.index]);
       }).subscribe(question => {
         this.question = question;
-        this.answers = this.questionService.getGivenAnswers(this.question);
+        this.initAnswers();
       });
   }
 
@@ -50,6 +52,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
+    this.questionService.setMaxPoints(this.questionService.getMaxPoints() + this.calculateMaxPoints());
+    this.questionService.setUserPoints(this.questionService.getUserPoints() + this.calculateUserPoints());
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 1]);
     } else {
@@ -57,16 +61,21 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     }
   }
 
-  previousPage() {
-    if (this.hasPreviousQuestion) {
-      this.router.navigate(['/kysymykset', this.index - 1]);
-    } else {
-      this.router.navigate(['/tiedot']);
-    }
-  }
-
   save(answers: Answer[]) {
-    this.questionService.updateAnswer(answers);
+    this.answers = answers;
   }
 
-}
+  initAnswers() {
+    this.answers = this.question.choices.map((option: Option) => { return { 'optionId': option.id, 'checked': false}; });
+  }
+
+  calculateMaxPoints() {
+    return this.question.choices.map((option: Option) => !option.correct ? 0
+      : 1).reduce((sum, current) => sum + current, 0);
+  }
+
+  calculateUserPoints() {
+    return this.question.choices
+      .filter((option: Option) => this.answers.some((answer: Answer) => answer.optionId === option.id && answer.checked))
+      .map((option: Option) => !option.correct ? -1 : 1).reduce((sum, current) => sum + current, 0);
+  }}

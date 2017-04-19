@@ -28,13 +28,10 @@ export class UserComponent implements OnInit {
     this.router.navigate(['/kysymykset/', 0]);
   }
 
-  previousPage() {
-    this.save();
-    this.router.navigate(['/']);
-  }
-
   save() {
     this.questionService.setUser(this.user);
+    this.questionService.setUserPoints(0);
+    this.questionService.setMaxPoints(0);
   }
 
 }
