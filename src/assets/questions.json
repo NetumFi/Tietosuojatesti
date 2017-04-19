@@ -4,16 +4,20 @@
     "text": "Miksi tietosuojasta on tullut entistä tärkeämpi osa-alue?",
     "choices": [
       { "id": "001",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "pointsIfChecked": 1
       },
       { "id": "002",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "003",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "004",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       }
     ]
   },
@@ -22,16 +26,20 @@
     "text": "Mitä tietosuoja mielestäsi tarkoittaa?",
     "choices": [
       { "id": "011",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "pointsIfChecked": 1
       },
       { "id": "012",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "013",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "014",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       }
     ]
   },
@@ -40,16 +48,20 @@
     "text": "Millä seuraavista keinoista edistät tietosuojan toteutumista?",
     "choices": [
       { "id": "021",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "pointsIfChecked": 1
       },
       { "id": "022",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "023",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "pointsIfChecked": -1
       },
       { "id": "024",
-        "text": "Oikea vastaus 2"
+        "text": "Oikea vastaus 2",
+        "pointsIfChecked": 1
       }
     ]
   }

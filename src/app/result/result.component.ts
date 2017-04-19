@@ -21,9 +21,9 @@ export class ResultComponent implements OnInit {
   ngOnInit() {
     this.questionService.setPageNumber(13);
     this.user = this.questionService.getUser();
-    this.questionService.calculatePoints().subscribe(userPoints => this.userPoints = userPoints);
-    this.questionService.calculateMaxPoints().subscribe(maxPoints => this.maxPoints = maxPoints);
-    this.questionService.calculatePercentage().subscribe(percentage => this.percentage = percentage);
+    this.userPoints = this.questionService.getUserPoints();
+    this.maxPoints = this.questionService.getMaxPoints();
+    this.percentage = this.maxPoints <= 0 ? 0 : this.userPoints * 100 / this.maxPoints;
   }
 
   backToBeginning() {
