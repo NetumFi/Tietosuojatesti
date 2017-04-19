@@ -6,6 +6,7 @@ import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+import { QuestionHelper } from './questionhelper';
 
 
 @Component({
@@ -50,8 +51,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
-    this.questionService.setMaxPoints(this.questionService.getMaxPoints() + this.calculateMaxPoints());
-    this.questionService.setUserPoints(this.questionService.getUserPoints() + this.calculateUserPoints());
+    this.questionService.setMaxPoints(
+      this.questionService.getMaxPoints() + QuestionHelper.calculateMaxPoints(this.question));
+    this.questionService.setUserPoints(
+      this.questionService.getUserPoints() + QuestionHelper.calculateUserPoints(this.question, this.answers));
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
@@ -67,13 +70,4 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     this.answers = this.question.choices.map((option: Option) => { return { 'optionId': option.id, 'checked': false}; });
   }
 
-  calculateMaxPoints() {
-    return this.question.choices.map((option: Option) => !option.correct ? 0
-      : 1).reduce((sum, current) => sum + current, 0);
-  }
-
-  calculateUserPoints() {
-    return this.question.choices
-      .filter((option: Option) => this.answers.some((answer: Answer) => answer.optionId === option.id && answer.checked))
-      .map((option: Option) => !option.correct ? -1 : 1).reduce((sum, current) => sum + current, 0);
-  }}
+}
