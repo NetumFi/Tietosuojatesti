@@ -13,7 +13,7 @@ const mockAnswer1 = [
 const mockAnswer2 = [{ 'optionId': '011', 'checked': true }];
 const mockAnswer3 = [{ 'optionId': '011', 'checked': false }];
 
-describe('UserComponent', () => {
+describe('QuestionHelper', () => {
   beforeEach(() => {
   });
 
