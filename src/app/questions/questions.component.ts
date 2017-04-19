@@ -70,12 +70,12 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   calculateMaxPoints() {
-    return this.question.choices.map((option: Option) => option.pointsIfChecked < 0 ? 0
-      : option.pointsIfChecked).reduce((sum, current) => sum + current, 0);
+    return this.question.choices.map((option: Option) => !option.correct ? 0
+      : 1).reduce((sum, current) => sum + current, 0);
   }
 
   calculateUserPoints() {
     return this.question.choices
       .filter((option: Option) => this.answers.some((answer: Answer) => answer.optionId === option.id && answer.checked))
-      .map((option: Option) => option.pointsIfChecked).reduce((sum, current) => sum + current, 0);
+      .map((option: Option) => !option.correct ? -1 : 1).reduce((sum, current) => sum + current, 0);
   }}
