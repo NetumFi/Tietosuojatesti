@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuestionService } from '../question.service';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'olx-result',
@@ -16,11 +17,12 @@ export class ResultComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private userService: UserService,
     private questionService: QuestionService) {}
 
   ngOnInit() {
     this.questionService.setPageNumber(13);
-    this.user = this.questionService.getUser();
+    this.user = this.userService.getUser();
     this.userPoints = this.questionService.getUserPoints();
     this.maxPoints = this.questionService.getMaxPoints();
     this.percentage = this.maxPoints <= 0 ? 0 : this.userPoints * 100 / this.maxPoints;

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuestionService } from '../question.service';
 import { User } from './user.model';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'olx-user',
@@ -14,13 +15,14 @@ export class UserComponent implements OnInit {
 
   constructor(
     private router: Router,
+    private userService: UserService,
     private questionService: QuestionService
   ) {
   }
 
   ngOnInit() {
     this.questionService.setPageNumber(2);
-    this.user = this.questionService.getUser();
+    this.user = this.userService.getUser();
   }
 
   nextPage() {
@@ -29,7 +31,7 @@ export class UserComponent implements OnInit {
   }
 
   save() {
-    this.questionService.setUser(this.user);
+    this.userService.setUser(this.user);
     this.questionService.setUserPoints(0);
     this.questionService.setMaxPoints(0);
   }

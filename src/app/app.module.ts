@@ -14,6 +14,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
 import { QuestionComponent } from './question/question.component';
+import { UserService } from './user.service';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -41,7 +42,10 @@ const appRoutes = [
     ButtonsModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [QuestionService],
+  providers: [
+    QuestionService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
