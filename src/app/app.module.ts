@@ -19,7 +19,7 @@ const appRoutes = [
   { path: '', component: IntroComponent },
   { path: 'tiedot', component: UserComponent },
   { path: 'kysymykset', component: QuestionsComponent },
-  { path: 'kysymykset/:index', component: QuestionsComponent },
+  { path: 'kysymykset/:question-number', component: QuestionsComponent },
   { path: 'tulokset', component: ResultComponent }
 ];
 

@@ -21,8 +21,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   hasNextQuestion = false;
   hasPreviousQuestion = false;
   subscription: Subscription;
-  userPoints = 0;
-  maxPoints = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -33,7 +31,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.subscription = this.route.params
       .switchMap((params: Params) => {
-        this.index = +params['index'];
+        this.index = +params['question-number'] - 1;
         this.questionService.setPageNumber(this.index + 3);
         return this.questionService.getQuestions()
           .do(questions => {
@@ -55,7 +53,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     this.questionService.setMaxPoints(this.questionService.getMaxPoints() + this.calculateMaxPoints());
     this.questionService.setUserPoints(this.questionService.getUserPoints() + this.calculateUserPoints());
     if (this.hasNextQuestion) {
-      this.router.navigate(['/kysymykset', this.index + 1]);
+      this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
       this.router.navigate(['/tulokset']);
     }

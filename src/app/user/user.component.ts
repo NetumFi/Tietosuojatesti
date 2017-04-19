@@ -25,7 +25,7 @@ export class UserComponent implements OnInit {
 
   nextPage() {
     this.save();
-    this.router.navigate(['/kysymykset/', 0]);
+    this.router.navigate(['/kysymykset/', 1]);
   }
 
   save() {
