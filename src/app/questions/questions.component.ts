@@ -40,7 +40,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .do(questions => {
             this.hasNextQuestion = this.index < questions.length - 1;
             this.hasPreviousQuestion = this.index > 0;
-            if (this.questionService.getMaxPoints() == 0) {
+            if (this.questionService.getMaxPoints() === 0) {
               this.initMaxPoints(questions);
             }
           })
