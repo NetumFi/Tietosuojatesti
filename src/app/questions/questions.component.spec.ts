@@ -8,6 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { TimerComponent } from '../timer/timer.component';
 import { TimePipe } from '../time.pipe';
 import { QuestionComponent } from '../question/question.component';
+import { UserService } from '../user.service';
+import { userServiceStub } from '../userservice.mock';
+import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/from';
 
 describe('QuestionsComponent', () => {
   let component: QuestionsComponent;
@@ -17,7 +22,11 @@ describe('QuestionsComponent', () => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule, FormsModule ],
       declarations: [ QuestionsComponent, TimerComponent, TimePipe, QuestionComponent ],
-      providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
+      providers: [
+        { provide: QuestionService, useValue: questionServiceStub },
+        { provide: UserService, useValue: userServiceStub },
+        { provide: ActivatedRoute, useValue: { 'params': Observable.from([{ 'question-number': 1 }]) } }
+      ]
     })
     .compileComponents();
   }));
@@ -25,8 +34,6 @@ describe('QuestionsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(QuestionsComponent);
     component = fixture.componentInstance;
-    component.question = { id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}] };
-    component.answers = [{ optionId: 'o', checked: false}];
     fixture.detectChanges();
   });
 

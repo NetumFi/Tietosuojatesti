@@ -14,12 +14,13 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
 import { QuestionComponent } from './question/question.component';
+import { UserService } from './user.service';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
   { path: 'tiedot', component: UserComponent },
   { path: 'kysymykset', component: QuestionsComponent },
-  { path: 'kysymykset/:index', component: QuestionsComponent },
+  { path: 'kysymykset/:question-number', component: QuestionsComponent },
   { path: 'tulokset', component: ResultComponent }
 ];
 
@@ -41,7 +42,10 @@ const appRoutes = [
     ButtonsModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [QuestionService],
+  providers: [
+    QuestionService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

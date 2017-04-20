@@ -1,17 +1,11 @@
 import { Observable } from 'rxjs/Observable';
 
 export const questionServiceStub = {
-  questions: Observable.of([]),
-  getQuestion: any => Observable.of({ id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}] }),
-  getQuestions: any => Observable.of([{ id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}]}]),
-  getGivenAnswers: any => [],
-  hasMoreQuestions: any => false,
-  hasPreviousQuestions: any => false,
-  getUser: () => [{ name: '', title: '', organization: ''}],
-  calculatePoints: any => Observable.of(0),
-  calculateMaxPoints: any => Observable.of(0),
-  calculatePercentage: any => Observable.of(0),
+  getQuestions: any => Observable.of([{ id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option', correct: true }]}]),
+  getMaxPoints: () => Observable.of(0),
+  addMaxPoints: any => {},
+  resetMaxPoints: () => {},
   setPageNumber: any => {},
-  getPageNumber: any => Observable.of(1)
+  getPageNumber: () => Observable.of(1)
 };
 

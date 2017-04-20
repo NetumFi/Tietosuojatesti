@@ -4,16 +4,20 @@
     "text": "Miksi tietosuojasta on tullut entistä tärkeämpi osa-alue?",
     "choices": [
       { "id": "001",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "correct": true
       },
       { "id": "002",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "003",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "004",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       }
     ]
   },
@@ -22,16 +26,20 @@
     "text": "Mitä tietosuoja mielestäsi tarkoittaa?",
     "choices": [
       { "id": "011",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "correct": true
       },
       { "id": "012",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "013",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "014",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       }
     ]
   },
@@ -40,17 +48,21 @@
     "text": "Millä seuraavista keinoista edistät tietosuojan toteutumista?",
     "choices": [
       { "id": "021",
-        "text": "Oikea vastaus 1"
+        "text": "Oikea vastaus 1",
+        "correct": true
       },
       { "id": "022",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "023",
-        "text": "Väärä vastaus"
+        "text": "Väärä vastaus",
+        "correct": false
       },
       { "id": "024",
-        "text": "Oikea vastaus 2"
-      }
+        "text": "Oikea vastaus 2",
+        "correct": true
+     }
     ]
   }
 ]

@@ -1,11 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { QuestionService } from '../question.service';
-import { Answer, Question } from './questions.model';
+import { Answer, Option, Question } from './questions.model';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -25,13 +27,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private userService: UserService,
     private questionService: QuestionService
   ) { }
 
   ngOnInit() {
     this.subscription = this.route.params
       .switchMap((params: Params) => {
-        this.index = +params['index'];
+        this.index = +params['question-number'] - 1;
         this.questionService.setPageNumber(this.index + 3);
         return this.questionService.getQuestions()
           .do(questions => {
@@ -41,7 +44,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .map(questions => questions[this.index]);
       }).subscribe(question => {
         this.question = question;
-        this.answers = this.questionService.getGivenAnswers(this.question);
+        this.initAnswers();
       });
   }
 
@@ -50,23 +53,25 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
+    const maxPoints = calculateMaxPoints(this.question);
+    const userPoints = calculateUserPoints(this.question, this.answers);
+
+    this.questionService.addMaxPoints(maxPoints);
+    this.userService.addPoints(userPoints);
+
     if (this.hasNextQuestion) {
-      this.router.navigate(['/kysymykset', this.index + 1]);
+      this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
       this.router.navigate(['/tulokset']);
     }
   }
 
-  previousPage() {
-    if (this.hasPreviousQuestion) {
-      this.router.navigate(['/kysymykset', this.index - 1]);
-    } else {
-      this.router.navigate(['/tiedot']);
-    }
+  save(answers: Answer[]) {
+    this.answers = answers;
   }
 
-  save(answers: Answer[]) {
-    this.questionService.updateAnswer(answers);
+  initAnswers() {
+    this.answers = this.question.choices.map((option: Option) => { return { 'optionId': option.id, 'checked': false}; });
   }
 
 }
