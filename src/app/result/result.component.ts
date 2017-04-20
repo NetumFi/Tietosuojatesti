@@ -29,6 +29,7 @@ export class ResultComponent implements OnInit {
   }
 
   backToBeginning() {
+    this.questionService.initQuestions(10);
     this.router.navigate(['/']);
   }
 

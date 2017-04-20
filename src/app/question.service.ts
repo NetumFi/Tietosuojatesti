@@ -8,6 +8,7 @@ import 'rxjs/add/operator/mergeMap';
 import 'rxjs/add/observable/forkJoin';
 import 'rxjs/add/observable/of';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { pickQuestions } from './questions/questionhelper';
 
 
 @Injectable()
@@ -17,7 +18,11 @@ export class QuestionService {
 
   private pageNumber: BehaviorSubject<number> = new BehaviorSubject(1);
 
-  constructor(public http: Http) { }
+  private questions: BehaviorSubject<Question[]>;
+
+  constructor(public http: Http) {
+    this.questions = new BehaviorSubject([]);
+  }
 
   addMaxPoints(maxPoints) {
     this.maxPoints += maxPoints;
@@ -27,9 +32,16 @@ export class QuestionService {
     this.maxPoints = 0;
   }
 
-  getQuestions(): Observable<Question[]> {
-    return this.http.get('assets/questions.json')
-      .map(response => response.json());
+  getQuestions() {
+    return this.questions;
+  }
+
+  initQuestions(amount) {
+    this.http.get('assets/questions.json')
+      .subscribe(response => {
+        const allQuestions: Question[] = response.json();
+        this.questions.next(pickQuestions(allQuestions, amount));
+      });
   }
 
   getPageNumber() {
