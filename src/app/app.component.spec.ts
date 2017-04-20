@@ -27,7 +27,6 @@ describe('AppComponent', () => {
       providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
     });
     TestBed.compileComponents();
-    questionServiceStub.questions = Observable.of([{}, {}]);
   }));
 
   it('should create the app', async(() => {

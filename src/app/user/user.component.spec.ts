@@ -5,6 +5,8 @@ import { questionServiceStub } from '../question.service.mock';
 import { QuestionService } from '../question.service';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
+import { userServiceStub } from '../userservice.mock';
+import { UserService } from '../user.service';
 
 describe('UserComponent', () => {
   let component: UserComponent;
@@ -14,7 +16,10 @@ describe('UserComponent', () => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule, FormsModule ],
       declarations: [ UserComponent ],
-      providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
+      providers: [
+        { provide: QuestionService, useValue: questionServiceStub },
+        { provide: UserService, useValue: userServiceStub }
+      ]
     })
     .compileComponents();
   }));
