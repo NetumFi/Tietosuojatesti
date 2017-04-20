@@ -40,6 +40,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .do(questions => {
             this.hasNextQuestion = this.index < questions.length - 1;
             this.hasPreviousQuestion = this.index > 0;
+            if (this.questionService.getMaxPoints() == 0) {
+              this.initMaxPoints(questions);
+            }
           })
           .map(questions => questions[this.index]);
       }).subscribe(question => {
@@ -53,10 +56,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
-    const maxPoints = calculateMaxPoints(this.question);
     const userPoints = calculateUserPoints(this.question, this.answers);
 
-    this.questionService.addMaxPoints(maxPoints);
     this.userService.addPoints(userPoints);
 
     if (this.hasNextQuestion) {
@@ -72,6 +73,13 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
   initAnswers() {
     this.answers = this.question.choices.map((option: Option) => { return { 'optionId': option.id, 'checked': false}; });
+  }
+
+  initMaxPoints(questions: Question[]) {
+    questions.forEach(question => {
+      const maxPoints = calculateMaxPoints(question);
+      this.questionService.addMaxPoints(maxPoints);
+    });
   }
 
 }

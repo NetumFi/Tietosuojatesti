@@ -1,6 +1,7 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/timer';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'olx-timer',
@@ -15,7 +16,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   secondsLeft;
   subscription;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.secondsLeft = this.seconds;
@@ -28,11 +29,16 @@ export class TimerComponent implements OnInit, OnDestroy {
     if (this.secondsLeft === 0) {
       alert('Aika loppui');
       this.subscription.unsubscribe();
+      this.toResultPage();
     }
   }
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  toResultPage() {
+    this.router.navigate(['/tulokset']);
   }
 
 }
