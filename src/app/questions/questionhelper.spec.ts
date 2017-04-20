@@ -1,32 +1,129 @@
-import { QuestionHelper } from './questionhelper';
-import { mockQuestionsJson } from '../jsonresponse.mock';
+import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
 
-const mockAnswer1 = [
-  { 'optionId': '015', 'checked': true },
-  { 'optionId': '012', 'checked': true },
-  { 'optionId': '011', 'checked': true },
-  { 'optionId': '014', 'checked': true },
-  { 'optionId': '002', 'checked': true },
-  { 'optionId': '013', 'checked': true },
-  { 'optionId': '003', 'checked': true }
-];
-const mockAnswer2 = [{ 'optionId': '011', 'checked': true }];
-const mockAnswer3 = [{ 'optionId': '011', 'checked': false }];
-
-describe('QuestionHelper', () => {
-  beforeEach(() => {
+describe('calculateMaxPoints', () => {
+  it('should add 0 points for incorrect options', () => {
+    const questionWithOnlyIncorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': false
+        }
+      ]
+    };
+    expect(calculateMaxPoints(questionWithOnlyIncorrectOptions)).toBe(0);
   });
 
-  it('should calculate max points', () => {
-    expect(QuestionHelper.calculateMaxPoints(mockQuestionsJson[0])).toBe(3);
-    expect(QuestionHelper.calculateMaxPoints(mockQuestionsJson[1])).toBe(4);
+  it('should add 1 point for correct options', () => {
+    const questionWithOnlyCorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': true
+        }
+      ]
+    };
+    expect(calculateMaxPoints(questionWithOnlyCorrectOptions)).toBe(1);
   });
-  it('should calculate user points', () => {
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[0], mockAnswer1)).toBe(2);
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[1], mockAnswer1)).toBe(3);
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[0], mockAnswer2)).toBe(0);
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[1], mockAnswer2)).toBe(-1);
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[0], mockAnswer3)).toBe(0);
-    expect(QuestionHelper.calculateUserPoints(mockQuestionsJson[1], mockAnswer3)).toBe(0);
+
+  it('should return 0 if no options', () => {
+    const questionWithNoOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': []
+    };
+    expect(calculateMaxPoints(questionWithNoOptions)).toBe(0);
+  });
+});
+
+describe('calculateUserPoints', () => {
+  it('should not add points for not checked answers', () => {
+    const questionWithOnlyCorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': true
+        }
+      ]
+    };
+    const noCheckedAnswers = [{ 'optionId': '001', 'checked': false }];
+
+    expect(calculateUserPoints(questionWithOnlyCorrectOptions, noCheckedAnswers)).toBe(0);
+  });
+
+  it('should add 1 point for correct answer', () => {
+    const questionWithOnlyCorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': true
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ 'optionId': '001', 'checked': true }];
+
+    expect(calculateUserPoints(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBe(1);
+  });
+
+  it('should add -1 points for incorrect answer', () => {
+    const questionWithOnlyIncorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': false
+        }
+      ]
+    };
+    const onlyIncorrectAnswers = [{ 'optionId': '001', 'checked': true }];
+
+    expect(calculateUserPoints(questionWithOnlyIncorrectOptions, onlyIncorrectAnswers)).toBe(-1);
+  });
+
+  it('should add no points for answer irrelevant to the question', () => {
+    const questionWithOnlyCorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': false
+        }
+      ]
+    };
+    const onlyIrrelevantAnswers = [{ 'optionId': '999', 'checked': true }];
+
+    expect(calculateUserPoints(questionWithOnlyCorrectOptions, onlyIrrelevantAnswers)).toBe(0);
+  });
+
+  it('should return 0 for empty array of answers', () => {
+    const questionWithOnlyCorrectOptions = {
+      'id': 'q1',
+      'text': 'Question 1',
+      'choices': [
+        {
+          'id': '001',
+          'text': 'Option 1',
+          'correct': false
+        }
+      ]
+    };
+    const noAnswers = [];
+
+    expect(calculateUserPoints(questionWithOnlyCorrectOptions, noAnswers)).toBe(0);
   });
 });

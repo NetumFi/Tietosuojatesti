@@ -13,19 +13,18 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 @Injectable()
 export class QuestionService {
 
-  private userPoints = 0;
   private maxPoints = 0;
 
   private pageNumber: BehaviorSubject<number> = new BehaviorSubject(1);
 
   constructor(public http: Http) { }
 
-  setUserPoints(userPoints) {
-    this.userPoints = userPoints;
+  addMaxPoints(maxPoints) {
+    this.maxPoints += maxPoints;
   }
 
-  setMaxPoints(maxPoints) {
-    this.maxPoints = maxPoints;
+  resetMaxPoints() {
+    this.maxPoints = 0;
   }
 
   getQuestions(): Observable<Question[]> {
@@ -39,10 +38,6 @@ export class QuestionService {
 
   setPageNumber(pageNumber: number) {
     this.pageNumber.next(pageNumber);
-  }
-
-  getUserPoints() {
-    return this.userPoints;
   }
 
   getMaxPoints() {

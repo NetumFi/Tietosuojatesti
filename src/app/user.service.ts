@@ -4,6 +4,7 @@ import { User } from './user/user.model';
 @Injectable()
 export class UserService {
 
+  private points = 0;
   private user: User = { name: '', title: '', organization: '' };
 
 
@@ -17,6 +18,16 @@ export class UserService {
     this.user = user;
   }
 
+  addPoints(points) {
+    this.points += points;
+  }
 
+  resetPoints() {
+    this.points = 0;
+  }
+
+  getPoints() {
+    return this.points;
+  }
 
 }

@@ -32,8 +32,8 @@ export class UserComponent implements OnInit {
 
   save() {
     this.userService.setUser(this.user);
-    this.questionService.setUserPoints(0);
-    this.questionService.setMaxPoints(0);
+    this.questionService.resetMaxPoints();
+    this.userService.resetPoints();
   }
 
 }

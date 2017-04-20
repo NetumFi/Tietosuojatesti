@@ -6,7 +6,8 @@ import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
-import { QuestionHelper } from './questionhelper';
+import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
+import { UserService } from '../user.service';
 
 
 @Component({
@@ -26,6 +27,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private userService: UserService,
     private questionService: QuestionService
   ) { }
 
@@ -51,10 +53,12 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
-    this.questionService.setMaxPoints(
-      this.questionService.getMaxPoints() + QuestionHelper.calculateMaxPoints(this.question));
-    this.questionService.setUserPoints(
-      this.questionService.getUserPoints() + QuestionHelper.calculateUserPoints(this.question, this.answers));
+    const maxPoints = calculateMaxPoints(this.question);
+    const userPoints = calculateUserPoints(this.question, this.answers);
+
+    this.questionService.addMaxPoints(maxPoints);
+    this.userService.addPoints(userPoints);
+
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
