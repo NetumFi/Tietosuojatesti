@@ -13,7 +13,8 @@
     "postinstall": "ng build --aot -prod",
     "start": "node server",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.60",
     "codelyzer": "~2.0.0",
+    "coveralls": "^2.13.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "3.2.0",
     "karma": "1.4.1",

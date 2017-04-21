@@ -26,9 +26,12 @@ before_install:
 before_script:
   - npm install -g @angular/cli
 
+after_success:
+  - npm run coveralls
+
 script:
   - ng lint
-  - ng test --watch false
+  - ng test --watch false --cc
   - ng e2e
 
 notifications:
