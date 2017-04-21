@@ -1,6 +1,6 @@
 # Olx 
 [![Build Status](https://travis-ci.org/NetumFi/Tietosuojatesti.svg?branch=master)](https://travis-ci.org/NetumFi/Tietosuojatesti)
-[![Known Vulnerabilities](https://snyk.io/test/github/netumfi/tietosuojatesti/badge.svg)](https://snyk.io/test/github/hollannikas/angular-workshop)
+[![Known Vulnerabilities](https://snyk.io/test/github/netumfi/tietosuojatesti/badge.svg)](https://snyk.io/test/github/NetumFi/Tietosuojatesti)
 [![Coverage Status](https://coveralls.io/repos/github/NetumFi/Tietosuojatesti/badge.svg?branch=master)](https://coveralls.io/github/NetumFi/Tietosuojatesti?branch=master)
 
 Deploys to [tietosuojatesti.herokuapp.com](http://tietosuojatesti.herokuapp.com/)
