@@ -1,4 +1,6 @@
-# Olx [![Build Status](https://travis-ci.org/NetumFi/Tietosuojatesti.svg?branch=master)](https://travis-ci.org/NetumFi/Tietosuojatesti)
+# Olx 
+[![Build Status](https://travis-ci.org/NetumFi/Tietosuojatesti.svg?branch=master)](https://travis-ci.org/NetumFi/Tietosuojatesti)
+[![Known Vulnerabilities](https://snyk.io/test/github/netumfi/tietosuojatesti/badge.svg)](https://snyk.io/test/github/hollannikas/angular-workshop)
 
 Deploys to [tietosuojatesti.herokuapp.com](http://tietosuojatesti.herokuapp.com/)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
