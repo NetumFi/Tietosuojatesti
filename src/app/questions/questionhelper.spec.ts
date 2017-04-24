@@ -1,4 +1,5 @@
-import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
+import { calculateMaxPoints, calculateUserPoints, pickQuestions } from './questionhelper';
+import { Question } from './questions.model';
 
 describe('calculateMaxPoints', () => {
   it('should add 0 points for incorrect options', () => {
@@ -127,3 +128,37 @@ describe('calculateUserPoints', () => {
     expect(calculateUserPoints(questionWithOnlyCorrectOptions, noAnswers)).toBe(0);
   });
 });
+
+describe('pickQuestions', () => {
+  function getQuestion(number) {
+    return {
+      'id': 'q' + number,
+      'text': 'Question ' + number,
+      'choices': []
+    };
+  }
+
+  it('should pick the only question in the array', () => {
+    expect(pickQuestions(Array.of(getQuestion(1)), 10).length).toBe(1);
+  });
+
+  it('should pick 10 questions from 50', () => {
+    const questions: Question[] = [];
+    for (let i = 0; i < 50; ++i) {
+      questions.push(getQuestion(i + 1));
+    }
+    const pickedQuestions = pickQuestions(questions, 10);
+    expect(pickedQuestions.length).toBe(10);
+  });
+
+  it('all 10 picked questions should be unique', () => {
+    const questions: Question[] = [];
+    for (let i = 0; i < 50; ++i) {
+      questions.push(getQuestion(i + 1));
+    }
+    const pickedQuestions = pickQuestions(questions, 10);
+    pickedQuestions.forEach(q1 => expect(pickedQuestions.filter(q2 => q1.id === q2.id).length).toBe(1));
+  });
+});
+
+
