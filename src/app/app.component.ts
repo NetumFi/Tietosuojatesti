@@ -22,7 +22,9 @@ export class AppComponent implements OnInit {
     this.pageNumber = this.questionService.getPageNumber();
     this.questionService.initQuestions(10);
     this.questions = this.questionService.getQuestions();
-    this.amountOfPages = this.questions.map(questions => questions.length + 3);
+    this.amountOfPages = this.questions
+      .map(questions => questions.length + 3)
+      .do(pages => this.questionService.setAmountOfPages(pages));
   }
 
 }

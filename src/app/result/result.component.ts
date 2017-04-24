@@ -21,7 +21,7 @@ export class ResultComponent implements OnInit {
     private questionService: QuestionService) {}
 
   ngOnInit() {
-    this.questionService.setPageNumber(13);
+    this.questionService.setPageNumberOfResultsPage();
     this.user = this.userService.getUser();
     this.userPoints = this.userService.getPoints();
     this.maxPoints = this.questionService.getMaxPoints();
