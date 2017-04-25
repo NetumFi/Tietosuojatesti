@@ -9,5 +9,5 @@ export const initialState: State = {
 };
 
 export function reducer(state = initialState, action: questions.Actions): State {
-  return initialState;
+  return state;
 }

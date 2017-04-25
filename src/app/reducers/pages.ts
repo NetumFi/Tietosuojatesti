@@ -15,7 +15,5 @@ export function reducer(state = initialState, action: pages.Actions): State {
       return { pageNumber: payload.pageNumber };
     }
   }
-  return initialState;
+  return state;
 }
-
-export const getPageNumber = (state: State) => state.pageNumber;
