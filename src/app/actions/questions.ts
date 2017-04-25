@@ -1,21 +1,21 @@
 import { Action } from '@ngrx/store';
 import { Question } from '../questions/questions.model';
 
-export const QUESTIONS_LOADED = '[Questions] Loaded Questions';
-export const QUESTIONS_PICKED = '[Questions] Picked random questions';
+export const LOADED = '[Questions] Loaded Questions';
+export const INITIALIZED = '[Questions] Initialized random questions';
 
-export class QuestionsLoadedAction implements Action {
-  readonly type = QUESTIONS_LOADED;
+export class LoadedAction implements Action {
+  readonly type = LOADED;
 
   constructor(public payload: Question[]) {}
 }
 
-export class RandomQuestionsPickedAction implements Action {
-  readonly type = QUESTIONS_PICKED;
+export class InitializedAction implements Action {
+  readonly type = INITIALIZED;
 
-  constructor(public payload: Question[]) {}
+  constructor() {}
 }
 
 export type Actions
-  = QuestionsLoadedAction
-  | RandomQuestionsPickedAction;
+  = LoadedAction
+  | InitializedAction;

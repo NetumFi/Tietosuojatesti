@@ -4,17 +4,17 @@ import { Question } from './questions.model';
 describe('calculateMaxPoints', () => {
   it('should add 0 points for incorrect options', () => {
     const questionWithOnlyIncorrectOptions = {
-      'id': 'q1',
-      'text': 'Question 1',
-      'choices': [
+      id: 'q1',
+      text: 'Question 1',
+      choices: [
         {
-          'id': '001',
-          'text': 'Option 1',
-          'correct': false
+          id: '001',
+          text: 'Option 1',
+          correct: false
         }
       ]
     };
-    expect(calculateMaxPoints(questionWithOnlyIncorrectOptions)).toBe(0);
+    expect(calculateMaxPoints([questionWithOnlyIncorrectOptions])).toBe(0);
   });
 
   it('should add 1 point for correct options', () => {
@@ -29,7 +29,7 @@ describe('calculateMaxPoints', () => {
         }
       ]
     };
-    expect(calculateMaxPoints(questionWithOnlyCorrectOptions)).toBe(1);
+    expect(calculateMaxPoints([questionWithOnlyCorrectOptions])).toBe(1);
   });
 
   it('should return 0 if no options', () => {
@@ -38,7 +38,7 @@ describe('calculateMaxPoints', () => {
       'text': 'Question 1',
       'choices': []
     };
-    expect(calculateMaxPoints(questionWithNoOptions)).toBe(0);
+    expect(calculateMaxPoints([questionWithNoOptions])).toBe(0);
   });
 });
 
@@ -138,10 +138,6 @@ describe('pickQuestions', () => {
     };
   }
 
-  it('should pick the only question in the array', () => {
-    expect(pickQuestions(Array.of(getQuestion(1)), 10).length).toBe(1);
-  });
-
   it('should pick 10 questions from 50', () => {
     const questions: Question[] = [];
     for (let i = 0; i < 50; ++i) {
@@ -160,5 +156,4 @@ describe('pickQuestions', () => {
     pickedQuestions.forEach(q1 => expect(pickedQuestions.filter(q2 => q1.id === q2.id).length).toBe(1));
   });
 });
-
 

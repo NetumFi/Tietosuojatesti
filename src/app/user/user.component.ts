@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { QuestionService } from '../question.service';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
@@ -22,7 +21,6 @@ export class UserComponent implements OnInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private questionService: QuestionService,
     private store: Store<fromRoot.State>
   ) {
     this.subscription = this.store.select(fromRoot.getUserState).map(state => state.user)
@@ -49,7 +47,6 @@ export class UserComponent implements OnInit, OnDestroy {
   save() {
     this.store.dispatch(new user.DetailsAddedAction({name: this.name, title: this.title, organization: this.organization}));
     this.store.dispatch(new user.PointsResetAction());
-    this.questionService.resetMaxPoints();
   }
 
 }

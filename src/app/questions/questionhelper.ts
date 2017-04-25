@@ -1,8 +1,12 @@
 import { Answer, Option, Question } from './questions.model';
 
 
-export function calculateMaxPoints(question: Question) {
-  return question.choices.map((option: Option) => !option.correct ? 0 : 1).reduce((sum, current) => sum + current, 0);
+export function calculateMaxPoints(questions: Question[]) {
+  let total = 0;
+  questions.forEach(question => total += question.choices
+    .map((option: Option) => !option.correct ? 0 : 1)
+    .reduce((sum, current) => sum + current, 0));
+  return total;
 }
 
 export function calculateUserPoints(question: Question, answers: Answer[]) {
@@ -16,13 +20,23 @@ export function pickQuestions(questions: Question[], amount): Question[] {
     return [];
   }
 
-  return pickQuestion(questions, pickQuestions(questions, amount - 1));
+  const pickedQuestions = [];
+
+  const pickedQuestionNumbers = [];
+  for (let i = 0; i < amount; i++) {
+    const pickedQuestionNumber = pickQuestion(pickedQuestionNumbers, questions.length);
+    pickedQuestions.push(questions[pickedQuestionNumber]);
+    pickedQuestionNumbers.push(pickedQuestionNumber);
+  }
+
+  return pickedQuestions;
 }
 
-function pickQuestion(questions: Question[], result: Question[]) {
-  if (questions.length > 0) {
-    const chosenIndex = Math.floor(Math.random() * questions.length);
-    result.push(questions.splice(chosenIndex, 1)[0]);
+export function pickQuestion(questionNumbers, maxQuestionNumber): number {
+  while (true) {
+    const questionNumber = Math.floor(Math.random() * maxQuestionNumber);
+    if (questionNumbers.indexOf(questionNumber) === -1) {
+      return questionNumber;
+    }
   }
-  return result;
 }
