@@ -44,13 +44,6 @@ export class QuestionService {
       });
   }
 
-  getPageNumber() {
-    return this.pageNumber;
-  }
-
-  setPageNumber(pageNumber: number) {
-    this.pageNumber.next(pageNumber);
-  }
 
   getMaxPoints() {
     return this.maxPoints;

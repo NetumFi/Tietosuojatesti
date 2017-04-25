@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { QuestionService } from '../question.service';
 import { UserService } from '../user.service';
+import { Store } from '@ngrx/store';
+import * as fromRoot from '../reducers';
+import * as pages from '../actions/pages';
 
 @Component({
   selector: 'olx-result',
@@ -18,10 +21,11 @@ export class ResultComponent implements OnInit {
   constructor(
     private router: Router,
     private userService: UserService,
-    private questionService: QuestionService) {}
+    private questionService: QuestionService,
+    private store: Store<fromRoot.State>) {}
 
   ngOnInit() {
-    this.questionService.setPageNumber(13);
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 13 }));
     this.user = this.userService.getUser();
     this.userPoints = this.userService.getPoints();
     this.maxPoints = this.questionService.getMaxPoints();
@@ -29,6 +33,7 @@ export class ResultComponent implements OnInit {
   }
 
   backToBeginning() {
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
     this.questionService.initQuestions(10);
     this.router.navigate(['/']);
   }

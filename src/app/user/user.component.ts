@@ -3,6 +3,9 @@ import { Router } from '@angular/router';
 import { QuestionService } from '../question.service';
 import { User } from './user.model';
 import { UserService } from '../user.service';
+import { Store } from '@ngrx/store';
+import * as fromRoot from '../reducers';
+import * as pages from '../actions/pages';
 
 @Component({
   selector: 'olx-user',
@@ -16,12 +19,13 @@ export class UserComponent implements OnInit {
   constructor(
     private router: Router,
     private userService: UserService,
-    private questionService: QuestionService
+    private questionService: QuestionService,
+    private store: Store<fromRoot.State>
   ) {
   }
 
   ngOnInit() {
-    this.questionService.setPageNumber(2);
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 2 }));
     this.user = this.userService.getUser();
   }
 

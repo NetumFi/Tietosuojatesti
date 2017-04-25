@@ -28,3 +28,7 @@ export function reducer(state: any, action: any) {
     return developmentReducer(state, action);
   }
 }
+
+export const getPagesState = (state: State) => state.pages;
+export const getUserState = (state: State) => state.user;
+export const questionsState = (state: State) => state.questions;

@@ -1,13 +1,21 @@
-import * as user from '../actions/pages';
+import * as pages from '../actions/pages';
 
 export interface State {
-  ids: string[];
+  pageNumber: number;
 }
 
 export const initialState: State = {
-  ids: []
+  pageNumber: 1
 };
 
-export function reducer(state = initialState, action: user.Actions): State {
+export function reducer(state = initialState, action: pages.Actions): State {
+  switch (action.type) {
+    case pages.CHANGED_PAGE: {
+      const payload = action.payload;
+      return { pageNumber: payload.pageNumber };
+    }
+  }
   return initialState;
 }
+
+export const getPageNumber = (state: State) => state.pageNumber;

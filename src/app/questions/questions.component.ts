@@ -8,7 +8,9 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
 import { UserService } from '../user.service';
-
+import { Store } from '@ngrx/store';
+import * as fromRoot from '../reducers';
+import * as pages from '../actions/pages';
 
 @Component({
   selector: 'olx-questions',
@@ -28,14 +30,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute,
     private router: Router,
     private userService: UserService,
-    private questionService: QuestionService
+    private questionService: QuestionService,
+    private store: Store<fromRoot.State>
   ) { }
 
   ngOnInit() {
     this.subscription = this.route.params
       .switchMap((params: Params) => {
-        this.index = +params['question-number'] - 1;
-        this.questionService.setPageNumber(this.index + 3);
+        const index = +params['question-number'] - 1;
+        this.index = index;
+        this.store.dispatch(new pages.ChangedPageAction({ pageNumber: index + 3 }));
         return this.questionService.getQuestions()
           .do(questions => {
             this.hasNextQuestion = this.index < questions.length - 1;
