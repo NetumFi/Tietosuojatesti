@@ -7,10 +7,10 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
-import { UserService } from '../user.service';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
+import * as user from '../actions/user';
 
 @Component({
   selector: 'olx-questions',
@@ -29,7 +29,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private userService: UserService,
     private questionService: QuestionService,
     private store: Store<fromRoot.State>
   ) { }
@@ -62,7 +61,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   nextPage() {
     const userPoints = calculateUserPoints(this.question, this.answers);
 
-    this.userService.addPoints(userPoints);
+    this.store.dispatch(new user.PointsAddedAction(userPoints));
 
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
