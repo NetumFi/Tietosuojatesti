@@ -31,4 +31,4 @@ export function reducer(state: any, action: any) {
 
 export const getPagesState = (state: State) => state.pages;
 export const getUserState = (state: State) => state.user;
-export const questionsState = (state: State) => state.questions;
+export const getQuestionsState = (state: State) => state.questions;

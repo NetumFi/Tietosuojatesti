@@ -13,7 +13,7 @@ export const initialState: State = {
 };
 
 export function reducer(state = initialState, action: user.Actions): State {
-  switch(action.type) {
+  switch (action.type) {
     case DETAILS_ADDED: {
       const user = action.payload;
       return { user: user, points: state.points };

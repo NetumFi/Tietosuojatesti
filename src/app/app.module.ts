@@ -9,7 +9,6 @@ import { UserComponent } from './user/user.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ResultComponent } from './result/result.component';
 import { RouterModule } from '@angular/router';
-import { QuestionService } from './question.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
@@ -54,9 +53,6 @@ export function instrumentOptions() {
     StoreDevtoolsModule.instrumentStore(instrumentOptions),
     StoreLogMonitorModule,
     StoreModule.provideStore(reducer)
-  ],
-  providers: [
-    QuestionService
   ],
   bootstrap: [AppComponent]
 })
