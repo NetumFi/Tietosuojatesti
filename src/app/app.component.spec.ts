@@ -33,7 +33,7 @@ describe('AppComponent', () => {
         provide: Store,
         useClass: class {
           select = jasmine.createSpy('select')
-            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: [ getMockedQuestion(1) ] }))
+            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: [ getMockedQuestion(1) ] }));
         }
       } ]
     });
