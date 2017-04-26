@@ -3,8 +3,8 @@
 <br/>
 <div *ngFor="let answer of answers" class="form-check">
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" [(ngModel)]="answer.checked" (click)="save()" />
-    {{getOptionText(answer.optionId)}}
+    <input class="form-check-input" type="checkbox" [(ngModel)]="answer.checked" />
+    {{answer.text}}
   </label>
 
 </div>

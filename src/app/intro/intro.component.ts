@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { QuestionService } from '../question.service';
 
 @Component({
   selector: 'olx-intro',
@@ -11,12 +10,9 @@ export class IntroComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private questionService: QuestionService
-  ) { }
+  ) {}
 
-  ngOnInit() {
-    this.questionService.setPageNumber(1);
-  }
+  ngOnInit() {}
 
   nextPage() {
     this.router.navigate(['/tiedot']);

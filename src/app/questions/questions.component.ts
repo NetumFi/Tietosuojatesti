@@ -1,14 +1,17 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { QuestionService } from '../question.service';
-import { Answer, Option, Question } from './questions.model';
+import { Question } from './questions.model';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
-import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
-import { UserService } from '../user.service';
-
+import { calculateUserPoints } from './questionhelper';
+import { Store } from '@ngrx/store';
+import * as fromRoot from '../reducers';
+import * as pages from '../actions/pages';
+import * as user from '../actions/user';
+import { Observable } from 'rxjs/Observable';
+import { QuestionComponent } from '../question/question.component';
 
 @Component({
   selector: 'olx-questions',
@@ -17,69 +20,59 @@ import { UserService } from '../user.service';
 })
 export class QuestionsComponent implements OnInit, OnDestroy {
 
-  question: Question;
-  answers: Answer[];
+  questions: Observable<Question[]>;
+  question: Observable<Question>;
+
+  @ViewChild(QuestionComponent)
+  private questionComponent: QuestionComponent;
+
   index;
   hasNextQuestion = false;
   hasPreviousQuestion = false;
-  subscription: Subscription;
+
+  subscriptions: Subscription[] = [];
 
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private userService: UserService,
-    private questionService: QuestionService
-  ) { }
+    private store: Store<fromRoot.State>
+  ) {
+    this.questions = store.select(fromRoot.getQuestionsState)
+      .map(state => state.pickedQuestions);
+  }
 
   ngOnInit() {
-    this.subscription = this.route.params
+    this.question = this.route.params
       .switchMap((params: Params) => {
-        this.index = +params['question-number'] - 1;
-        this.questionService.setPageNumber(this.index + 3);
-        return this.questionService.getQuestions()
+        const index = +params['question-number'] - 1;
+        this.index = index;
+        this.store.dispatch(new pages.ChangedPageAction({ pageNumber: index + 3 }));
+        return this.questions
           .do(questions => {
             this.hasNextQuestion = this.index < questions.length - 1;
             this.hasPreviousQuestion = this.index > 0;
-            if (this.questionService.getMaxPoints() === 0) {
-              this.initMaxPoints(questions);
-            }
           })
           .map(questions => questions[this.index]);
-      }).subscribe(question => {
-        this.question = question;
-        this.initAnswers();
       });
+
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+      this.subscriptions.forEach(s => s.unsubscribe());
   }
 
   nextPage() {
-    const userPoints = calculateUserPoints(this.question, this.answers);
-
-    this.userService.addPoints(userPoints);
+    this.subscriptions.push(this.question
+      .map(question => calculateUserPoints(question, this.questionComponent.answers))
+      .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)) ));
 
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
+      this.subscriptions.push(
+        this.questions.subscribe(questions => this.store.dispatch(new pages.ChangedPageAction({ pageNumber: questions.length + 3 }))));
       this.router.navigate(['/tulokset']);
     }
-  }
-
-  save(answers: Answer[]) {
-    this.answers = answers;
-  }
-
-  initAnswers() {
-    this.answers = this.question.choices.map((option: Option) => { return { 'optionId': option.id, 'checked': false}; });
-  }
-
-  initMaxPoints(questions: Question[]) {
-    questions.forEach(question => {
-      const maxPoints = calculateMaxPoints(question);
-      this.questionService.addMaxPoints(maxPoints);
-    });
   }
 
 }
