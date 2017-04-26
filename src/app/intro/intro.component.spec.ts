@@ -18,7 +18,7 @@ describe('IntroComponent', () => {
       providers: [
         {
           provide: Store,
-          useClass: class { select = jasmine.createSpy('select').and.callFake(any => Observable.of(initialState)) }
+          useClass: class { select = jasmine.createSpy('select').and.callFake(any => Observable.of(initialState)); }
         }
       ]
     }).compileComponents();
