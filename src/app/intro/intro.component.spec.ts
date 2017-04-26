@@ -3,7 +3,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { IntroComponent } from './intro.component';
 import { Store } from '@ngrx/store';
-import { initialState } from '../reducers/pages';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/Observable/of';
 
@@ -18,7 +17,7 @@ describe('IntroComponent', () => {
       providers: [
         {
           provide: Store,
-          useClass: class { select = jasmine.createSpy('select').and.callFake(any => Observable.of(initialState)); }
+          useClass: class { select = jasmine.createSpy('select').and.callFake(() => Observable.of({ pageNumber: 1 })); }
         }
       ]
     }).compileComponents();

@@ -6,7 +6,6 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/Observable/of';
-import { getMockedQuestion } from '../testhelper';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;
@@ -22,7 +21,13 @@ describe('ResultComponent', () => {
           useClass: class {
             dispatch = jasmine.createSpy('dispatch');
             select = jasmine.createSpy('select')
-              .and.callFake(any => Observable.of({ pickedQuestions: [ getMockedQuestion(1) ] }));
+              .and.callFake(() => Observable.of(
+                {
+                  user: { name: '', title: '', organization: '' },
+                  points: 0,
+                  maxPoints: 0
+                }
+              ));
           }
         }
       ]

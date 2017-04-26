@@ -20,7 +20,7 @@ describe('UserComponent', () => {
           provide: Store,
           useClass: class {
             dispatch = jasmine.createSpy('dispatch');
-            select = jasmine.createSpy('select').and.callFake(any => Observable.of( { user: { name: '', title: '', organization: '' } } ));
+            select = jasmine.createSpy('select').and.callFake(() => Observable.of({ user: { name: '', title: '', organization: '' } }));
           }
         }
       ]
