@@ -20,23 +20,14 @@ export function pickQuestions(questions: Question[], amount): Question[] {
     return [];
   }
 
-  const pickedQuestions = [];
-
-  const pickedQuestionNumbers = [];
-  for (let i = 0; i < amount; i++) {
-    const pickedQuestionNumber = pickQuestion(pickedQuestionNumbers, questions.length);
-    pickedQuestions.push(questions[pickedQuestionNumber]);
-    pickedQuestionNumbers.push(pickedQuestionNumber);
-  }
-
-  return pickedQuestions;
+  return pickQuestion(questions, pickQuestions(questions, amount - 1));
 }
 
-export function pickQuestion(questionNumbers, maxQuestionNumber): number {
-  while (true) {
-    const questionNumber = Math.floor(Math.random() * maxQuestionNumber);
-    if (questionNumbers.indexOf(questionNumber) === -1) {
-      return questionNumber;
-    }
+function pickQuestion(questions: Question[], picks: Question[]) {
+  const availableQuestions = questions.filter(question => !picks.some(pick => pick.id === question.id));
+  if (availableQuestions.length > 0) {
+    const chosenIndex = Math.floor(Math.random() * availableQuestions.length);
+    picks.push(availableQuestions[chosenIndex]);
   }
+  return picks;
 }

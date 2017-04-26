@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges } from '@angular/core';
 import { Answer, Question } from '../questions/questions.model';
 
 @Component({
@@ -16,7 +16,7 @@ export class QuestionComponent implements OnChanges {
   constructor() {}
 
   ngOnChanges() {
-    this.answers = this.question.choices.map(option => {return { optionId: option.id, checked: false, text: option.text}; } );
+    this.answers = this.question.choices.map(option => { return { optionId: option.id, checked: false, text: option.text }; } );
   }
 
 }
