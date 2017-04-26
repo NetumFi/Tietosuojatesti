@@ -18,8 +18,8 @@ describe('QuestionComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(QuestionComponent);
     component = fixture.componentInstance;
-    component.question = { id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option'}] };
-    component.answers = [{ optionId: 'o', checked: false}];
+    component.question = { id: 'q', text: 'first question', choices: [{ id: 'o', text: 'only option', correct: true }] };
+    component.answers = [{ optionId: 'o', checked: false, text: '' }];
     fixture.detectChanges();
   });
 

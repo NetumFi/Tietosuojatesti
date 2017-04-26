@@ -2,8 +2,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { IntroComponent } from './intro.component';
-import { QuestionService } from '../question.service';
-import { questionServiceStub } from '../question.service.mock';
+import { Store } from '@ngrx/store';
+import { initialState } from '../reducers/pages';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/Observable/of';
 
 describe('IntroComponent', () => {
   let component: IntroComponent;
@@ -13,9 +15,13 @@ describe('IntroComponent', () => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
       declarations: [ IntroComponent ],
-      providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
-    })
-    .compileComponents();
+      providers: [
+        {
+          provide: Store,
+          useClass: class { select = jasmine.createSpy('select').and.callFake(any => Observable.of(initialState)) }
+        }
+      ]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
