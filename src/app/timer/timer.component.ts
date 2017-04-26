@@ -2,6 +2,9 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/timer';
 import { Router } from '@angular/router';
+import { Store } from '@ngrx/store';
+import * as fromRoot from '../reducers';
+import * as pages from '../actions/pages';
 
 @Component({
   selector: 'olx-timer',
@@ -16,7 +19,10 @@ export class TimerComponent implements OnInit, OnDestroy {
   secondsLeft;
   subscription;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private store: Store<fromRoot.State>
+  ) { }
 
   ngOnInit() {
     this.secondsLeft = this.seconds;
@@ -38,6 +44,9 @@ export class TimerComponent implements OnInit, OnDestroy {
   }
 
   toResultPage() {
+      this.store.select(fromRoot.getQuestionsState)
+        .map(state => state.pickedQuestions.length)
+        .subscribe(amount => this.store.dispatch(new pages.ChangedPageAction({ pageNumber: amount + 3 })));
     this.router.navigate(['/tulokset']);
   }
 

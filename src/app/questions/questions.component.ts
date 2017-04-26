@@ -1,17 +1,16 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Answer, Option, Question } from './questions.model';
+import { Question } from './questions.model';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
-import { calculateMaxPoints, calculateUserPoints } from './questionhelper';
+import { calculateUserPoints } from './questionhelper';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
 import * as user from '../actions/user';
 import { Observable } from 'rxjs/Observable';
-import { subscribeOn } from 'rxjs/operator/subscribeOn';
 import { QuestionComponent } from '../question/question.component';
 
 @Component({
