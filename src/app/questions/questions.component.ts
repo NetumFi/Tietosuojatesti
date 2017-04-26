@@ -72,6 +72,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
+      this.questions.subscribe(questions => this.store.dispatch(new pages.ChangedPageAction({ pageNumber: questions.length + 3 })));
       this.router.navigate(['/tulokset']);
     }
   }
