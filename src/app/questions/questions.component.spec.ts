@@ -11,7 +11,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/from';
 import { Store } from '@ngrx/store';
 import 'rxjs/add/observable/of';
-import { getMockedQuestion } from '../testhelper';
+import { getMockedQuestions } from '../testhelper';
 
 describe('QuestionsComponent', () => {
   let component: QuestionsComponent;
@@ -28,7 +28,7 @@ describe('QuestionsComponent', () => {
         {
           provide: Store, useClass: class {
             dispatch = jasmine.createSpy('dispatch');
-            select = jasmine.createSpy('select').and.callFake(() => Observable.of( { pickedQuestions: [ getMockedQuestion(1) ] } ));
+            select = jasmine.createSpy('select').and.callFake(() => Observable.of( { pickedQuestions: getMockedQuestions(1) } ));
           }
         }
 

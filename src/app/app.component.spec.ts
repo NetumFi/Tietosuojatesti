@@ -13,7 +13,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { HttpModule, XHRBackend } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
-import { getMockedQuestion } from './testhelper';
+import { getMockedQuestions } from './testhelper';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -33,7 +33,7 @@ describe('AppComponent', () => {
         provide: Store,
         useClass: class {
           select = jasmine.createSpy('select')
-            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: [ getMockedQuestion(1) ] }));
+            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: getMockedQuestions(1) }));
         }
       } ]
     });
