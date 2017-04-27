@@ -1,11 +1,12 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { UserComponent } from './user.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
+import { By } from '@angular/platform-browser';
 
 describe('UserComponent', () => {
   let component: UserComponent;
@@ -36,4 +37,15 @@ describe('UserComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should click Next page button', fakeAsync(() => {
+    spyOn(component, 'nextPage');
+
+    let button = fixture.debugElement.query(By.css('button'));
+    button.triggerEventHandler('click', null);
+    tick();
+    fixture.detectChanges();
+    expect(component.nextPage).toHaveBeenCalled();
+  }));
+
 });
