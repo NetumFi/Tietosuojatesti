@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/from';
 import { Store } from '@ngrx/store';
-import 'rxjs/add/Observable/of';
+import 'rxjs/add/observable/of';
 import { getMockedQuestion } from '../testhelper';
 
 describe('QuestionsComponent', () => {

@@ -10,7 +10,7 @@ import { ResultComponent } from './result/result.component';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/Observable/of';
+import 'rxjs/add/observable/of';
 import { HttpModule, XHRBackend } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { getMockedQuestion } from './testhelper';

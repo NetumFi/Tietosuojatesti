@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { IntroComponent } from './intro.component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/Observable/of';
+import 'rxjs/add/observable/of';
 
 describe('IntroComponent', () => {
   let component: IntroComponent;

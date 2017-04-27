@@ -5,7 +5,7 @@ import { ResultComponent } from './result.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/Observable/of';
+import 'rxjs/add/observable/of';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;

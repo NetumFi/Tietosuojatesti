@@ -5,7 +5,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/Observable/of';
+import 'rxjs/add/observable/of';
 
 describe('UserComponent', () => {
   let component: UserComponent;
