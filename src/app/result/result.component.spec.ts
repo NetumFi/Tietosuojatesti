@@ -55,7 +55,7 @@ describe('ResultComponent', () => {
   it('should click Back to beginning button', fakeAsync(() => {
     spyOn(component, 'backToBeginning');
 
-    let button = fixture.debugElement.query(By.css('button'));
+    const button = fixture.debugElement.query(By.css('button'));
     button.triggerEventHandler('click', null);
     tick();
     fixture.detectChanges();
@@ -64,7 +64,7 @@ describe('ResultComponent', () => {
 
   it('should tell the user to try again', fakeAsync(() => {
     expect(fixture.debugElement.query(By.css('div')).nativeElement.textContent)
-      .toContain("Testituloksesi 74 / 100 pistettä ei valitettavasti riittänyt");
+      .toContain('Testituloksesi 74 / 100 pistettä ei valitettavasti riittänyt');
   }));
 
   it('should congratulate the user', fakeAsync(() => {
@@ -73,7 +73,7 @@ describe('ResultComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
     expect(fixture.debugElement.query(By.css('div')).nativeElement.textContent)
-      .toContain("Onneksi olkoon John Doe, sait 75 / 100");
+      .toContain('Onneksi olkoon John Doe, sait 75 / 100');
   }));
 
 });

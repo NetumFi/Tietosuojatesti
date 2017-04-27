@@ -7,7 +7,7 @@ export function getMockedQuestions(amount) {
 }
 
 function getMockedQuestion(number) {
-  let questionId = 'q' + number;
+  const questionId = 'q' + number;
   return {
     id: questionId,
     text: 'Question ' + number,

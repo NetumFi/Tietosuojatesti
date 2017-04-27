@@ -41,7 +41,7 @@ describe('UserComponent', () => {
   it('should click Next page button', fakeAsync(() => {
     spyOn(component, 'nextPage');
 
-    let button = fixture.debugElement.query(By.css('button'));
+    const button = fixture.debugElement.query(By.css('button'));
     button.triggerEventHandler('click', null);
     tick();
     fixture.detectChanges();
