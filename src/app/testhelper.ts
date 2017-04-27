@@ -7,10 +7,22 @@ export function getMockedQuestions(amount) {
 }
 
 function getMockedQuestion(number) {
+  let questionId = 'q' + number;
   return {
-    id: 'q' + number,
+    id: questionId,
     text: 'Question ' + number,
-    choices: []
+    choices: [
+      getMockedOption(questionId, 1, false),
+      getMockedOption(questionId, 2, true)
+    ]
+  };
+}
+
+function getMockedOption(questionId, number, correct) {
+  return {
+    id: questionId + '-' + number,
+    text: (!correct ? 'Incorrect option ' : 'Correct option ') + number,
+    correct: correct
   };
 }
 

@@ -14,6 +14,7 @@ import 'rxjs/add/observable/of';
 import { getMockedQuestions } from '../testhelper';
 import { By } from '@angular/platform-browser';
 
+
 describe('QuestionsComponent', () => {
   let component: QuestionsComponent;
   let fixture: ComponentFixture<QuestionsComponent>;
@@ -40,8 +41,8 @@ describe('QuestionsComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(QuestionsComponent);
+    fixture.autoDetectChanges();
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
@@ -56,6 +57,14 @@ describe('QuestionsComponent', () => {
     tick();
     fixture.detectChanges();
     expect(component.nextPage).toHaveBeenCalled();
+  }));
+
+  it('should show one question with two options', async(() => {
+    expect(fixture.debugElement.queryAll(By.css('span')).length).toBe(1);
+    expect(fixture.debugElement.query(By.css('span')).nativeElement.textContent).toContain('Question');
+    expect(fixture.debugElement.queryAll(By.css('label')).length).toBe(2);
+    expect(fixture.debugElement.queryAll(By.css('label'))[0].nativeElement.textContent).toContain('Incorrect option');
+    expect(fixture.debugElement.queryAll(By.css('label'))[1].nativeElement.textContent).toContain('Correct option');
   }));
 
 });
