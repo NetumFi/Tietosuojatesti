@@ -1,8 +1,7 @@
-<div *ngIf="question != null && question !== undefined">
-  <olx-timer [seconds]="600"></olx-timer>
-  <h3>{{index + 1}}. Kysymys</h3>
-  <olx-question [question]="question" [answers]="answers" (onSave)="save($event)"></olx-question>
-  <div>
-    <button type="button" class="btn btn-primary" (click)="nextPage()">Seuraava</button>
-  </div>
+
+<olx-timer [seconds]="600"></olx-timer>
+<h3>{{index + 1}}. Kysymys</h3>
+<olx-question [question]="question | async"></olx-question>
+<div>
+  <button type="button" class="btn btn-primary" (click)="nextPage()">Seuraava</button>
 </div>

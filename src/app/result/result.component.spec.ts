@@ -2,11 +2,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ResultComponent } from './result.component';
-import { questionServiceStub } from '../question.service.mock';
-import { QuestionService } from '../question.service';
 import { RouterTestingModule } from '@angular/router/testing';
-import { userServiceStub } from '../userservice.mock';
-import { UserService } from '../user.service';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;
@@ -17,11 +16,22 @@ describe('ResultComponent', () => {
       imports: [ RouterTestingModule ],
       declarations: [ ResultComponent ],
       providers: [
-        { provide: QuestionService, useValue: questionServiceStub },
-        { provide: UserService, useValue: userServiceStub }
+        {
+          provide: Store,
+          useClass: class {
+            dispatch = jasmine.createSpy('dispatch');
+            select = jasmine.createSpy('select')
+              .and.callFake(() => Observable.of(
+                {
+                  user: { name: '', title: '', organization: '' },
+                  points: 0,
+                  maxPoints: 0
+                }
+              ));
+          }
+        }
       ]
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

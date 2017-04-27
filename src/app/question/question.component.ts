@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges } from '@angular/core';
 import { Answer, Question } from '../questions/questions.model';
 
 @Component({
@@ -6,25 +6,17 @@ import { Answer, Question } from '../questions/questions.model';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css']
 })
-export class QuestionComponent {
+export class QuestionComponent implements OnChanges {
 
   @Input()
   question: Question;
 
-  @Input()
   answers: Answer[];
-
-  @Output()
-  onSave: EventEmitter<Answer[]> = new EventEmitter();
 
   constructor() {}
 
-  getOptionText(id) {
-    return this.question.choices.filter(option => id === option.id)[0].text;
-  }
-
-  save() {
-    this.onSave.emit(this.answers);
+  ngOnChanges() {
+    this.answers = this.question.choices.map(option => { return { optionId: option.id, checked: false, text: option.text }; } );
   }
 
 }
