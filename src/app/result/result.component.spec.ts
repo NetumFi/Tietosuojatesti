@@ -11,25 +11,32 @@ import { By } from '@angular/platform-browser';
 describe('ResultComponent', () => {
   let component: ResultComponent;
   let fixture: ComponentFixture<ResultComponent>;
+  let mockStore: MockStore;
+
+  class MockStore {
+    userPoints;
+    dispatch = jasmine.createSpy('dispatch');
+    select = jasmine.createSpy('select')
+      .and.callFake(() => Observable.of(
+        {
+          user: {name: 'John Doe', title: 'Reporter', organization: ''},
+          points: this.userPoints,
+          maxPoints: 100
+        }
+      ));
+    }
+
 
   beforeEach(async(() => {
+    mockStore = new MockStore();
+    mockStore.userPoints = 74;
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
       declarations: [ ResultComponent ],
       providers: [
         {
           provide: Store,
-          useClass: class {
-            dispatch = jasmine.createSpy('dispatch');
-            select = jasmine.createSpy('select')
-              .and.callFake(() => Observable.of(
-                {
-                  user: { name: '', title: '', organization: '' },
-                  points: 0,
-                  maxPoints: 0
-                }
-              ));
-          }
+          useValue: mockStore
         }
       ]
     }).compileComponents();
@@ -53,6 +60,20 @@ describe('ResultComponent', () => {
     tick();
     fixture.detectChanges();
     expect(component.backToBeginning).toHaveBeenCalled();
+  }));
+
+  it('should tell the user to try again', fakeAsync(() => {
+    expect(fixture.debugElement.query(By.css('div')).nativeElement.textContent)
+      .toContain("Testituloksesi 74 / 100 pistettä ei valitettavasti riittänyt");
+  }));
+
+  it('should congratulate the user', fakeAsync(() => {
+    mockStore.userPoints = 75;
+    fixture = TestBed.createComponent(ResultComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+    expect(fixture.debugElement.query(By.css('div')).nativeElement.textContent)
+      .toContain("Onneksi olkoon John Doe, sait 75 / 100");
   }));
 
 });
