@@ -1,8 +1,8 @@
 import * as fromUser from './user';
 import { DetailsAddedAction, PointsAddedAction, PointsResetAction } from '../actions/user';
 
-describe("reducer: userReducer", () => {
-  let originalState: fromUser.State
+describe('reducer: userReducer', () => {
+  let originalState: fromUser.State;
 
   beforeEach(() => {
     originalState = {
@@ -11,7 +11,7 @@ describe("reducer: userReducer", () => {
     };
   });
 
-  it("should add user details", () => {
+  it('should add user details', () => {
     const payload = { name: 'John Doe', title: 'Reporter', organization: 'Dantes' };
     expect(fromUser.reducer(originalState, new DetailsAddedAction(payload))).toEqual({
       user: payload,
@@ -19,7 +19,7 @@ describe("reducer: userReducer", () => {
     });
   });
 
-  it("should add user points", () => {
+  it('should add user points', () => {
     const payload =  999;
     expect(fromUser.reducer(originalState, new PointsAddedAction(payload))).toEqual({
       user: { name: '', title: '', organization: '' },
@@ -27,7 +27,7 @@ describe("reducer: userReducer", () => {
     });
   });
 
-  it("should reset user points", () => {
+  it('should reset user points', () => {
     originalState = {
       user: { name: 'John Doe', title: 'Reporter', organization: 'Dantes' },
       points: 999

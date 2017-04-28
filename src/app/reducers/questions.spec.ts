@@ -2,8 +2,8 @@ import * as fromQuestions from './questions';
 import { InitializedAction, LoadedAction } from '../actions/questions';
 import { getMockedQuestions } from '../testhelper';
 
-describe("reducer: questionsReducer", () => {
-  it("should load questions", () => {
+describe('reducer: questionsReducer', () => {
+  it('should load questions', () => {
     const originalState = {
       allQuestions: [],
       pickedQuestions: [],
@@ -19,16 +19,17 @@ describe("reducer: questionsReducer", () => {
     });
   });
 
-  it("should pick 10 from all questions", () => {
+  it('should pick 10 from all questions', () => {
     const originalState = {
       allQuestions: getMockedQuestions(50),
       pickedQuestions: [],
       maxPoints: 0
-    }
+    };
     const stateAfter: fromQuestions.State = fromQuestions.reducer(originalState, new InitializedAction());
+
     expect(stateAfter.allQuestions).toEqual(originalState.allQuestions);
-    expect(stateAfter.pickedQuestions.length).toBe(10);
+    expect(stateAfter.pickedQuestions.length).toEqual(10);
     stateAfter.pickedQuestions.forEach(pick => expect(originalState.allQuestions.some(question => question.id === pick.id)));
-    expect(stateAfter.maxPoints).toBe(10) // every mocked question has one correct option
+    expect(stateAfter.maxPoints).toEqual(10); // every mocked question has one correct option
   });
 });
