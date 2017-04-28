@@ -9,12 +9,15 @@ import { UserComponent } from './user/user.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ResultComponent } from './result/result.component';
 import { RouterModule } from '@angular/router';
-import { QuestionService } from './question.service';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
 import { QuestionComponent } from './question/question.component';
-import { UserService } from './user.service';
+import { StoreLogMonitorModule, useLogMonitor } from '@ngrx/store-log-monitor';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { StoreModule } from '@ngrx/store';
+
+import { reducer } from './reducers';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -23,6 +26,12 @@ const appRoutes = [
   { path: 'kysymykset/:question-number', component: QuestionsComponent },
   { path: 'tulokset', component: ResultComponent }
 ];
+
+export function instrumentOptions() {
+  return {
+    monitor: useLogMonitor({ visible: true, position: 'right' })
+  };
+}
 
 @NgModule({
   declarations: [
@@ -40,11 +49,10 @@ const appRoutes = [
     FormsModule,
     HttpModule,
     ButtonsModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [
-    QuestionService,
-    UserService
+    RouterModule.forRoot(appRoutes),
+    StoreDevtoolsModule.instrumentStore(instrumentOptions),
+    StoreLogMonitorModule,
+    StoreModule.provideStore(reducer)
   ],
   bootstrap: [AppComponent]
 })
