@@ -7,6 +7,8 @@ export const questionServiceStub = {
   addMaxPoints: any => {},
   resetMaxPoints: () => {},
   setPageNumber: any => {},
+  setPageNumberOfResultsPage: any => {},
+  setAmountOfPages: any => {},
   getPageNumber: () => Observable.of(1)
 };
 

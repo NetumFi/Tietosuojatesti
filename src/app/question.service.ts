@@ -20,6 +20,8 @@ export class QuestionService {
 
   private questions: BehaviorSubject<Question[]>;
 
+  private amountOfPages;
+
   constructor(public http: Http) {
     this.questions = new BehaviorSubject([]);
   }
@@ -50,6 +52,14 @@ export class QuestionService {
 
   setPageNumber(pageNumber: number) {
     this.pageNumber.next(pageNumber);
+  }
+
+  setPageNumberOfResultsPage() {
+    this.pageNumber.next(this.amountOfPages);
+  }
+
+  setAmountOfPages(amount) {
+    this.amountOfPages = amount;
   }
 
   getMaxPoints() {
