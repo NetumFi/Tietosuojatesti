@@ -7,15 +7,18 @@ import { IntroComponent } from './intro/intro.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { UserComponent } from './user/user.component';
 import { ResultComponent } from './result/result.component';
-import { QuestionService } from './question.service';
-import { questionServiceStub } from './question.service.mock';
 import { FormsModule } from '@angular/forms';
+import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import { HttpModule, XHRBackend } from '@angular/http';
+import { MockBackend } from '@angular/http/testing';
+import { getMockedQuestions } from './testhelper';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule ],
+      imports: [ FormsModule, HttpModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [
         AppComponent,
@@ -24,7 +27,15 @@ describe('AppComponent', () => {
         QuestionsComponent,
         ResultComponent
       ],
-      providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
+      providers: [
+      { provide: XHRBackend, useClass: MockBackend },
+      {
+        provide: Store,
+        useClass: class {
+          select = jasmine.createSpy('select')
+            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: getMockedQuestions(1) }));
+        }
+      } ]
     });
     TestBed.compileComponents();
   }));

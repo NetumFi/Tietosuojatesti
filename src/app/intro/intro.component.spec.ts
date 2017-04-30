@@ -1,9 +1,11 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { IntroComponent } from './intro.component';
-import { QuestionService } from '../question.service';
-import { questionServiceStub } from '../question.service.mock';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import { By } from '@angular/platform-browser';
 
 describe('IntroComponent', () => {
   let component: IntroComponent;
@@ -13,9 +15,13 @@ describe('IntroComponent', () => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
       declarations: [ IntroComponent ],
-      providers: [ { provide: QuestionService, useValue: questionServiceStub } ]
-    })
-    .compileComponents();
+      providers: [
+        {
+          provide: Store,
+          useClass: class { select = jasmine.createSpy('select').and.callFake(() => Observable.of({ pageNumber: 1 })); }
+        }
+      ]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -27,4 +33,14 @@ describe('IntroComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should click Next page button', fakeAsync(() => {
+    spyOn(component, 'nextPage');
+
+    const button = fixture.debugElement.query(By.css('button'));
+    button.triggerEventHandler('click', null);
+    tick();
+    fixture.detectChanges();
+    expect(component.nextPage).toHaveBeenCalled();
+  }));
 });

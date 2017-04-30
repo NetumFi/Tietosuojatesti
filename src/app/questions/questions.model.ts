@@ -13,5 +13,6 @@ export interface Question {
 export interface Answer {
   optionId: string;
   checked: boolean;
+  text: string;
 }
 
