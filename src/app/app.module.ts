@@ -13,7 +13,6 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
 import { QuestionComponent } from './question/question.component';
-import { StoreLogMonitorModule, useLogMonitor } from '@ngrx/store-log-monitor';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 
@@ -26,12 +25,6 @@ const appRoutes = [
   { path: 'kysymykset/:question-number', component: QuestionsComponent },
   { path: 'tulokset', component: ResultComponent }
 ];
-
-export function instrumentOptions() {
-  return {
-    monitor: useLogMonitor({ visible: true, position: 'right' })
-  };
-}
 
 @NgModule({
   declarations: [
@@ -50,9 +43,10 @@ export function instrumentOptions() {
     HttpModule,
     ButtonsModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    StoreDevtoolsModule.instrumentStore(instrumentOptions),
-    StoreLogMonitorModule,
-    StoreModule.provideStore(reducer)
+    StoreModule.provideStore(reducer),
+    StoreDevtoolsModule.instrumentOnlyWithExtension({
+      maxAge: 5
+    })
   ],
   bootstrap: [AppComponent]
 })

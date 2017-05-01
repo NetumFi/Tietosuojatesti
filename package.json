@@ -31,7 +31,6 @@
     "@ngrx/core": "^1.2.0",
     "@ngrx/store": "^2.2.2",
     "@ngrx/store-devtools": "^3.2.4",
-    "@ngrx/store-log-monitor": "^3.0.2",
     "ngrx-store-freeze": "^0.1.9",
     "bootstrap": "^4.0.0-alpha.6",
     "classlist.js": "^1.1.20150312",
