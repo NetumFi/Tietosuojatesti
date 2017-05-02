@@ -11,6 +11,7 @@ import * as pages from '../actions/pages';
 import * as user from '../actions/user';
 import { Observable } from 'rxjs/Observable';
 import { QuestionComponent } from '../question/question.component';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'olx-questions',
