@@ -5,8 +5,8 @@ import { TimePipe } from '../time.pipe';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/Observable/of';
-import { getMockedQuestion } from '../testhelper';
+import 'rxjs/add/observable/of';
+import { getMockedQuestions } from '../testhelper';
 
 describe('TimerComponent', () => {
   let component: TimerComponent;
@@ -22,7 +22,7 @@ describe('TimerComponent', () => {
           useClass: class {
             dispatch = jasmine.createSpy('dispatch');
             select = jasmine.createSpy('select')
-              .and.callFake(() => Observable.of({ pickedQuestions: [ getMockedQuestion(1) ] }));
+              .and.callFake(() => Observable.of({ pickedQuestions: getMockedQuestions(1) }));
           }
         }
       ]
