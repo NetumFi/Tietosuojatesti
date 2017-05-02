@@ -1,10 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Question } from './questions/questions.model';
 import { Store } from '@ngrx/store';
 import * as fromRoot from './reducers';
 import { Http } from '@angular/http';
+import * as pages from './actions/pages';
 import * as questions from './actions/questions';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'olx-root',
@@ -14,36 +15,30 @@ import * as questions from './actions/questions';
 
 export class AppComponent implements OnInit, OnDestroy {
 
-  pageNumber: Observable<number>;
-  questions: Observable<Question[]>;
-  amountOfPages: Observable<number>;
+  progress: Observable<number>;
 
-  subscription;
+  subscriptions: Subscription[] = [];
 
   constructor(
     private store: Store<fromRoot.State>,
     private http: Http
-  ) {
-    this.pageNumber = store.select(fromRoot.getPagesState)
-      .map(state => state.pageNumber);
-    this.questions = store.select(fromRoot.getQuestionsState)
-      .map(state => state.pickedQuestions);
-    this.amountOfPages = this.questions.map(questions => questions.length + 3);
-  }
+  ) { }
 
   ngOnInit() {
-    this.subscription = this.http.get('assets/questions.json')
+    this.subscriptions.push(this.http.get('assets/questions.json')
       .map(data => data.json())
       .subscribe(loadedQuestions => {
         this.store.dispatch(new questions.LoadedAction(loadedQuestions));
         this.store.dispatch(new questions.InitializedAction());
-      });
+      }));
+    this.subscriptions.push(this.store.select(fromRoot.getQuestionsState)
+      .map(state => state.pickedQuestions.length)
+      .subscribe(amount => this.store.dispatch(new pages.InitializedAmountOfPagesAction({ amountOfPages: amount + 3 }))));
+    this.progress = this.store.select(fromRoot.getPagesState).map(state => state.progress);
   }
 
   ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+      this.subscriptions.forEach(s => s.unsubscribe());
   }
 }
 

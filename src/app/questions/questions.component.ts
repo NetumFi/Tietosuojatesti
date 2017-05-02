@@ -11,6 +11,7 @@ import * as pages from '../actions/pages';
 import * as user from '../actions/user';
 import { Observable } from 'rxjs/Observable';
 import { QuestionComponent } from '../question/question.component';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'olx-questions',
@@ -29,7 +30,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   hasNextQuestion = false;
   hasPreviousQuestion = false;
 
-  subscription;
+  subscriptions: Subscription[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -57,19 +58,19 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
+      this.subscriptions.forEach(s => s.unsubscribe());
   }
 
   nextPage() {
-    this.question
+    this.subscriptions.push(this.question
       .map(question => calculateUserPoints(question, this.questionComponent.answers))
-      .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)) );
+      .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)) ));
 
     if (this.hasNextQuestion) {
       this.router.navigate(['/kysymykset', this.index + 2]);
     } else {
+      this.subscriptions.push(
+        this.questions.subscribe(questions => this.store.dispatch(new pages.ChangedPageAction({ pageNumber: questions.length + 3 }))));
       this.router.navigate(['/tulokset']);
     }
   }
