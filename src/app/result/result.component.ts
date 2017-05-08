@@ -19,7 +19,6 @@ export class ResultComponent implements OnInit {
   userPoints: Observable<number>;
 
   maxPoints: Observable<number>;
-  percentage: Observable<number>;
 
   passed: Observable<boolean>;
 
@@ -33,10 +32,9 @@ export class ResultComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 13 }));
-    this.percentage = this.userPoints
-      .switchMap(userPoints => this.maxPoints.map(maxPoints => maxPoints <= 0 ? 0 : userPoints * 100 / maxPoints));
-    this.passed = this.percentage.map(percentage => percentage >= 75);
+    this.passed = this.userPoints
+      .switchMap(userPoints => this.maxPoints.map(maxPoints => maxPoints <= 0 ? 0 : userPoints * 100 / maxPoints))
+      .map(percentage => percentage >= 75);
   }
 
   backToBeginning() {
