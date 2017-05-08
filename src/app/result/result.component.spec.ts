@@ -7,6 +7,8 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { By } from '@angular/platform-browser';
+import { CertificateComponent } from '../certificate/certificate.component';
+import { OlxDateFormatPipe } from '../olx-date-format.pipe';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;
@@ -32,7 +34,7 @@ describe('ResultComponent', () => {
     mockStore.userPoints = 74;
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
-      declarations: [ ResultComponent ],
+      declarations: [ ResultComponent, CertificateComponent, OlxDateFormatPipe ],
       providers: [
         {
           provide: Store,
