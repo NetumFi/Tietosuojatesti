@@ -8,7 +8,7 @@ describe('reducer: pagesReducer', () => {
     const newState = fromPages.reducer(originalState, new InitializedAmountOfPagesAction(payload));
     expect(newState.amountOfPages).toEqual(20);
     expect(newState.pageNumber).toEqual(5);
-    expect(newState.progress).toEqual(25)
+    expect(newState.progress).toEqual(25);
   });
   it('should change the page number', () => {
     const originalState: fromPages.State = { pageNumber: 5, amountOfPages: 20, progress: 25 };
