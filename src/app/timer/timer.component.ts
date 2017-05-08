@@ -19,6 +19,8 @@ export class TimerComponent implements OnInit, OnDestroy {
   secondsLeft;
   subscription;
 
+  resultsPageNumber;
+
   constructor(
     private router: Router,
     private store: Store<fromRoot.State>
@@ -28,6 +30,9 @@ export class TimerComponent implements OnInit, OnDestroy {
     this.secondsLeft = this.seconds;
     this.subscription = Observable.timer(this.seconds, 1000)
       .subscribe(tick => this.timer());
+    this.store.select(fromRoot.getQuestionsState)
+      .map(state => state.pickedQuestions.length)
+      .subscribe(amount => this.resultsPageNumber = amount + 3);
   }
 
   timer() {
@@ -44,9 +49,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   }
 
   toResultPage() {
-      this.store.select(fromRoot.getQuestionsState)
-        .map(state => state.pickedQuestions.length)
-        .subscribe(amount => this.store.dispatch(new pages.ChangedPageAction({ pageNumber: amount + 3 })));
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.resultsPageNumber }));
     this.router.navigate(['/tulokset']);
   }
 

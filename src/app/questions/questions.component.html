@@ -1,7 +1,10 @@
-
-<olx-timer [seconds]="600"></olx-timer>
-<h3>{{index + 1}}. Kysymys</h3>
-<olx-question [question]="question | async"></olx-question>
-<div>
+<div class="main-area">
+  <olx-timer [seconds]="600"></olx-timer>
+  <h3>{{index + 1}}. Kysymys</h3>
+  <div class="question">
+    <olx-question [question]="question | async"></olx-question>
+</div>
+</div>
+<div class="buttons">
   <button type="button" class="btn btn-primary" (click)="nextPage()">Seuraava</button>
 </div>
