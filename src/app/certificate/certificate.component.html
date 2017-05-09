@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="print('certificate')">Tulosta</button>
+
+<div id="certificate" [style.visibility]="visibility">
+  <h2>TODISTUS</h2>
+
+  <div>{{user.name}} on suorittanut {{date | date:'d.M.yyyy'}} Arjen tietosuojakoulutuksen testin pistemäärällä</div>
+
+  <div>{{userPoints}} / {{maxPoints}}</div>
+
+  <div>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</div>
+</div>

@@ -10,10 +10,14 @@
   <div>
     Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
   </div>
-  <div>
-    <button type="button" class="btn btn-primary" (click)="backToBeginning()">Tulosta</button>
+  <div class="certificate">
+    <olx-certificate [user]="user | async"
+                     [userPoints]="userPoints | async"
+                     [maxPoints]="maxPoints | async">
+    </olx-certificate>
   </div>
 </div>
+
 <div *ngIf="!(passed | async)">
   <br/>
   <div>
