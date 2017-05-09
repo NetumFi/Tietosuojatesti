@@ -27,10 +27,10 @@ export class CertificateComponent implements OnInit {
   ngOnInit() {
   }
 
-  printToCart(printSectionId: string) {
+  print(printSectionId: string) {
     const innerContents = document.getElementById(printSectionId).innerHTML;
     const popupWindow = window
-      .open('', '_blank', 'width=600,height=700,scrollbars=no,menubar=no,toolbar=no,location=no,status=no,titlebar=no');
+      .open('', '_blank', 'scrollbars=no,menubar=no,toolbar=no,location=no,status=no,titlebar=no');
     popupWindow.document.open();
     popupWindow.document
       .write('<html><head><link rel="stylesheet" type="text/css" href="style.css" /></head><body onload="window.print()">'

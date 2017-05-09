@@ -18,7 +18,6 @@ import { StoreModule } from '@ngrx/store';
 
 import { reducer } from './reducers';
 import { CertificateComponent } from './certificate/certificate.component';
-import { OlxDateFormatPipe } from './olx-date-format.pipe';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -38,8 +37,7 @@ const appRoutes = [
     ResultComponent,
     TimerComponent,
     QuestionComponent,
-    CertificateComponent,
-    OlxDateFormatPipe
+    CertificateComponent
   ],
   imports: [
     BrowserModule,
