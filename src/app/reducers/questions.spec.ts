@@ -29,7 +29,10 @@ describe('reducer: questionsReducer', () => {
 
     expect(stateAfter.allQuestions).toEqual(originalState.allQuestions);
     expect(stateAfter.pickedQuestions.length).toEqual(10);
-    stateAfter.pickedQuestions.forEach(pick => expect(originalState.allQuestions.some(question => question.id === pick.id)));
+    stateAfter.pickedQuestions.forEach(pick =>
+      expect(originalState.allQuestions.some(question => question.id === pick.id)).toEqual(true));
+    stateAfter.pickedQuestions.forEach(pick =>
+      expect(stateAfter.pickedQuestions.filter(question => question.id === pick.id).length).toEqual(1));
     expect(stateAfter.maxPoints).toEqual(10); // every mocked question has one correct option
   });
 });
