@@ -16,6 +16,7 @@ import { Subscription } from 'rxjs/Subscription';
 export class AppComponent implements OnInit, OnDestroy {
 
   progress: Observable<number>;
+  selectedLanguage = 'sv';
 
   subscriptions: Subscription[] = [];
 
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit, OnDestroy {
       .map(state => state.pickedQuestions.length)
       .subscribe(amount => this.store.dispatch(new pages.InitializedAmountOfPagesAction({ amountOfPages: amount + 3 }))));
     this.progress = this.store.select(fromRoot.getPagesState).map(state => state.progress);
+    this.selectedLanguage = document.location.pathname.split('/')[1];
   }
 
   ngOnDestroy() {

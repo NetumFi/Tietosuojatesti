@@ -7,14 +7,16 @@
     "ng": "ng",
     "serve": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build_sv": "ng build --aot -prod --output-path dist/sv --locale sv --i18nFormat xlf --i18nFile './src/locale/messages.sv.xlf'",
+    "build_fi": "ng build --aot -prod --output-path dist/fi --locale fi --i18nFormat xlf --i18nFile './src/locale/messages.fi.xlf'",    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
+    "postinstall": "npm run build_sv && npm run build_fi",
     "start": "node server",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "i18n": "ng-xi18n --i18nFormat xlf"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "@angular/http": "^4.0.1",
     "@angular/platform-browser": "^4.0.1",
     "@angular/platform-browser-dynamic": "^4.0.1",
+    "@angular/platform-server": "^4.0.1",
     "@angular/router": "^4.0.1",
     "@ngrx/core": "^1.2.0",
     "@ngrx/store": "^2.2.2",
