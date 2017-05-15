@@ -1,6 +1,6 @@
 <div>
   <div class="form-group required row" [class.has-danger]="userName.invalid && userName.touched">
-    <label for="userName" class="col-3 col-form-label">Nimi:</label>
+    <label for="userName" class="col-3 col-form-label" i18n>Nimi:</label>
     <div class="col-5">
       <input
         required
@@ -13,7 +13,7 @@
   </div>
 
   <div class="form-group row">
-    <label for="userTitle" class="col-3 col-form-label">Tehtävänimike:</label>
+    <label for="userTitle" class="col-3 col-form-label" i18n>Tehtävänimike:</label>
     <div class="col-5">
       <input
         id="userTitle"
@@ -24,7 +24,7 @@
   </div>
 
   <div class="form-group row">
-    <label for="userOrganization" class="col-3 col-form-label">Organisaatio:</label>
+    <label for="userOrganization" class="col-3 col-form-label" i18n>Organisaatio:</label>
     <div class="col-5">
       <input
         id="userOrganization"
@@ -36,29 +36,20 @@
 
   <br/>
   <div>
-    <div>
+    <div i18n>
       <strong>Vastausohjeet</strong>
     </div>
     <br/>
-    <div>
-      Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.
+    <div i18n>
+      <p>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.</p>
+      <p>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.</p>
+      <p>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit halutessasi myös kokeilla saman tien uudelleen.</p>
     </div>
-    <br/>
-    <div>
-      Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.
-    </div>
-    <br/>
-    <div>
-      Jos testisi ei mennyt läpi, voit opiskella lisää tai voit halutessasi myös kokeilla saman tien uudelleen.
-    </div>
-    <br/>
-    <div>
-      Jatka testiin painamalla Seuraava.
-    </div>
+    <div i18n>Jatka testiin painamalla Seuraava.</div>
   </div>
   <br/>
   <div>
-    <button type="button" class="btn btn-primary" [disabled]="userName.invalid" (click)="nextPage()">Seuraava</button>
+    <button type="button" class="btn btn-primary" [disabled]="userName.invalid" (click)="nextPage()" i18n>Seuraava</button>
   </div>
 </div>
 

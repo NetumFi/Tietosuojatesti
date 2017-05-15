@@ -1,24 +1,32 @@
 <header id="header" role="banner">
-  <div class="container-fluid">
-    <div id="heading">
-      <div class="row">
-        <div class="col-4">
-          <a class="logo" href="http://vm.fi" title="Go to Valtiovarainministeriö"> <img alt="Valtiovarainministeriö" src="/assets/images/vmlogo_fi.png"> </a>
-        </div>
+  <div class="custom-nav">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <a class="navbar-brand" href="/" i18n>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</a>
+
+      <div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" [class.active]="selectedLanguage === 'fi'">
+            <a class="nav-link" href="/fi">FI <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" [class.active]="selectedLanguage === 'sv'">
+            <a class="nav-link" href="/sv">SV</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </div>
 </header>
+
 
 <div>
   <div class="container-fluid" role="main">
     <div class="row">
-      <h2>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</h2>
+      <h2 i18n>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</h2>
     </div>
     <div>
       <div class="progress">
         <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" [attr.aria-valuenow]="progress | async" aria-valuemin="0" aria-valuemax ="100"
-             style="min-width: 2em;" [style.width]="((progress | async) * 100) / 100 + '%'">
+             style="min-width: 2em;" [style.width]="((progress | async)) + '%'">
         </div>
       </div>
     </div>

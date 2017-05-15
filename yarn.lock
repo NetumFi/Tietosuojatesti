@@ -106,6 +106,13 @@
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.0.3.tgz#170b18d5af4ee02b248aa6a1f1e0584ac841681e"
 
+"@angular/platform-server@^4.0.1":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.1.2.tgz#3ef2206a59fd2d138d267aad101a50d3d806e39c"
+  dependencies:
+    parse5 "^3.0.1"
+    xhr2 "^0.1.4"
+
 "@angular/router@^4.0.1":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.0.3.tgz#24184e9b1266c4ad017b2be81573464b1e4c5dfa"
@@ -123,10 +130,6 @@
 "@ngrx/store-devtools@^3.2.4":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-3.2.4.tgz#2ce4d13bf34848a9e51ec87e3b125ed67b51e550"
-
-"@ngrx/store-log-monitor@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@ngrx/store-log-monitor/-/store-log-monitor-3.0.2.tgz#951dc2e3d8ba0113ea4ed6744d9ce7640fee3271"
 
 "@ngrx/store@^2.2.2":
   version "2.2.2"
@@ -3791,6 +3794,12 @@ parse-json@^2.1.0, parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
+parse5@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-3.0.2.tgz#05eff57f0ef4577fb144a79f8b9a967a6cc44510"
+  dependencies:
+    "@types/node" "^6.0.46"
+
 parsejson@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/parsejson/-/parsejson-0.0.3.tgz#ab7e3759f209ece99437973f7d0f1f64ae0e64ab"
@@ -5863,6 +5872,10 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
 
+xhr2@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/xhr2/-/xhr2-0.1.4.tgz#7f87658847716db5026323812f818cadab387a5f"
+
 xml-char-classes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/xml-char-classes/-/xml-char-classes-1.0.0.tgz#64657848a20ffc5df583a42ad8a277b4512bbc4d"
@@ -5983,6 +5996,6 @@ yn@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-1.2.0.tgz#d237a4c533f279b2b89d3acac2db4b8c795e4a63"
 
-zone.js@^0.8.4, zone.js@^0.8.5:
+zone.js@^0.8.4:
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.8.tgz#354f02bb7241af834bb83b310308a89ad012d3af"
