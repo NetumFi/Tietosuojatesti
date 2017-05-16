@@ -44,7 +44,7 @@ const appRoutes = [
     FormsModule,
     HttpModule,
     ButtonsModule.forRoot(),
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     StoreModule.provideStore(reducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension({
       maxAge: 5
