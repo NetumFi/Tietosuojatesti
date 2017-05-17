@@ -182,11 +182,11 @@
         "correct": true
       },
       { "id": "074",
-        "text": "Henkilötietoja on käsitelty huolimattomasti, esimerkiksi työntekijöiden sairaslomailmoitukset ovat jääneet esimiehen pöydälle ",
+        "text": "Henkilötietoja on käsitelty huolimattomasti, esimerkiksi työntekijöiden sairauslomailmoitukset ovat jääneet esimiehen pöydälle ",
         "correct": true
       },
       { "id": "075",
-        "text": "Salassapidettäviä tulosteita löytyy kopiohuoneesta tai printtereiltä kaikkien nähtävillä",
+        "text": "Salassa pidettäviä tulosteita löytyy kopiohuoneesta tai printtereiltä kaikkien nähtävillä",
         "correct": true
       }
     ]
@@ -263,7 +263,7 @@
     "choices": [
       { "id": "111",
         "text": "Johdolle",
-        "correct": false
+        "correct": true
       },
       { "id": "112",
         "text": "Esimiehellesi",
@@ -344,7 +344,7 @@
   },
   {
     "id": "q16",
-    "text": "Mitä tietosuojavastaa tekee?",
+    "text": "Mitä tietosuojavastaava tekee?",
     "choices": [
       { "id": "151",
         "text": "Neuvoo ja ohjeistaa",

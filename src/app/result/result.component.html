@@ -15,6 +15,7 @@
                      [maxPoints]="maxPoints | async">
     </olx-certificate>
   </div>
+  <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Sulje testi</button>
 </div>
 
 <div *ngIf="!(passed | async)">
