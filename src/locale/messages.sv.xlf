@@ -50,10 +50,6 @@
         <source>Seuraava</source>
         <target>SV_Seuraava</target>
       </trans-unit>
-      <trans-unit id="24beb49646764de36fceec905d340c0aa66bf9b1" datatype="html">
-        <source><x id="INTERPOLATION"/>. Kysymys</source>
-        <target>SV_<x id="INTERPOLATION"/>. Kysymys</target>
-      </trans-unit>
       <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
         <target><x id="START_TAG_STRONG" ctype="x-strong"/>SV_Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>

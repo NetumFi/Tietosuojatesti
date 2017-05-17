@@ -9,6 +9,9 @@ import { Answer, Question } from '../questions/questions.model';
 export class QuestionComponent implements OnChanges {
 
   @Input()
+  questionNumber;
+
+  @Input()
   question: Question;
 
   answers: Answer[];

@@ -1,8 +1,7 @@
 <div class="main-area">
   <olx-timer [seconds]="600"></olx-timer>
-  <h3 i18n>{{index + 1}}. Kysymys</h3>
   <div class="question">
-    <olx-question [question]="question | async"></olx-question>
+    <olx-question [questionNumber]="index + 1" [question]="question | async"></olx-question>
   </div>
 </div>
 <div class="buttons">
