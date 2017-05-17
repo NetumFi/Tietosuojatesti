@@ -7,7 +7,7 @@
   </div>
   <br/>
   <div i18n>
-    Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
+    Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
   </div>
   <div class="certificate">
     <olx-certificate [user]="user | async"
@@ -20,13 +20,14 @@
 <div *ngIf="!(passed | async)">
   <br/>
   <div i18n>
-    Testituloksesi {{(userPoints | async)}} / {{(maxPoints | async)}} pistettä ei valitettavasti riittänyt testin läpäisemiseen.
-    Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-    jonka saat esille täältä.
+    Testituloksesi {{(userPoints | async)}} / {{(maxPoints | async)}} pistettä ei valitettavasti riittänyt testin
+    läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
+    jonka saat esille Opiskelen vielä lisää -painikkeella.
   </div>
   <div>
     <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Haluan kokeilla testiä uudelleen</button>
     <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Opiskelen vielä lisää</button>
+    <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Sulje testi</button>
   </div>
 </div>
 
