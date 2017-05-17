@@ -34,16 +34,16 @@
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
         <target><x id="START_TAG_STRONG" ctype="x-strong"/>SV_Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
       </trans-unit>
-      <trans-unit id="e22190fde51a22ca37247150ceaaebed4c6ba27c" datatype="html">
+      <trans-unit id="9f603eebd8cfb5200100b6631b07a7fef2cc445a" datatype="html">
         <source>
           <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit halutessasi myös kokeilla saman tien uudelleen.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </source>
         <target>
           <x id="START_PARAGRAPH" ctype="x-p"/>SV_Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>SV_Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Jos testisi ei mennyt läpi, voit opiskella lisää tai voit halutessasi myös kokeilla saman tien uudelleen.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
       <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
@@ -64,20 +64,20 @@
           ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
         </target>
       </trans-unit>
-      <trans-unit id="8dc36f04ff02e75abd9b365d803f8b46a3591acc" datatype="html">
-        <source>Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
-        <target>SV_Voit tulostaa tai tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
+      <trans-unit id="362ef69bc9820c3f8d0924e55c71d4d0e9e1119d" datatype="html">
+        <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
+        <target>SV_Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
       </trans-unit>
-      <trans-unit id="acb12d17b097e5c8e1ba2392d1130ec6713bc25f" datatype="html">
+      <trans-unit id="2c22b44262e2ef5a07d6ad99ecb7480fbcfe8ad8" datatype="html">
         <source>
-          Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin läpäisemiseen.
-          Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-          jonka saat esille täältä.
+          Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
+          läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
+          jonka saat esille Opiskelen vielä lisää -painikkeella.
         </source>
         <target>
-          SV_Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin läpäisemiseen.
-          Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-          jonka saat esille täältä.
+          SV_Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
+          läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
+          jonka saat esille Opiskelen vielä lisää -painikkeella.
         </target>
       </trans-unit>
       <trans-unit id="877b88822c17dd590017aaadcebff1a6c078bdfe" datatype="html">
@@ -87,6 +87,10 @@
       <trans-unit id="bd94ba0c1827bfa0cc26cea336da26c57086a7e1" datatype="html">
         <source>Opiskelen vielä lisää</source>
         <target>SV_Opiskelen vielä lisää</target>
+      </trans-unit>
+      <trans-unit id="9c7fdb302016ee2dd674f29703425719040db684" datatype="html">
+        <source>Sulje testi</source>
+        <target>SV_Sulje testi</target>
       </trans-unit>
       <trans-unit id="68f75085e8aa2feced4c5b680cdaf66ecd771733" datatype="html">
         <source>Aika jäljellä: <x id="INTERPOLATION"/></source>
