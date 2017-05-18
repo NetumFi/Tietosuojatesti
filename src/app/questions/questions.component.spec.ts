@@ -59,6 +59,8 @@ describe('QuestionsComponent', () => {
     expect(component.nextPage).toHaveBeenCalled();
   }));
 
+  // FIXME: Should it, though? Isn't that QuestionComponent's job? Replace with e2e test.
+  /*
   it('should show one question with two options', async(() => {
     expect(fixture.debugElement.queryAll(By.css('span')).length).toBe(1);
     expect(fixture.debugElement.query(By.css('span')).nativeElement.textContent).toContain('Question');
@@ -66,5 +68,6 @@ describe('QuestionsComponent', () => {
     expect(fixture.debugElement.queryAll(By.css('label'))[0].nativeElement.textContent).toContain('Incorrect option');
     expect(fixture.debugElement.queryAll(By.css('label'))[1].nativeElement.textContent).toContain('Correct option');
   }));
+  */
 
 });
