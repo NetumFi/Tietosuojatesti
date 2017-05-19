@@ -5,6 +5,7 @@ describe('calculateMaxPoints', () => {
   it('should add 0 points for incorrect options', () => {
     const questionWithOnlyIncorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -20,6 +21,7 @@ describe('calculateMaxPoints', () => {
   it('should add 1 point for correct options', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -35,6 +37,7 @@ describe('calculateMaxPoints', () => {
   it('should return 0 if no options', () => {
     const questionWithNoOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: []
     };
@@ -46,6 +49,7 @@ describe('calculateUserPoints', () => {
   it('should not add points for not checked answers', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -63,6 +67,7 @@ describe('calculateUserPoints', () => {
   it('should add 1 point for correct answer', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -80,6 +85,7 @@ describe('calculateUserPoints', () => {
   it('should add -1 points for incorrect answer', () => {
     const questionWithOnlyIncorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -97,6 +103,7 @@ describe('calculateUserPoints', () => {
   it('should add no points for answer irrelevant to the question', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {
@@ -114,6 +121,7 @@ describe('calculateUserPoints', () => {
   it('should return 0 for empty array of answers', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
+      index: 1,
       text: 'Question 1',
       choices: [
         {

@@ -1,5 +1,5 @@
 import { Answer, Option, Question } from './questions.model';
-
+// import _ from 'lodash';
 
 export function calculateMaxPoints(questions: Question[]) {
   let total = 0;
@@ -27,7 +27,11 @@ function pickQuestion(questions: Question[], picks: Question[]) {
   const availableQuestions = questions.filter(question => !picks.some(pick => pick.id === question.id));
   if (availableQuestions.length > 0) {
     const chosenIndex = Math.floor(Math.random() * availableQuestions.length);
-    picks.push(availableQuestions[chosenIndex]);
+    // TODO: fix lodash + karma issue
+    // const question: Question = _.cloneDeep(availableQuestions[chosenIndex]);
+    const question: Question = JSON.parse(JSON.stringify(availableQuestions[chosenIndex]));
+    question.index = picks.length + 1;
+    picks.push(question);
   }
   return picks;
 }

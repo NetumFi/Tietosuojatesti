@@ -1,9 +1,25 @@
-body {
-  background: url(/fi/assets/images/VM_Etusivu_2236x420_171014.jpg) no-repeat 50% top;
+@font-face {
+  font-family: FranklinGothic;
+  src: local("FranklinGothickBookRegular"),
+  local("FranklinGothickBookRegular"),
+  url(/fi/assets/fonts/FranklinGothicBookRegular.ttf);
+  font-weight: bold;
+}
 
-  font-family: "Gotham XNarrow 5r", "Gotham XNarrow A", "Gotham XNarrow B", Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: FranklinGothicMedium;
+  src: local("FranklinGothikMediumRegular"),
+  local("FranklinGothicMediumRegular"),
+  url(/fi/assets/fonts/FranklinGothicMediumRegular.ttf);
+  font-weight: bold;
+}
+
+body {
+  background: url(/fi/assets/images/JUHTApallot.png) no-repeat 80% top;
+
+  font-family: "FranklinGothic", Helvetica, Arial, sans-serif;
 }
 
 #content {
-  margin-top: 160px;
+  margin-top: 140px;
 }

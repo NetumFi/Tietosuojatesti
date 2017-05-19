@@ -3,6 +3,10 @@ h2 {
 }
 
 .progress {
-  width: 60%
+  width: 60%;
+  margin-bottom: 45px;
 }
 
+.progress-bar {
+  background-color: #d90f65;
+}

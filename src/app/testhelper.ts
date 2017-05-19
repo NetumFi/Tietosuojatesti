@@ -1,3 +1,5 @@
+import { Question } from './questions/questions.model';
+
 export function getMockedQuestions(amount) {
   const mockedQuestions = [];
   for (let i = 0; i < amount; ++i) {
@@ -6,10 +8,11 @@ export function getMockedQuestions(amount) {
   return mockedQuestions;
 }
 
-function getMockedQuestion(number) {
+function getMockedQuestion(number): Question {
   const questionId = 'q' + number;
   return {
     id: questionId,
+    index: number,
     text: 'Question ' + number,
     choices: [
       getMockedOption(questionId, 1, false),

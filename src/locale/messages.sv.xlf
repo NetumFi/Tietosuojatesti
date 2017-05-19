@@ -14,21 +14,41 @@
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
         <target><x id="START_TAG_STRONG" ctype="x-strong"/>SV_Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
       </trans-unit>
-      <trans-unit id="d63eaa66a5c172eaa3fe32963ad2036756b1c6ff" datatype="html">
-        <source>Tervetuloa! Tämä testi on tarkoitettu … lorem ipsum</source>
-        <target>SV_Tervetuloa! Tämä testi on tarkoitettu … lorem ipsum</target>
-      </trans-unit>
-      <trans-unit id="7786832dbd3b9ace8993f97c479b3ebe1128840e" datatype="html">
-        <source>Jatka testiin painamalla Seuraava</source>
-        <target>SV_Jatka testiin painamalla Seuraava</target>
+      <trans-unit id="9afabbb14cfa5ae038417e186c3c6bb21f4abb59" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
+            Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
+            Muista myös sulkea käyttämäsi www-selain.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
+            Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            SV_Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
+            Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
+            Muista myös sulkea käyttämäsi www-selain.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            SV_Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
+            Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
       </trans-unit>
       <trans-unit id="a835cfce98204908d07c884d5381f40ee218e7f4" datatype="html">
         <source>Seuraava</source>
         <target>SV_Seuraava</target>
-      </trans-unit>
-      <trans-unit id="24beb49646764de36fceec905d340c0aa66bf9b1" datatype="html">
-        <source><x id="INTERPOLATION"/>. Kysymys</source>
-        <target>SV_<x id="INTERPOLATION"/>. Kysymys</target>
       </trans-unit>
       <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>

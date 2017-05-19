@@ -1,6 +1,4 @@
-<span>{{question.text}}</span>
-<br/>
-<br/>
+<h3>{{question.index}}. {{question.text}}</h3>
 <div *ngFor="let answer of answers" class="form-check">
   <label class="form-check-label">
     <input class="form-check-input" type="checkbox" [(ngModel)]="answer.checked" />
