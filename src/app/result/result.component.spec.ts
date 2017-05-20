@@ -77,4 +77,34 @@ describe('ResultComponent', () => {
       .toContain('Onneksi olkoon John Doe, sait 75 / 100');
   }));
 
+  describe('hasPassed', () => {
+    it('should fail with a score below 75', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.hasPassed(74)).toBeFalsy();
+    }));
+
+    it('should pass with a score of 75', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.hasPassed(75)).toBeTruthy();
+    }));
+  });
+
+  describe('getPercentage', () => {
+    it('8 is 10% of 80', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.getPercentage(80, 8)).toBe(10);
+    }));
+
+    it('Should return infinity if max points is 0', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.getPercentage(0, 8)).toBe(Infinity);
+    }));
+  });
+
 });
+
+

@@ -1,13 +1,34 @@
-<button class="btn btn-primary" (click)="print('certificate')" i18n>Tulosta</button>
+<div class="">
+  <button (click)="print('certificate')"><i class="fa fa-print"></i></button>
+  <button shareButton="linkedin"
+          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+          sbTitle="JUHTA tietosuojatesti">
+    <i class="fa fa-linkedin-square"></i>
+  </button>
+  <button shareButton="twitter"
+          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+          sbTitle="JUHTA tietosuojatesti #tuki2018 #stöd2018"
+          sbTags="#tuki2018 #stöd2018">
+    <i class="fa fa-twitter-square"></i></button>
+  <button shareButton="facebook"
+          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+          sbTitle="JUHTA tietosuojatesti"
+          sbDescription="#tuki2018 #stöd2018"
+          sbImage="http://tietosuojatesti.herokuapp.com/fi/assets/images/JUHTAlogo_5.png">
+    <i class="fa fa-facebook-square"></i></button>
+</div>
 
-<div id="certificate" [style.visibility]="visibility">
+<div id="certificate">
   <h2 i18n>TODISTUS</h2>
 
-  <div i18n>{{user.name}} on suorittanut {{date | date:'d.M.yyyy'}} Arjen tietosuojakoulutuksen testin pistemäärällä</div>
+  <div i18n>{{user.name}} on suorittanut {{date | date:'d.M.yyyy'}} Arjen tietosuojakoulutuksen testin pistemäärällä
+  </div>
 
   <br/>
   <div>{{userPoints}} / {{maxPoints}}</div>
 
   <br/>
-  <div i18n>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</div>
+  <div i18n>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen
+    ohjeiden mukaisesti.
+  </div>
 </div>

@@ -7,13 +7,14 @@ import * as user from '../actions/user';
 import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { User } from '../user/user.model';
+import 'rxjs/add/observable/of';
 
 @Component({
   selector: 'olx-result',
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })
-export class ResultComponent implements OnInit {
+export class ResultComponent {
 
   user: Observable<User>;
   userPoints: Observable<number>;
@@ -29,12 +30,18 @@ export class ResultComponent implements OnInit {
     this.user = store.select(fromRoot.getUserState).map(state => state.user);
     this.userPoints = store.select(fromRoot.getUserState).map(state => state.points);
     this.maxPoints = store.select(fromRoot.getQuestionsState).map(state => state.maxPoints);
+
+    this.passed = this.userPoints
+      .switchMap(userPoints => this.maxPoints.map(maxPoints => this.getPercentage(maxPoints, userPoints)))
+      .map(percentage => this.hasPassed(percentage));
   }
 
-  ngOnInit() {
-    this.passed = this.userPoints
-      .switchMap(userPoints => this.maxPoints.map(maxPoints => maxPoints <= 0 ? 0 : userPoints * 100 / maxPoints))
-      .map(percentage => percentage >= 75);
+  hasPassed(percentage) {
+    return percentage >= 75;
+  }
+
+  getPercentage(maxPoints, userPoints) {
+    return userPoints * 100 / maxPoints;
   }
 
   backToBeginning() {

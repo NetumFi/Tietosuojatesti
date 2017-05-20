@@ -19,8 +19,6 @@ export class CertificateComponent implements OnInit {
 
   date = new Date().toDateString();
 
-  visibility = 'hidden';
-
   constructor() {
   }
 

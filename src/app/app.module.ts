@@ -18,6 +18,7 @@ import { StoreModule } from '@ngrx/store';
 
 import { reducer } from './reducers';
 import { CertificateComponent } from './certificate/certificate.component';
+import { ShareButtonsModule } from 'ng2-sharebuttons';
 
 const appRoutes = [
   { path: '', component: IntroComponent },
@@ -43,6 +44,7 @@ const appRoutes = [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ShareButtonsModule.forRoot(),
     ButtonsModule.forRoot(),
     RouterModule.forRoot(appRoutes, { useHash: true }),
     StoreModule.provideStore(reducer),
