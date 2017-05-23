@@ -1,11 +1,11 @@
 <div *ngIf="(passed | async)">
+
   <div i18n>
     Onneksi olkoon {{(user | async)?.name}}, sait {{(userPoints | async)}} / {{(maxPoints | async)}}
     pistettä ja olet läpäissyt testin!
     Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
     ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
   </div>
-  <br/>
   <div i18n>
     Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
   </div>
