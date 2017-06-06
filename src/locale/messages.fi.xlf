@@ -6,10 +6,6 @@
         <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</source>
         <target>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</target>
       </trans-unit>
-      <trans-unit id="9b961df1d1dbbfa3c6e47231d1ee1eecf4178c4f" datatype="html">
-        <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</source>
-        <target>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</target>
-      </trans-unit>
       <trans-unit id="e772cd98fc1c19aae76e47a3f908ca260bcc97e8" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
         <target><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
@@ -124,11 +120,11 @@
         <source>TODISTUS</source>
         <target>TODISTUS</target>
       </trans-unit>
-      <trans-unit id="e666f1a40718fabb3cc7a378780fc9f1f01f2415" datatype="html">
+      <trans-unit id="abfed936d7768e2f8a0e02d608ae38d2c6c63c8a" datatype="html">
         <source><x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</source>
         <target><x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</target>
       </trans-unit>
-      <trans-unit id="5e86514a43bf5ebc21ec5d53586a9c297da9dca6" datatype="html">
+      <trans-unit id="b5834b189987c7ef6c05328920ee72e1cecc039f" datatype="html">
         <source>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</source>
         <target>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</target>
       </trans-unit>
