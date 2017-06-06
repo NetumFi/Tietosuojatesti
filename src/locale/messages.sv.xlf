@@ -4,15 +4,11 @@
     <body>
       <trans-unit id="35a98eb5f299498ce9f98eeab920f2ca4b80c3f6" datatype="html">
         <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</source>
-        <target>SV_Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</target>
-      </trans-unit>
-      <trans-unit id="9b961df1d1dbbfa3c6e47231d1ee1eecf4178c4f" datatype="html">
-        <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</source>
-        <target>SV_Arjen tietosuojakoulutus – tietosuojan perusteet kaikille –testi</target>
+        <target>Dataskyddsutbildning i vardagen -informationsskyddsgrunder åt alla</target>
       </trans-unit>
       <trans-unit id="e772cd98fc1c19aae76e47a3f908ca260bcc97e8" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong"/>SV_Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
+        <target><x id="START_TAG_STRONG" ctype="x-strong"/>Inledning<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
       </trans-unit>
       <trans-unit id="9afabbb14cfa5ae038417e186c3c6bb21f4abb59" datatype="html">
         <source>
@@ -31,28 +27,28 @@
           <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Välkommen till Informationsskydd i vardagen -webbtesten som genomförs av delegationen för informationsförvaltningen inom den offentliga förvaltningen (JUHTA).<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Testen baserar sig på Informationsskydd i vardagen -videon och det tillhörande stödmaterialet.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>
-            SV_Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
-            Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
-            Muista myös sulkea käyttämäsi www-selain.
+            Webbtest-servicen sparar inte någon information om den som svarar.
+            Kom ihåg att stänga testen genom Stäng-ikonen efter att du gjort testen, ifall du använder en gemensam dator.
+            Kom även ihåg att stänga webbläsaren.
           <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>
-            SV_Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
-            Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+            Du kan be om ytterligare information on testen eller ge respons via arjen.tietosuoja@vm.fi.
+            Observera: Vi berättar eller kommenterar inte enskilda frågor eller rätta svar.
           <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Du kommer vidare genom att klicka på Följande, varefter du får mera information om testen innan testen börjar.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Fortsätt till testen genom att klicka på Följande<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
       <trans-unit id="a835cfce98204908d07c884d5381f40ee218e7f4" datatype="html">
         <source>Seuraava</source>
-        <target>SV_Seuraava</target>
+        <target>Följande</target>
       </trans-unit>
       <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong"/>SV_Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
+        <target><x id="START_TAG_STRONG" ctype="x-strong"/>Svarsanvisningar<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
       </trans-unit>
       <trans-unit id="9f603eebd8cfb5200100b6631b07a7fef2cc445a" datatype="html">
         <source>
@@ -61,14 +57,14 @@
           <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>SV_Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Du kommer att få 10 frågor om videon ”Informationsskydd i vardagen” som du sett (länk till videon). Välj rätt det svarsalternativ som du tycker är rätt, ett alternativ är alltid rätt men den kan även finnas flera.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Du får ett testresultat efter att du besvarat alla tio frågor. Ifall ditt resultat är tillräckligt bra får du en möjlighet att skriva ut ett intyg om att du klarat testen och att spara den på din egen dator. Ifall din organisation gett dig tilläggsinformation om avklarandet av testen ska du agera enligt de anvisningar du fått.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Om du inte klarar testen så kan du studera lite till och göra testen på nytt. Du har 10 minuter på dig att besvara testen.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
       <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
         <source>Jatka testiin painamalla Seuraava.</source>
-        <target>SV_Jatka testiin painamalla Seuraava.</target>
+        <target>Fortsätt till testen genom att klicka på Följande</target>
       </trans-unit>
       <trans-unit id="2b3b8f04b5ff1362b2a6faa66240bb349466eaa5" datatype="html">
         <source>
@@ -78,15 +74,15 @@
           ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
         </source>
         <target>
-          SV_Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
-          pistettä ja olet läpäissyt testin!
-          Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
-          ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
+          Gratulerar <x id="INTERPOLATION"/>, du fick <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
+          poäng och klarade testen!
+          Du har nu nödvändiga grundläggande insikter i informationssäkerheten,
+          upprätthåll din kompetens genom att delta även i annan utbildning som erbjuds dig.
         </target>
       </trans-unit>
       <trans-unit id="362ef69bc9820c3f8d0924e55c71d4d0e9e1119d" datatype="html">
         <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
-        <target>SV_Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
+        <target>Du kan skriva ut ett intyg om att du klarat testen, och spara det på din egen dator om du vill.</target>
       </trans-unit>
       <trans-unit id="2c22b44262e2ef5a07d6ad99ecb7480fbcfe8ad8" datatype="html">
         <source>
@@ -95,54 +91,54 @@
           jonka saat esille Opiskelen vielä lisää -painikkeella.
         </source>
         <target>
-          SV_Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
-          läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-          jonka saat esille Opiskelen vielä lisää -painikkeella.
+          Ditt resultat <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> poäng räcker tyvärr inte till för att klara testen.
+          Vi rekommenderar att du ser videon en gång till och bekantar dig med tilläggsmaterialet
+          som du får fram genom att klicka på Jag studerar lite till -ikonen.
         </target>
       </trans-unit>
       <trans-unit id="877b88822c17dd590017aaadcebff1a6c078bdfe" datatype="html">
         <source>Haluan kokeilla testiä uudelleen</source>
-        <target>SV_Haluan kokeilla testiä uudelleen</target>
+        <target>Jag vill göra testen på nytt</target>
       </trans-unit>
       <trans-unit id="bd94ba0c1827bfa0cc26cea336da26c57086a7e1" datatype="html">
         <source>Opiskelen vielä lisää</source>
-        <target>SV_Opiskelen vielä lisää</target>
+        <target>Jag studerar lite till</target>
       </trans-unit>
       <trans-unit id="9c7fdb302016ee2dd674f29703425719040db684" datatype="html">
         <source>Sulje testi</source>
-        <target>SV_Sulje testi</target>
+        <target>Stäng testen</target>
       </trans-unit>
       <trans-unit id="68f75085e8aa2feced4c5b680cdaf66ecd771733" datatype="html">
         <source>Aika jäljellä: <x id="INTERPOLATION"/></source>
-        <target>SV_Aika jäljellä: <x id="INTERPOLATION"/></target>
+        <target>Kvarstående tiden: <x id="INTERPOLATION"/></target>
       </trans-unit>
       <trans-unit id="e4aebeb6656fe6c10097ac42e4e1e8c8438579ca" datatype="html">
         <source>Tulosta</source>
-        <target>SV_Tulosta</target>
+        <target>Skriv ut</target>
       </trans-unit>
       <trans-unit id="d6f9804e2f3c65212b273a203e1b33c0115144c8" datatype="html">
         <source>TODISTUS</source>
-        <target>SV_TODISTUS</target>
+        <target>INTYG</target>
       </trans-unit>
-      <trans-unit id="e666f1a40718fabb3cc7a378780fc9f1f01f2415" datatype="html">
+      <trans-unit id="abfed936d7768e2f8a0e02d608ae38d2c6c63c8a" datatype="html">
         <source><x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</source>
-        <target>SV_<x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</target>
+        <target><x id="INTERPOLATION"/> har avlagt <x id="INTERPOLATION_1"/> testen Informationssäkerhet i vardagen med poängtalet</target>
       </trans-unit>
-      <trans-unit id="5e86514a43bf5ebc21ec5d53586a9c297da9dca6" datatype="html">
+      <trans-unit id="b5834b189987c7ef6c05328920ee72e1cecc039f" datatype="html">
         <source>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</source>
-        <target>SV_Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</target>
+        <target>Du har nu nödvändiga grundläggande insikter i vad som avses med datasäkerhet. Kom ihåg att följa de anvisningar du fått i samband med utbildingen.</target>
       </trans-unit>
       <trans-unit id="9e30dbe2985887e725143f484378db2feebc8e4e" datatype="html">
         <source>Nimi:</source>
-        <target>SV_Nimi:</target>
+        <target>Namn:</target>
       </trans-unit>
       <trans-unit id="bc11aaed58ebc308ea086da8f37dc23f5769c90e" datatype="html">
         <source>Tehtävänimike:</source>
-        <target>SV_Tehtävänimike:</target>
+        <target>Titel:</target>
        </trans-unit>
       <trans-unit id="0af951cb1d6acd0cd378c575501f6c71aac20813" datatype="html">
         <source>Organisaatio:</source>
-        <target>SV_Organisaatio:</target>
+        <target>Organisation:</target>
       </trans-unit>
     </body>
   </file>
