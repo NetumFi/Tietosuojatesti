@@ -19,16 +19,54 @@
 </div>
 
 <div id="certificate">
-  <h2 i18n>TODISTUS</h2>
+  <div class="navbar-brand">
+    <img src="/fi/assets/images/JUHTAlogo_5.png" width="150" height="150" alt="" align="left">
+    <img src="/fi/assets/images/JUHTApallot.png" height="150" alt="" align="right">
+  </div>
+  <div style="clear: both;"></div>
 
-  <div i18n>{{user.name}} on suorittanut {{date | date:'d.M.yyyy'}} Arjen tietosuojakoulutuksen testin pistemäärällä
+  <div style="margin: 50px 50px 50px 50px;">
+    <div style="text-align: center;">
+      <h1 style="color: blue" i18n>TODISTUS</h1>
+
+      <h2 style="color: red" i18n>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</h2>
+
+      <p i18n>{{user.title}} {{user.name}}, {{user.organization}} on suorittanut {{date | date:'d.M.yyyy'}} </p>
+
+      <p i18n>Arjen tietosuojakoulutuksen testin pistemäärällä</p>
+
+      <br/>
+      <div>{{userPoints}} / {{maxPoints}}</div>
+    </div>
+
+    <br/>
+    <p i18n>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</p>
+
+    <p i18n>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</p>
+
+    <p i18n>Helsingissä, {{date | date:'d.M.yyyy'}}</p>
+
+    <div style="height: 100px"></div>
+
+    <table>
+      <tr>
+        <td style="min-width: 300px">Tuula Seppo</td>
+        <td>Kimmo Rousku</td>
+      </tr>
+      <tr>
+        <td i18n>JUHTA asiantuntijaryhmän pj.</td>
+        <td i18n>VAHTI-pääsihteeri</td>
+      </tr>
+      <tr>
+        <td i18n>Kuntaliitto</td>
+        <td i18n>Valtionvarainministeriö</td>
+      </tr>
+    </table>
   </div>
 
-  <br/>
-  <div>{{userPoints}} / {{maxPoints}}</div>
-
-  <br/>
-  <div i18n>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen
-    ohjeiden mukaisesti.
+  <div>
+    <h3 i18n>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</h3>
+    <img src="/fi/assets/images/Partner_logos.png" height="150" alt="" align="left">
   </div>
+
 </div>
