@@ -1,5 +1,7 @@
 export interface Option {
   id: string;
+  fi: string;
+  sv: string;
   text: string;
   correct: boolean;
 }
@@ -7,6 +9,8 @@ export interface Option {
 export interface Question {
   id: string;
   index: number;
+  fi: string;
+  sv: string;
   text: string;
   choices: Option[];
 }

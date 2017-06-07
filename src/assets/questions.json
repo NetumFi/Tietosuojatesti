@@ -1,486 +1,597 @@
 [
   {
     "id": "q1",
-    "text": "Mitka seuraavista ovat perusoikeuksia?",
+    "fi": "Mitkä seuraavista ovat perusoikeuksia?",
+    "sv": "SV_Mitkä seuraavista ovat perusoikeuksia?",
     "choices": [
       { "id": "001",
-        "text": "äänioikeus",
+        "fi": "äänioikeus",
+        "sv": "SV_äänioikeus",
         "correct": true
       },
       { "id": "002",
-        "text": "jokamiehen oikeus",
+        "fi": "jokamiehen oikeus",
+        "sv": "SV_jokamiehen oikeus",
         "correct": false
       },
       { "id": "003",
-        "text": "oikeus yksityisyyteen",
+        "fi": "oikeus yksityisyyteen",
+        "sv": "SV_oikeus yksityisyyteen",
         "correct": true
       },
       { "id": "004",
-        "text": "sananvapaus",
+        "fi": "sananvapaus",
+        "sv": "SV_sananvapaus",
         "correct": true
       },
       { "id": "005",
-        "text": "vapaus kesälomiin",
+        "fi": "vapaus kesälomiin",
+        "sv": "SV_vapaus kesälomiin",
         "correct": false
       }
     ]
   },
   {
     "id": "q2",
-    "text": "Mitä tietosuojalla tarkoitetaan?",
+    "fi": "Mitä tietosuojalla tarkoitetaan?",
+    "sv": "SV_Mitä tietosuojalla tarkoitetaan?",
     "choices": [
       { "id": "011",
-        "text": "Oikeuksien ja vapauksien turvaamista henkilötietojen käsittelelyssä",
+        "fi": "Oikeuksien ja vapauksien turvaamista henkilötietojen käsittelelyssä",
+        "sv": "SV_Oikeuksien ja vapauksien turvaamista henkilötietojen käsittelelyssä",
         "correct": true
       },
       { "id": "012",
-        "text": "Salassa pidettävien tietojen oikeaa käsittelyä",
+        "fi": "Salassa pidettävien tietojen oikeaa käsittelyä",
+        "sv": "SV_Salassa pidettävien tietojen oikeaa käsittelyä",
         "correct": false
       },
       { "id": "013",
-        "text": "Henkilötietojen salaamista oikealla tavalla",
+        "fi": "Henkilötietojen salaamista oikealla tavalla",
+        "sv": "SV_Henkilötietojen salaamista oikealla tavalla",
         "correct": false
       },
       { "id": "014",
-        "text": "Henkilötietojen suojaamista ulkopuolisilta henkilöiltä",
+        "fi": "Henkilötietojen suojaamista ulkopuolisilta henkilöiltä",
+        "sv": "SV_Henkilötietojen suojaamista ulkopuolisilta henkilöiltä",
         "correct": false
       }
     ]
   },
   {
     "id": "q3",
-    "text": "Mitä julkisuusperiaate tarkoittaa?",
+    "fi": "Mitä julkisuusperiaate tarkoittaa?",
+    "sv": "SV_Mitä julkisuusperiaate tarkoittaa?",
     "choices": [
       { "id": "021",
-        "text": "Kaikki tiedot ovat kaikille julkisia",
+        "fi": "Kaikki tiedot ovat kaikille julkisia",
+        "sv": "SV_Kaikki tiedot ovat kaikille julkisia",
         "correct": false
       },
       { "id": "022",
-        "text": "Jokaisella on oikeus saada tietää viranomaisten julkisista asiakirjoista",
+        "fi": "Jokaisella on oikeus saada tietää viranomaisten julkisista asiakirjoista",
+        "sv": "SV_Jokaisella on oikeus saada tietää viranomaisten julkisista asiakirjoista",
         "correct": true
       },
       { "id": "023",
-        "text": "Viranomaisten tiedot pitää laittaa nettiin kaikille julkisesti tiedoksi",
+        "fi": "Viranomaisten tiedot pitää laittaa nettiin kaikille julkisesti tiedoksi",
+        "sv": "SV_Viranomaisten tiedot pitää laittaa nettiin kaikille julkisesti tiedoksi",
         "correct": false
       }
     ]
   },
   {
     "id": "q4",
-    "text": "Itsemääräämisoikeus tarkoittaa, että sinun",
+    "fi": "Itsemääräämisoikeus tarkoittaa, että sinun",
+    "sv": "SV_Itsemääräämisoikeus tarkoittaa, että sinun",
     "choices": [
       { "id": "031",
-        "text": "tulee itse määrittää, mitkä kaikki tietosi ovat julkisia",
+        "fi": "tulee itse määrittää, mitkä kaikki tietosi ovat julkisia",
+        "sv": "SV_tulee itse määrittää, mitkä kaikki tietosi ovat julkisia",
         "correct": false
       },
       { "id": "032",
-        "text": "henkilötietojen käsittelyn salliminen onnistuu vain sinulta",
+        "fi": "henkilötietojen käsittelyn salliminen onnistuu vain sinulta",
+        "sv": "SV_henkilötietojen käsittelyn salliminen onnistuu vain sinulta",
         "correct": false
       },
       { "id": "033",
-        "text": "henkilötietojen käsittely on perustuttava lakiin",
+        "fi": "henkilötietojen käsittely on perustuttava lakiin",
+        "sv": "SV_henkilötietojen käsittely on perustuttava lakiin",
         "correct": true
       },
       { "id": "034",
-        "text": "henkilötietojen käsittely edellyttää suostumustasi",
+        "fi": "henkilötietojen käsittely edellyttää suostumustasi",
+        "sv": "SV_henkilötietojen käsittely edellyttää suostumustasi",
         "correct": true
       }
     ]
   },
   {
     "id": "q5",
-    "text": "Ohjelmassa esiintyy tietoturvatutkija",
+    "fi": "Ohjelmassa esiintyy tietoturvatutkija",
+    "sv": "SV_Ohjelmassa esiintyy tietoturvatutkija",
     "choices": [
       { "id": "041",
-        "text": "Kari Mäkinen",
+        "fi": "Kari Mäkinen",
+        "sv": "SV_Kari Mäkinen",
         "correct": false
       },
       { "id": "042",
-        "text": "Jari Virtanen",
+        "fi": "Jari Virtanen",
+        "sv": "SV_Jari Virtanen",
         "correct": false
       },
       { "id": "043",
-        "text": "Petteri Järvinen",
+        "fi": "Petteri Järvinen",
+        "sv": "SV_Petteri Järvinen",
         "correct": false
       },
       { "id": "044",
-        "text": "Kimmo Rousku",
+        "fi": "Kimmo Rousku",
+        "sv": "SV_Kimmo Rousku",
         "correct": false
       },
       { "id": "045",
-        "text": "Kari Nykänen",
+        "fi": "Kari Nykänen",
+        "sv": "SV_Kari Nykänen",
         "correct": true
       }
     ]
   },
   {
     "id": "q6",
-    "text": "Ohjelman juontajina toimivat",
+    "fi": "Ohjelman juontajina toimivat",
+    "sv": "SV_Ohjelman juontajina toimivat",
     "choices": [
       { "id": "051",
-        "text": "Tuula & Kimmo",
+        "fi": "Tuula & Kimmo",
+        "sv": "SV_Tuula & Kimmo",
         "correct": true
       },
       { "id": "052",
-        "text": "Maija & Mikko",
+        "fi": "Maija & Mikko",
+        "sv": "SV_Maija & Mikko",
         "correct": false
       },
       { "id": "053",
-        "text": "Anna & Kari",
+        "fi": "Anna & Kari",
+        "sv": "SV_Anna & Kari",
         "correct": false
       },
       { "id": "054",
-        "text": "Mikko & Matti",
+        "fi": "Mikko & Matti",
+        "sv": "SV_Mikko & Matti",
         "correct": false
       },
       { "id": "055",
-        "text": "Tuula & Leela",
+        "fi": "Tuula & Leela",
+        "sv": "SV_Tuula & Leela",
         "correct": false
       }
     ]
   },
   {
     "id": "q7",
-    "text": "Tietosuojasta on säädetty perustuslain",
+    "fi": "Tietosuojasta on säädetty perustuslain",
+    "sv": "SV_Tietosuojasta on säädetty perustuslain",
     "choices": [
       { "id": "061",
-        "text": "1 §",
+        "fi": "1 §",
+        "sv": "SV_1 §",
         "correct": false
       },
       { "id": "062",
-        "text": "5 §",
+        "fi": "5 §",
+        "sv": "SV_5 §",
         "correct": false
       },
       { "id": "063",
-        "text": "10 §",
+        "fi": "10 §",
+        "sv": "SV_10 §",
         "correct": true
       },
       { "id": "064",
-        "text": "13 §",
+        "fi": "13 §",
+        "sv": "SV_13 §",
         "correct": false
       },
       { "id": "065",
-        "text": "15 §",
+        "fi": "15 §",
+        "sv": "SV_15 §",
         "correct": false
       }
     ]
   },
   {
     "id": "q8",
-    "text": "Miksi tietosuoja voi pettää?",
+    "fi": "Miksi tietosuoja voi pettää?",
+    "sv": "SV_Miksi tietosuoja voi pettää?",
     "choices": [
       { "id": "071",
-        "text": "Henkilöltä on kysytty sellaista tietoa, mitä ei ole ollut oikeus kerätä",
+        "fi": "Henkilöltä on kysytty sellaista tietoa, mitä ei ole ollut oikeus kerätä",
+        "sv": "SV_Henkilöltä on kysytty sellaista tietoa, mitä ei ole ollut oikeus kerätä",
         "correct": true
       },
       { "id": "072",
-        "text": "Henkilötietoja on käytetty väärin, niitä on esimerkiksi luovutettu tai myyty edelleen",
+        "fi": "Henkilötietoja on käytetty väärin, niitä on esimerkiksi luovutettu tai myyty edelleen",
+        "sv": "SV_Henkilötietoja on käytetty väärin, niitä on esimerkiksi luovutettu tai myyty edelleen",
         "correct": true
       },
       { "id": "073",
-        "text": "Henkilötietoihin ovat päässeet käsiksi sellaiset henkilöt, joilla ei ole siihen työtehtävien perusteella oikeutta tai tietoja on laittomasti urkittu",
+        "fi": "Henkilötietoihin ovat päässeet käsiksi sellaiset henkilöt, joilla ei ole siihen työtehtävien perusteella oikeutta tai tietoja on laittomasti urkittu",
+        "sv": "SV_Henkilötietoihin ovat päässeet käsiksi sellaiset henkilöt, joilla ei ole siihen työtehtävien perusteella oikeutta tai tietoja on laittomasti urkittu",
         "correct": true
       },
       { "id": "074",
-        "text": "Henkilötietoja on käsitelty huolimattomasti, esimerkiksi työntekijöiden sairauslomailmoitukset ovat jääneet esimiehen pöydälle ",
+        "fi": "Henkilötietoja on käsitelty huolimattomasti, esimerkiksi työntekijöiden sairauslomailmoitukset ovat jääneet esimiehen pöydälle ",
+        "sv": "SV_Henkilötietoja on käsitelty huolimattomasti, esimerkiksi työntekijöiden sairauslomailmoitukset ovat jääneet esimiehen pöydälle ",
         "correct": true
       },
       { "id": "075",
-        "text": "Salassa pidettäviä tulosteita löytyy kopiohuoneesta tai printtereiltä kaikkien nähtävillä",
+        "fi": "Salassa pidettäviä tulosteita löytyy kopiohuoneesta tai printtereiltä kaikkien nähtävillä",
+        "sv": "SV_Salassa pidettäviä tulosteita löytyy kopiohuoneesta tai printtereiltä kaikkien nähtävillä",
         "correct": true
       }
     ]
   },
   {
     "id": "q9",
-    "text": "Miksi tietosuoja voi pettää?",
+    "fi": "Miksi tietosuoja voi pettää?",
+    "sv": "SV_Miksi tietosuoja voi pettää?",
     "choices": [
       { "id": "081",
-        "text": "Henkilötietojen käsittelystä annettuja ohjeita ei ole noudatettu",
+        "fi": "Henkilötietojen käsittelystä annettuja ohjeita ei ole noudatettu",
+        "sv": "SV_Henkilötietojen käsittelystä annettuja ohjeita ei ole noudatettu",
         "correct": true
       },
       { "id": "082",
-        "text": "Tietoturva pettää ja altistaa henkilötietoja ulkopuolisille tahoille",
+        "fi": "Tietoturva pettää ja altistaa henkilötietoja ulkopuolisille tahoille",
+        "sv": "SV_Tietoturva pettää ja altistaa henkilötietoja ulkopuolisille tahoille",
         "correct": true
       },
       { "id": "083",
-        "text": "Organisaatio on luovuttanut tietojasi edelleen lain perusteella.",
+        "fi": "Organisaatio on luovuttanut tietojasi edelleen lain perusteella.",
+        "sv": "SV_Organisaatio on luovuttanut tietojasi edelleen lain perusteella.",
         "correct": false
       },
       { "id": "084",
-        "text": "Inhimillisen erehdyksen johdosta",
+        "fi": "Inhimillisen erehdyksen johdosta",
+        "sv": "SV_Inhimillisen erehdyksen johdosta",
         "correct": true
       },
       { "id": "085",
-        "text": "Kun teknologia ei toimi niin kuin pitäisi.",
+        "fi": "Kun teknologia ei toimi niin kuin pitäisi.",
+        "sv": "SV_Kun teknologia ei toimi niin kuin pitäisi.",
         "correct": true
       }
     ]
   },
   {
     "id": "q10",
-    "text": "Lähetyksessä esillä ollut roskalava",
+    "fi": "Lähetyksessä esillä ollut roskalava",
+    "sv": "SV_Lähetyksessä esillä ollut roskalava",
     "choices": [
       { "id": "091",
-        "text": "syyllistyi tietoturvarikkomukseen",
+        "fi": "syyllistyi tietoturvarikkomukseen",
+        "sv": "SV_syyllistyi tietoturvarikkomukseen",
         "correct": false
       },
       { "id": "092",
-        "text": "julistettiin syyttömäksi",
+        "fi": "julistettiin syyttömäksi",
+        "sv": "SV_julistettiin syyttömäksi",
         "correct": true
       },
       { "id": "093",
-        "text": "odottaa edelleen tuomiota",
+        "fi": "odottaa edelleen tuomiota",
+        "sv": "SV_odottaa edelleen tuomiota",
         "correct": false
       }
     ]
   },
   {
     "id": "q11",
-    "text": "Tietosuojan vastuu organisaatiossa on",
+    "fi": "Tietosuojan vastuu organisaatiossa on",
+    "sv": "SV_Tietosuojan vastuu organisaatiossa on",
     "choices": [
       { "id": "101",
-        "text": "Esimiehelläsi",
+        "fi": "Esimiehelläsi",
+        "sv": "SV_Esimiehelläsi",
         "correct": false
       },
       { "id": "102",
-        "text": "Organisaation johdolla",
+        "fi": "Organisaation johdolla",
+        "sv": "SV_Organisaation johdolla",
         "correct": true
       },
       { "id": "103",
-        "text": "Tietoturvavastaavalla",
+        "fi": "Tietoturvavastaavalla",
+        "sv": "SV_Tietoturvavastaavalla",
         "correct": false
       },
       { "id": "104",
-        "text": "Tietosuojavastaavalla",
+        "fi": "Tietosuojavastaavalla",
+        "sv": "SV_Tietosuojavastaavalla",
         "correct": false
       }
     ]
   },
   {
     "id": "q12",
-    "text": "Tietosuojan kokonaisvastuu organisaatiossa kuuluu",
+    "fi": "Tietosuojan kokonaisvastuu organisaatiossa kuuluu",
+    "sv": "SV_Tietosuojan kokonaisvastuu organisaatiossa kuuluu",
     "choices": [
       { "id": "111",
-        "text": "Johdolle",
+        "fi": "Johdolle",
+        "sv": "SV_Johdolle",
         "correct": true
       },
       { "id": "112",
-        "text": "Esimiehellesi",
+        "fi": "Esimiehellesi",
+        "sv": "SV_Esimiehellesi",
         "correct": false
       },
       {
         "id": "113",
-        "text": "Sinulle",
+        "fi": "Sinulle",
+        "sv": "SV_Sinulle",
         "correct": false
       },
       { "id": "114",
-        "text": "Kaikille organisaation työntekijöille",
+        "fi": "Kaikille organisaation työntekijöille",
+        "sv": "SV_Kaikille organisaation työntekijöille",
         "correct": false
       }
     ]
   },
   {
     "id": "q13",
-    "text": "Ketkä kaikki vaikuttavat organisaatiossa tietosuojan toteutumiseen",
+    "fi": "Ketkä kaikki vaikuttavat organisaatiossa tietosuojan toteutumiseen",
+    "sv": "SV_Ketkä kaikki vaikuttavat organisaatiossa tietosuojan toteutumiseen",
     "choices": [
       { "id": "121",
-        "text": "Sinä",
+        "fi": "Sinä",
+        "sv": "SV_Sinä",
         "correct": true
       },
       { "id": "122",
-        "text": "Johto",
+        "fi": "Johto",
+        "sv": "SV_Johto",
         "correct": true
       },
       { "id": "123",
-        "text": "Tietosuojavastaava",
+        "fi": "Tietosuojavastaava",
+        "sv": "SV_Tietosuojavastaava",
         "correct": true
       },
       { "id": "124",
-        "text": "Kaikki organisaation työntekijät",
+        "fi": "Kaikki organisaation työntekijät",
+        "sv": "SV_Kaikki organisaation työntekijät",
         "correct": true
       }
     ]
   },
   {
     "id": "q14",
-    "text": "Organisaatio voi ulkoistaa vastuun tietosuojasta",
+    "fi": "Organisaatio voi ulkoistaa vastuun tietosuojasta",
+    "sv": "SV_Organisaatio voi ulkoistaa vastuun tietosuojasta",
     "choices": [
       { "id": "131",
-        "text": "Sopimuksella",
+        "fi": "Sopimuksella",
+        "sv": "SV_Sopimuksella",
         "correct": false
       },
       { "id": "132",
-        "text": "Ostamalla vakuutuksen",
+        "fi": "Ostamalla vakuutuksen",
+        "sv": "SV_Ostamalla vakuutuksen",
         "correct": false
       },
       { "id": "133",
-        "text": "Kouluttamalla riittävästi henkilöstöä",
+        "fi": "Kouluttamalla riittävästi henkilöstöä",
+        "sv": "SV_Kouluttamalla riittävästi henkilöstöä",
         "correct": false
       },
       { "id": "134",
-        "text": "Vastuuta ei voi ulkoistaa",
+        "fi": "Vastuuta ei voi ulkoistaa",
+        "sv": "SV_Vastuuta ei voi ulkoistaa",
         "correct": true
       }
     ]
   },
   {
     "id": "q15",
-    "text": "Mikä on meidän jokaisen vastuu?",
+    "fi": "Mikä on meidän jokaisen vastuu?",
+    "sv": "SV_Mikä on meidän jokaisen vastuu?",
     "choices": [
       { "id": "141",
-        "text": "Käsittelemme henkilötietoja ohjeiden mukaisesti",
+        "fi": "Käsittelemme henkilötietoja ohjeiden mukaisesti",
+        "sv": "SV_Käsittelemme henkilötietoja ohjeiden mukaisesti",
         "correct": true
       },
       { "id": "142",
-        "text": "Luovutamme henkilötietoja niitä aina meiltä pyydettäessä",
+        "fi": "Luovutamme henkilötietoja niitä aina meiltä pyydettäessä",
+        "sv": "SV_Luovutamme henkilötietoja niitä aina meiltä pyydettäessä",
         "correct": false
       },
       { "id": "143",
-        "text": "Ilmoitamme mahdollisista ongelmista tai rikkomuksista",
+        "fi": "Ilmoitamme mahdollisista ongelmista tai rikkomuksista",
+        "sv": "SV_Ilmoitamme mahdollisista ongelmista tai rikkomuksista",
         "correct": true
       }
     ]
   },
   {
     "id": "q16",
-    "text": "Mitä tietosuojavastaava tekee?",
+    "fi": "Mitä tietosuojavastaava tekee?",
+    "sv": "SV_Mitä tietosuojavastaava tekee?",
     "choices": [
       { "id": "151",
-        "text": "Neuvoo ja ohjeistaa",
+        "fi": "Neuvoo ja ohjeistaa",
+        "sv": "SV_Neuvoo ja ohjeistaa",
         "correct": true
       },
       { "id": "152",
-        "text": "Valvoo",
+        "fi": "Valvoo",
+        "sv": "SV_Valvoo",
         "correct": true
       },
       { "id": "153",
-        "text": "Kehittää tietosuojaa",
+        "fi": "Kehittää tietosuojaa",
+        "sv": "SV_Kehittää tietosuojaa",
         "correct": true
       },
       { "id": "154",
-        "text": "Tarkistaa, että henkilötiedot ovat tiedoissa oikein",
+        "fi": "Tarkistaa, että henkilötiedot ovat tiedoissa oikein",
+        "sv": "SV_Tarkistaa, että henkilötiedot ovat tiedoissa oikein",
         "correct": false
       },
       { "id": "155",
-        "text": "Luovuttaa henkilötietoja ulkopuolisille",
+        "fi": "Luovuttaa henkilötietoja ulkopuolisille",
+        "sv": "SV_Luovuttaa henkilötietoja ulkopuolisille",
         "correct": false
       },
       { "id": "156",
-        "text": "Rakentaa organisaatioon tietoturvaratkaisuja",
+        "fi": "Rakentaa organisaatioon tietoturvaratkaisuja",
+        "sv": "SV_Rakentaa organisaatioon tietoturvaratkaisuja",
         "correct": false
       }
     ]
   },
   {
     "id": "q17",
-    "text": "Maailman ensimmäinen painovapausasetus julkaistiin",
+    "fi": "Maailman ensimmäinen painovapausasetus julkaistiin",
+    "sv": "SV_Maailman ensimmäinen painovapausasetus julkaistiin",
     "choices": [
       { "id": "161",
-        "text": "Ranskassa 1494",
+        "fi": "Ranskassa 1494",
+        "sv": "SV_Ranskassa 1494",
         "correct": false
       },
       { "id": "162",
-        "text": "Kreikassa 2400 EKR",
+        "fi": "Kreikassa 2400 EKR",
+        "sv": "SV_Kreikassa 2400 EKR",
         "correct": false
       },
       { "id": "163",
-        "text": "Saksassa 1693",
+        "fi": "Saksassa 1693",
+        "sv": "SV_Saksassa 1693",
         "correct": false
       },
       {
         "id": "164",
-        "text": "Ruotsisssa 1766",
+        "fi": "Ruotsisssa 1766",
+        "sv": "SV_Ruotsisssa 1766",
         "correct": true
       },
       { "id": "165",
-        "text": "Suomessa 1917",
+        "fi": "Suomessa 1917",
+        "sv": "SV_Suomessa 1917",
         "correct": false
       },
       { "id": "166",
-        "text": "Venäjällä 1894",
+        "fi": "Venäjällä 1894",
+        "sv": "SV_Venäjällä 1894",
         "correct": false
       }
     ]
   },
   {
     "id": "q18",
-    "text": "Kuinka moni EU-kansalainen on huolissaan EU-barometrin mukaan siitä, että heidän tietojaan käytetään eri tarkoituksiin mihin niitä on kerätty?",
+    "fi": "Kuinka moni EU-kansalainen on huolissaan EU-barometrin mukaan siitä, että heidän tietojaan käytetään eri tarkoituksiin mihin niitä on kerätty?",
+    "sv": "SV_Kuinka moni EU-kansalainen on huolissaan EU-barometrin mukaan siitä, että heidän tietojaan käytetään eri tarkoituksiin mihin niitä on kerätty?",
     "choices": [
       { "id": "171",
-        "text": "40%",
+        "fi": "40%",
+        "sv": "SV_40%",
         "correct": false
       },
       { "id": "172",
-        "text": "50%",
+        "fi": "50%",
+        "sv": "SV_50%",
         "correct": false
       },
       { "id": "173",
-        "text": "60%",
+        "fi": "60%",
+        "sv": "SV_60%",
         "correct": false
       },
       { "id": "174",
-        "text": "70%",
+        "fi": "70%",
+        "sv": "SV_70%",
         "correct": true
       },
       { "id": "175",
-        "text": "80%",
+        "fi": "80%",
+        "sv": "SV_80%",
         "correct": false
       },
       { "id": "176",
-        "text": "90%",
+        "fi": "90%",
+        "sv": "SV_90%",
         "correct": false
       }
     ]
   },
   {
     "id": "q19",
-    "text": "EU-tietosuoja-asetuksen soveltaminen käynnistyy",
+    "fi": "EU-tietosuoja-asetuksen soveltaminen käynnistyy",
+    "sv": "SV_EU-tietosuoja-asetuksen soveltaminen käynnistyy",
     "choices": [
       { "id": "181",
-        "text": "25/05/2015",
+        "fi": "25/05/2015",
+        "sv": "SV_25/05/2015",
         "correct": false
       },
       { "id": "182",
-        "text": "01/01/2018",
+        "fi": "01/01/2018",
+        "sv": "SV_01/01/2018",
         "correct": false
       },
       { "id": "183",
-        "text": "25/05/2018",
+        "fi": "25/05/2018",
+        "sv": "SV_25/05/2018",
         "correct": true
       },
       { "id": "184",
-        "text": "24/12/2018",
+        "fi": "24/12/2018",
+        "sv": "SV_24/12/2018",
         "correct": false
       },
       { "id": "185",
-        "text": "01/01/2019",
+        "fi": "01/01/2019",
+        "sv": "SV_01/01/2019",
         "correct": false
       },
       { "id": "186",
-        "text": "06/12/2020",
+        "fi": "06/12/2020",
+        "sv": "SV_06/12/2020",
         "correct": false
       }
     ]
   },
   {
     "id": "q20",
-    "text": "EU:n yleinen tietosuoja-asetus",
+    "fi": "EU:n yleinen tietosuoja-asetus",
+    "sv": "SV_EU:n yleinen tietosuoja-asetus",
     "choices": [
       { "id": "191",
-        "text": "Mahdollistaa uudenlaisten digitaalisten palveluiden helpomman kehittämisen",
+        "fi": "Mahdollistaa uudenlaisten digitaalisten palveluiden helpomman kehittämisen",
+        "sv": "SV_Mahdollistaa uudenlaisten digitaalisten palveluiden helpomman kehittämisen",
         "correct": true
       },
       { "id": "192",
-        "text": "Yhdenmukaistaa henkilötietojen käsittelyä EU-alueella",
+        "fi": "Yhdenmukaistaa henkilötietojen käsittelyä EU-alueella",
+        "sv": "SV_Yhdenmukaistaa henkilötietojen käsittelyä EU-alueella",
         "correct": true
       },
       { "id": "193",
-        "text": "Mahdollistaa henkilötietojen paremman, laillisen hyödyntämisen",
+        "fi": "Mahdollistaa henkilötietojen paremman, laillisen hyödyntämisen",
+        "sv": "SV_Mahdollistaa henkilötietojen paremman, laillisen hyödyntämisen",
         "correct": true
       },
       { "id": "195",
-        "text": "Koskee myös muita EU-alueen ulkopuolisia maita",
+        "fi": "Koskee myös muita EU-alueen ulkopuolisia maita",
+        "sv": "SV_Koskee myös muita EU-alueen ulkopuolisia maita",
         "correct": false
       }
     ]

@@ -13,6 +13,8 @@ function getMockedQuestion(number): Question {
   return {
     id: questionId,
     index: number,
+    fi: '',
+    sv: '',
     text: 'Question ' + number,
     choices: [
       getMockedOption(questionId, 1, false),
@@ -24,6 +26,8 @@ function getMockedQuestion(number): Question {
 function getMockedOption(questionId, number, correct) {
   return {
     id: questionId + '-' + number,
+    fi: '',
+    sv: '',
     text: (!correct ? 'Incorrect option ' : 'Correct option ') + number,
     correct: correct
   };
