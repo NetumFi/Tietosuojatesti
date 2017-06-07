@@ -16,6 +16,8 @@ export class TimerComponent implements OnInit, OnDestroy {
   @Input()
   seconds;
 
+  selectedLanguage = 'sv';
+
   secondsLeft;
   subscription;
 
@@ -33,12 +35,14 @@ export class TimerComponent implements OnInit, OnDestroy {
     this.store.select(fromRoot.getQuestionsState)
       .map(state => state.pickedQuestions.length)
       .subscribe(amount => this.resultsPageNumber = amount + 3);
+    this.selectedLanguage = document.location.pathname.split('/')[1];
   }
 
   timer() {
     this.secondsLeft--;
     if (this.secondsLeft === 0) {
-      alert('Aika loppui');
+      const timeHasRunOutText = this.selectedLanguage === 'sv' ? 'SV_Aika loppui' : 'Aika loppui';
+      alert(timeHasRunOutText);
       this.subscription.unsubscribe();
       this.toResultPage();
     }
