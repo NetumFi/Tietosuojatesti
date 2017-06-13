@@ -1,4 +1,4 @@
-import { calculateMaxPoints, calculateUserPoints, pickQuestions } from './questionhelper';
+import { areAnswersCorrect, calculateMaxPoints, calculateUserPoints, pickQuestions } from './questionhelper';
 import { getMockedQuestions } from '../testhelper';
 
 describe('calculateMaxPoints', () => {
@@ -6,11 +6,13 @@ describe('calculateMaxPoints', () => {
     const questionWithOnlyIncorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: false
         }
       ]
@@ -22,11 +24,13 @@ describe('calculateMaxPoints', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: true
         }
       ]
@@ -38,7 +42,8 @@ describe('calculateMaxPoints', () => {
     const questionWithNoOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: []
     };
     expect(calculateMaxPoints([questionWithNoOptions])).toBe(0);
@@ -50,11 +55,13 @@ describe('calculateUserPoints', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: true
         }
       ]
@@ -68,11 +75,13 @@ describe('calculateUserPoints', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: true
         }
       ]
@@ -86,11 +95,13 @@ describe('calculateUserPoints', () => {
     const questionWithOnlyIncorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: false
         }
       ]
@@ -104,11 +115,13 @@ describe('calculateUserPoints', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: false
         }
       ]
@@ -122,11 +135,13 @@ describe('calculateUserPoints', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
-      text: 'Question 1',
+      fi: 'Question 1',
+      sv: 'Question 1',
       choices: [
         {
           id: '001',
-          text: 'Option 1',
+          fi: 'Option 1',
+          sv: 'Option 1',
           correct: false
         }
       ]
@@ -151,5 +166,106 @@ describe('pickQuestions', () => {
     const pickedQuestions = pickQuestions(getMockedQuestions(50), 10);
     pickedQuestions.forEach(q1 => expect(pickedQuestions.filter(q2 => q1.id === q2.id).length).toBe(1));
   });
+});
+
+describe('areAnswersCorrect', () => {
+  it('It should return false if no correct answer is given', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        }
+      ]
+    };
+    const noCheckedAnswers = [{ optionId: '001', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, noCheckedAnswers)).toBeFalsy();
+  });
+
+  it('It should return false if any incorrect answer is given', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '021',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
+        }
+      ]
+    };
+    const noCheckedAnswers = [{ optionId: '001', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, noCheckedAnswers)).toBeFalsy();
+  });
+
+  it('It should return true for only correct answers (first answer correct, second incorrect)', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: false
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ optionId: '001', checked: true }, { optionId: '002', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeTruthy();
+  });
+
+  it('It should return true for only correct answers (all answers correct)', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ optionId: '001', checked: true }, { optionId: '002', checked: true }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeTruthy();
+  });
+
 });
 

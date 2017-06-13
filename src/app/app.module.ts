@@ -24,6 +24,7 @@ import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { LanguageService } from './language.service';
 import { QuizComponent } from './quiz/quiz.component';
 import { FooterComponent } from './footer/footer.component';
+import { SummaryComponent } from './result/summary/summary.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FooterComponent } from './footer/footer.component';
     FrontPageComponent,
     HeaderBarComponent,
     QuizComponent,
-    FooterComponent
+    FooterComponent,
+    SummaryComponent
   ],
   providers: [
     LanguageService

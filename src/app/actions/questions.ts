@@ -1,8 +1,9 @@
 import { Action } from '@ngrx/store';
-import { Question } from '../questions/questions.model';
+import { Answer, Question } from '../questions/questions.model';
 
 export const LOADED = '[Questions] Loaded Questions';
 export const INITIALIZED = '[Questions] Initialized random questions';
+export const ANSWERED = '[Questions] Answered a question';
 
 export class LoadedAction implements Action {
   readonly type = LOADED;
@@ -16,6 +17,15 @@ export class InitializedAction implements Action {
   constructor() {}
 }
 
+export class AnsweredAction implements Action {
+  readonly type = ANSWERED;
+
+  constructor(public questionIndex: number,
+              public answers: Answer[]) {
+  }
+}
+
 export type Actions
   = LoadedAction
-  | InitializedAction;
+  | InitializedAction
+  | AnsweredAction;

@@ -22,21 +22,12 @@ export class QuizComponent implements OnInit, OnDestroy {
 
   constructor(
     private store: Store<fromRoot.State>,
-    private http: Http,
-    private languageService: LanguageService
+    private http: Http
   ) { }
 
   ngOnInit() {
-    const selectedLanguage = this.languageService.getLanguage();
     this.subscriptions.push(this.http.get('assets/questions.json')
       .map(data => data.json())
-      .map((loadedQ: Question[]) => {
-        loadedQ.forEach(q => {
-          q.text = q[selectedLanguage];
-          q.choices.forEach(o => o.text = o[selectedLanguage]);
-        });
-        return loadedQ;
-      })
       .subscribe(loadedQuestions => {
         this.store.dispatch(new questions.LoadedAction(loadedQuestions));
         this.store.dispatch(new questions.InitializedAction());

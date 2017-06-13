@@ -9,6 +9,8 @@ import 'rxjs/add/observable/of';
 import { By } from '@angular/platform-browser';
 import { CertificateComponent } from '../certificate/certificate.component';
 import { FooterComponent } from '../footer/footer.component';
+import { SummaryComponent } from './summary/summary.component';
+import { LanguageService } from '../language.service';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;
@@ -37,9 +39,11 @@ describe('ResultComponent', () => {
       declarations: [
         ResultComponent,
         CertificateComponent,
-        FooterComponent
+        FooterComponent,
+        SummaryComponent
       ],
       providers: [
+        LanguageService,
         {
           provide: Store,
           useValue: mockStore

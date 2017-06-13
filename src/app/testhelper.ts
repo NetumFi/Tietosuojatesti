@@ -15,7 +15,6 @@ function getMockedQuestion(number): Question {
     index: number,
     fi: '',
     sv: '',
-    text: 'Question ' + number,
     choices: [
       getMockedOption(questionId, 1, false),
       getMockedOption(questionId, 2, true)
