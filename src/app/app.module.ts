@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { LanguageService } from './language.service';
+import { QuizComponent } from './quiz/quiz.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { LanguageService } from './language.service';
     QuestionComponent,
     CertificateComponent,
     FrontPageComponent,
-    HeaderBarComponent
+    HeaderBarComponent,
+    QuizComponent
   ],
   providers: [
     LanguageService

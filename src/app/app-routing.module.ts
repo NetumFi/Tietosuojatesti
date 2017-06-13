@@ -5,15 +5,20 @@ import { QuestionsComponent } from './questions/questions.component';
 import { IntroComponent } from './intro/intro.component';
 import { UserComponent } from './user/user.component';
 import { FrontPageComponent } from './front-page/front-page.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes = [
+  { path: '', redirectTo: 'front', pathMatch: 'full' },
   { path: 'front', component: FrontPageComponent },
-  // TODO: FrontPage as root, Intro &c. into own parent as children
-  { path: '', component: IntroComponent },
-  { path: 'tiedot', component: UserComponent },
-  { path: 'kysymykset', component: QuestionsComponent },
-  { path: 'kysymykset/:question-number', component: QuestionsComponent },
-  { path: 'tulokset', component: ResultComponent }
+  {
+    path: 'quiz', component: QuizComponent, children: [
+      { path: '', component: IntroComponent },
+      { path: 'tiedot', component: UserComponent },
+      { path: 'kysymykset', component: QuestionsComponent },
+      { path: 'kysymykset/:question-number', component: QuestionsComponent },
+      { path: 'tulokset', component: ResultComponent }
+    ]
+  }
 ];
 
 @NgModule({

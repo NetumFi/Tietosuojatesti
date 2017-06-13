@@ -69,10 +69,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
       .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)));
 
     if (this.hasNextQuestion) {
-      this.router.navigate(['/kysymykset', this.index + 2]);
+      this.router.navigate(['/quiz/kysymykset', this.index + 2]);
     } else {
       this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
-      this.router.navigate(['/tulokset']);
+      this.router.navigate(['/quiz/tulokset']);
     }
   }
 
