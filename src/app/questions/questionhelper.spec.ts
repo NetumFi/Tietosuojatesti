@@ -189,7 +189,7 @@ describe('areAnswersCorrect', () => {
     expect(areAnswersCorrect(questionWithOnlyCorrectOptions, noCheckedAnswers)).toBeFalsy();
   });
 
-  it('It should return true for only correct answers', () => {
+  it('It should return false if any incorrect answer is given', () => {
     const questionWithOnlyCorrectOptions = {
       id: 'q1',
       index: 1,
@@ -201,10 +201,68 @@ describe('areAnswersCorrect', () => {
           fi: 'Option 1',
           sv: 'Option 1',
           correct: true
+        },
+        {
+          id: '021',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
         }
       ]
     };
-    const onlyCorrectAnswers = [{ optionId: '001', checked: true }];
+    const noCheckedAnswers = [{ optionId: '001', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, noCheckedAnswers)).toBeFalsy();
+  });
+
+  it('It should return true for only correct answers (first answer correct, second incorrect)', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: false
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ optionId: '001', checked: true }, { optionId: '002', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeTruthy();
+  });
+
+  it('It should return true for only correct answers (all answers correct)', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ optionId: '001', checked: true }, { optionId: '002', checked: true }];
 
     expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeTruthy();
   });
