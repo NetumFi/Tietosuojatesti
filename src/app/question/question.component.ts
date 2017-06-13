@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnChanges } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { Answer, Question } from '../questions/questions.model';
 
 @Component({
