@@ -23,7 +23,7 @@ export class SummaryComponent implements OnInit {
         if (questionState.pickedQuestions) {
           questionState.pickedQuestions.forEach((question, i) => {
             if (!questionState.answers[i]) {
-              failedQuestions.push({ question: question[languageService.getLanguage()] });
+              failedQuestions.push({ index: i, question: question[languageService.getLanguage()] });
             }
           });
         }

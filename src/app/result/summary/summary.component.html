@@ -1,9 +1,17 @@
-<div i18n>
-  Väärin vastatut kysymykset:
+<div class="flex-md-row">
+  <br>
 </div>
-
-<div *ngIf="failedQuestions | async as failedQuestions">
-  <div *ngFor="let failedQuestion of failedQuestions; let i = index">
-    <div>{{ i }}: {{ failedQuestion.question }}<div>
+<div class="flex-md-row">
+  <div class="ml-md-5" >
+    <strong i18n>Väärin vastatut kysymykset:</strong>
   </div>
+
+  <div class="ml-md-5" *ngIf="failedQuestions | async as failedQuestions">
+    <div *ngFor="let failedQuestion of failedQuestions">
+      <div><small>{{ failedQuestion.index + 1 }}: {{ failedQuestion.question }}</small></div>
+    </div>
+  </div>
+</div>
+<div class="flex-md-row">
+  <br>
 </div>
