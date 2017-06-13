@@ -23,6 +23,7 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { LanguageService } from './language.service';
 import { QuizComponent } from './quiz/quiz.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { QuizComponent } from './quiz/quiz.component';
     CertificateComponent,
     FrontPageComponent,
     HeaderBarComponent,
-    QuizComponent
+    QuizComponent,
+    FooterComponent
   ],
   providers: [
     LanguageService
