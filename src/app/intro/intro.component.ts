@@ -15,7 +15,7 @@ export class IntroComponent implements OnInit {
   ngOnInit() {}
 
   nextPage() {
-    this.router.navigate(['/tiedot']);
+    this.router.navigate(['quiz/tiedot']);
   }
 
 }

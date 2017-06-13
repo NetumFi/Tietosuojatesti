@@ -48,7 +48,7 @@ export class ResultComponent {
     this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
     this.store.dispatch(new user.PointsResetAction());
     this.store.dispatch(new questions.InitializedAction());
-    this.router.navigate(['/']);
+    this.router.navigate(['/quiz']);
   }
 
 }

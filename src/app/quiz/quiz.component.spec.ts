@@ -2,27 +2,27 @@
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { IntroComponent } from './intro/intro.component';
-import { QuestionsComponent } from './questions/questions.component';
-import { UserComponent } from './user/user.component';
-import { ResultComponent } from './result/result.component';
+import { IntroComponent } from '../intro/intro.component';
+import { QuestionsComponent } from '../questions/questions.component';
+import { UserComponent } from '../user/user.component';
+import { ResultComponent } from '../result/result.component';
 import { FormsModule } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { HttpModule, XHRBackend } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
-import { getMockedQuestions } from './testhelper';
-import { LanguageService } from './language.service';
+import { getMockedQuestions } from '../testhelper';
+import { LanguageService } from '../language.service';
+import { QuizComponent } from './quiz.component';
 
-describe('AppComponent', () => {
+describe('QuizComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ FormsModule, HttpModule ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       declarations: [
-        AppComponent,
+        QuizComponent,
         IntroComponent,
         UserComponent,
         QuestionsComponent,
@@ -44,16 +44,9 @@ describe('AppComponent', () => {
     TestBed.compileComponents();
   }));
 
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
+  it('should create the quiz', async(() => {
+    const fixture = TestBed.createComponent(QuizComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-
-/*  it('should show the total amount of pages', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain(' 1/4');
-  }));*/
 });

@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CertificateComponent } from './certificate.component';
 import { ShareButtonDirective, ShareButtonsService } from 'ng2-sharebuttons';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('CertificateComponent', () => {
   let component: CertificateComponent;
@@ -9,7 +10,11 @@ describe('CertificateComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CertificateComponent, ShareButtonDirective ],
+      declarations: [
+        CertificateComponent,
+        ShareButtonDirective,
+        FooterComponent
+      ],
       providers: [
         { provide: ShareButtonsService, useValue: {
           validateUrl: function() {}

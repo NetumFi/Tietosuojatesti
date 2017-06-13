@@ -31,7 +31,7 @@ export class CertificateComponent implements OnInit {
       .open('', '_blank', 'scrollbars=no,menubar=no,toolbar=no,location=no,status=no,titlebar=no');
     popupWindow.document.open();
     popupWindow.document
-      .write('<html><head><link rel="stylesheet" type="text/css" href="style.css" /></head><body onload="window.print()">'
+      .write('<html><head><link rel="stylesheet" type="text/css" href="styles.css" /></head><body onload="window.print()">'
         + innerContents
         + '</html>');
     popupWindow.document.close();

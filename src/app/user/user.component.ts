@@ -41,7 +41,7 @@ export class UserComponent implements OnInit, OnDestroy {
 
   nextPage() {
     this.save();
-    this.router.navigate(['/kysymykset/', 1]);
+    this.router.navigate(['/quiz/kysymykset/', 1]);
   }
 
   save() {

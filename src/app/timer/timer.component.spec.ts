@@ -7,6 +7,7 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { getMockedQuestions } from '../testhelper';
+import { LanguageService } from '../language.service';
 
 describe('TimerComponent', () => {
   let component: TimerComponent;
@@ -17,6 +18,7 @@ describe('TimerComponent', () => {
       imports: [ RouterTestingModule ],
       declarations: [ TimerComponent, TimePipe ],
       providers: [
+        LanguageService,
         {
           provide: Store,
           useClass: class {

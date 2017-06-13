@@ -1,7 +1,14 @@
 import { TimePipe } from './time.pipe';
+import { LanguageService } from './language.service';
+import { TestBed } from '@angular/core/testing';
 
 describe('TimePipe', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [LanguageService]
+    });
 
+  });
   const pipe = new TimePipe();
 
   it('transforms 600 seconds to "10 minuuttia "', () => {

@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { By } from '@angular/platform-browser';
 import { CertificateComponent } from '../certificate/certificate.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('ResultComponent', () => {
   let component: ResultComponent;
@@ -33,7 +34,11 @@ describe('ResultComponent', () => {
     mockStore.userPoints = 74;
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
-      declarations: [ ResultComponent, CertificateComponent ],
+      declarations: [
+        ResultComponent,
+        CertificateComponent,
+        FooterComponent
+      ],
       providers: [
         {
           provide: Store,
