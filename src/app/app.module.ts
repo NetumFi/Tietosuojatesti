@@ -8,7 +8,6 @@ import { IntroComponent } from './intro/intro.component';
 import { UserComponent } from './user/user.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { ResultComponent } from './result/result.component';
-import { RouterModule } from '@angular/router';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TimePipe } from './time.pipe';
 import { TimerComponent } from './timer/timer.component';
@@ -19,14 +18,8 @@ import { StoreModule } from '@ngrx/store';
 import { reducer } from './reducers';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ShareButtonsModule } from 'ng2-sharebuttons';
+import { AppRoutingModule } from './app-routing.module';
 
-const appRoutes = [
-  { path: '', component: IntroComponent },
-  { path: 'tiedot', component: UserComponent },
-  { path: 'kysymykset', component: QuestionsComponent },
-  { path: 'kysymykset/:question-number', component: QuestionsComponent },
-  { path: 'tulokset', component: ResultComponent }
-];
 
 @NgModule({
   declarations: [
@@ -46,7 +39,7 @@ const appRoutes = [
     HttpModule,
     ShareButtonsModule.forRoot(),
     ButtonsModule.forRoot(),
-    RouterModule.forRoot(appRoutes, { useHash: true }),
+    AppRoutingModule,
     StoreModule.provideStore(reducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension({
       maxAge: 5
