@@ -14,6 +14,7 @@ import 'rxjs/add/observable/of';
 import { HttpModule, XHRBackend } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import { getMockedQuestions } from './testhelper';
+import { LanguageService } from './language.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -28,15 +29,17 @@ describe('AppComponent', () => {
         ResultComponent
       ],
       providers: [
-      { provide: XHRBackend, useClass: MockBackend },
-      {
-        provide: Store,
-        useClass: class {
-          dispatch = jasmine.createSpy('dispatch');
-          select = jasmine.createSpy('select')
-            .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: getMockedQuestions(1) }));
+        LanguageService,
+        { provide: XHRBackend, useClass: MockBackend },
+        {
+          provide: Store,
+          useClass: class {
+            dispatch = jasmine.createSpy('dispatch');
+            select = jasmine.createSpy('select')
+              .and.callFake(() => Observable.of({ pageNumber: 1, pickedQuestions: getMockedQuestions(1) }));
+          }
         }
-      } ]
+      ]
     });
     TestBed.compileComponents();
   }));

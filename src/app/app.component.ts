@@ -7,6 +7,7 @@ import * as pages from './actions/pages';
 import * as questions from './actions/questions';
 import { Subscription } from 'rxjs/Subscription';
 import { Question } from './questions/questions.model';
+import { LanguageService } from './language.service';
 
 @Component({
   selector: 'olx-root',
@@ -17,23 +18,23 @@ import { Question } from './questions/questions.model';
 export class AppComponent implements OnInit, OnDestroy {
 
   progress: Observable<number>;
-  selectedLanguage = 'sv';
 
   subscriptions: Subscription[] = [];
 
   constructor(
     private store: Store<fromRoot.State>,
-    private http: Http
+    private http: Http,
+    private languageService: LanguageService
   ) { }
 
   ngOnInit() {
-    this.selectedLanguage = document.location.pathname.split('/')[1];
+    const selectedLanguage = this.languageService.getLanguage();
     this.subscriptions.push(this.http.get('assets/questions.json')
       .map(data => data.json())
       .map((loadedQ: Question[]) => {
         loadedQ.forEach(q => {
-          q.text = this.selectedLanguage === 'sv' ? q.sv : q.fi;
-          q.choices.forEach(o => o.text = this.selectedLanguage === 'sv' ? o.sv : o.fi);
+          q.text = q[selectedLanguage];
+          q.choices.forEach(o => o.text = o[selectedLanguage]);
         });
         return loadedQ;
       })

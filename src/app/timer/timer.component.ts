@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'olx-timer',
@@ -25,7 +26,8 @@ export class TimerComponent implements OnInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private store: Store<fromRoot.State>
+    private store: Store<fromRoot.State>,
+    private languageService: LanguageService
   ) { }
 
   ngOnInit() {
@@ -41,7 +43,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   timer() {
     this.secondsLeft--;
     if (this.secondsLeft === 0) {
-      const timeHasRunOutText = this.selectedLanguage === 'sv' ? 'SV_Aika loppui' : 'Aika loppui';
+      const timeHasRunOutText = this.languageService.getLanguage() === 'sv' ? 'SV_Aika loppui' : 'Aika loppui';
       alert(timeHasRunOutText);
       this.subscription.unsubscribe();
       this.toResultPage();

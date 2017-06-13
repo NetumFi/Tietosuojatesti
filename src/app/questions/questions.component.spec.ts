@@ -13,6 +13,7 @@ import { Store } from '@ngrx/store';
 import 'rxjs/add/observable/of';
 import { getMockedQuestions } from '../testhelper';
 import { By } from '@angular/platform-browser';
+import { LanguageService } from '../language.service';
 
 
 describe('QuestionsComponent', () => {
@@ -24,6 +25,7 @@ describe('QuestionsComponent', () => {
       imports: [ RouterTestingModule, FormsModule ],
       declarations: [ QuestionsComponent, TimerComponent, TimePipe, QuestionComponent ],
       providers: [
+        LanguageService,
         {
           provide: ActivatedRoute, useValue: { 'params': Observable.from([{ 'question-number': 1 }]) }
         },
@@ -33,7 +35,6 @@ describe('QuestionsComponent', () => {
             select = jasmine.createSpy('select').and.callFake(() => Observable.of( { pickedQuestions: getMockedQuestions(1) } ));
           }
         }
-
       ]
     })
     .compileComponents();

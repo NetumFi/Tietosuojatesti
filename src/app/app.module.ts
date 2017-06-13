@@ -19,6 +19,9 @@ import { reducer } from './reducers';
 import { CertificateComponent } from './certificate/certificate.component';
 import { ShareButtonsModule } from 'ng2-sharebuttons';
 import { AppRoutingModule } from './app-routing.module';
+import { FrontPageComponent } from './front-page/front-page.component';
+import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { LanguageService } from './language.service';
 
 
 @NgModule({
@@ -31,7 +34,12 @@ import { AppRoutingModule } from './app-routing.module';
     ResultComponent,
     TimerComponent,
     QuestionComponent,
-    CertificateComponent
+    CertificateComponent,
+    FrontPageComponent,
+    HeaderBarComponent
+  ],
+  providers: [
+    LanguageService
   ],
   imports: [
     BrowserModule,
