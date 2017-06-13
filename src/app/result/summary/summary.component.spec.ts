@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { SummaryComponent } from './summary.component';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
+import { LanguageService } from '../../language.service';
 
 // FIXME: duplicate to result component test. Extract
 class MockStore {
@@ -24,8 +25,9 @@ describe('SummaryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SummaryComponent ],
+      declarations: [SummaryComponent ],
       providers: [
+        LanguageService,
         {
           provide: Store,
           useValue: new MockStore()

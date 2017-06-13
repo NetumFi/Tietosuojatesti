@@ -9,6 +9,7 @@ import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
 import * as user from '../actions/user';
+import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { QuestionComponent } from '../question/question.component';
 import { Subscription } from 'rxjs/Subscription';
@@ -64,9 +65,12 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
+    // FIXME do the calculation as part of questions.AnsweredAction
     this.subscription = this.question
       .map(question => calculateUserPoints(question, this.questionComponent.answers))
       .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)));
+
+    this.store.dispatch(new questions.AnsweredAction(this.index, this.questionComponent.answers));
 
     if (this.hasNextQuestion) {
       this.router.navigate(['/quiz/kysymykset', this.index + 2]);

@@ -1,5 +1,5 @@
 import * as fromQuestions from './questions';
-import { InitializedAction, LoadedAction } from '../actions/questions';
+import { AnsweredAction, InitializedAction, LoadedAction } from '../actions/questions';
 import { getMockedQuestions } from '../testhelper';
 
 describe('reducer: questionsReducer', () => {
@@ -7,6 +7,7 @@ describe('reducer: questionsReducer', () => {
     const originalState = {
       allQuestions: [],
       pickedQuestions: [],
+      answers: [],
       maxPoints: 0
     };
 
@@ -15,6 +16,7 @@ describe('reducer: questionsReducer', () => {
     expect(fromQuestions.reducer(originalState, new LoadedAction(payload))).toEqual({
       allQuestions: payload,
       pickedQuestions: [],
+      answers: [],
       maxPoints: 0
     });
   });
@@ -23,6 +25,7 @@ describe('reducer: questionsReducer', () => {
     const originalState = {
       allQuestions: getMockedQuestions(50),
       pickedQuestions: [],
+      answers: [],
       maxPoints: 0
     };
     const stateAfter: fromQuestions.State = fromQuestions.reducer(originalState, new InitializedAction());
@@ -34,5 +37,23 @@ describe('reducer: questionsReducer', () => {
     stateAfter.pickedQuestions.forEach(pick =>
       expect(stateAfter.pickedQuestions.filter(question => question.id === pick.id).length).toEqual(1));
     expect(stateAfter.maxPoints).toEqual(10); // every mocked question has one correct option
+  });
+
+  it('should add answers', () => {
+    const originalState = {
+      allQuestions: [],
+      pickedQuestions: getMockedQuestions(1),
+      answers: [],
+      maxPoints: 0
+    };
+
+    const action = new AnsweredAction(0, [
+      { optionId: '1', checked: true },
+      { optionId: '2', checked: false },
+    ]);
+
+    const state = fromQuestions.reducer(originalState, action);
+
+    expect(state.answers.length).toBe(1);
   });
 });

@@ -1,3 +1,9 @@
-<p>
-  summary works!
-</p>
+<div>
+  Väärin vastatut kysymykset:
+</div>
+
+<div *ngIf="failedQuestions | async as failedQuestions">
+  <div *ngFor="let failedQuestion of failedQuestions; let i = index">
+    <div>{{ i }}: {{ failedQuestion.question }}<div>
+  </div>
+</div>

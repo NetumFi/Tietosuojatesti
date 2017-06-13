@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../../reducers';
+import { Observable } from 'rxjs/Observable';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'olx-summary',
@@ -9,7 +11,25 @@ import * as fromRoot from '../../reducers';
 })
 export class SummaryComponent implements OnInit {
 
-  constructor(private store: Store<fromRoot.State>) { }
+  failedQuestions: Observable<any[]>;
+
+  constructor(
+    private store: Store<fromRoot.State>,
+    private languageService: LanguageService
+  ) {
+    this.failedQuestions = store.select(fromRoot.getQuestionsState)
+      .map(questionState => {
+        const failedQuestions = [];
+        if (questionState.pickedQuestions) {
+          questionState.pickedQuestions.forEach((question, i) => {
+            if (!questionState.answers[i]) {
+              failedQuestions.push({ question: question[languageService.getLanguage()] });
+            }
+          });
+        }
+        return failedQuestions;
+      });
+  }
 
   ngOnInit() {
   }
