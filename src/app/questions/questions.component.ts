@@ -4,6 +4,7 @@ import { Question } from './questions.model';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/take';
 import { calculateUserPoints } from './questionhelper';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
@@ -45,9 +46,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.question = this.route.params
       .switchMap((params: Params) => {
-        const index = +params['question-number'] - 1;
-        this.index = index;
-        this.store.dispatch(new pages.ChangedPageAction({ pageNumber: index + 3 }));
+        this.index = +params['question-number'] - 1;
         return this.questions
           .do(questions => {
             this.hasNextQuestion = this.index < questions.length - 1;
@@ -65,14 +64,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   nextPage() {
-    // FIXME do the calculation as part of questions.AnsweredAction
+    // FIXME do the calculation as part of questions.AnsweredAction (in stead of take 1)
     this.subscription = this.question
+      .take(1)
       .map(question => calculateUserPoints(question, this.questionComponent.answers))
       .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)));
 
     this.store.dispatch(new questions.AnsweredAction(this.index, this.questionComponent.answers));
 
     if (this.hasNextQuestion) {
+      this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 3 }));
       this.router.navigate(['/quiz/kysymykset', this.index + 2]);
     } else {
       this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
