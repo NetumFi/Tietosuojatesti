@@ -43,7 +43,7 @@ export class TimerComponent implements OnInit, OnDestroy {
   timer() {
     this.secondsLeft--;
     if (this.secondsLeft === 0) {
-      const timeHasRunOutText = this.languageService.getLanguage() === 'sv' ? 'SV_Aika loppui' : 'Aika loppui';
+      const timeHasRunOutText = this.languageService.getLanguage() === 'sv' ? 'Tiden tog slut' : 'Aika loppui';
       alert(timeHasRunOutText);
       this.subscription.unsubscribe();
       this.toResultPage();
