@@ -140,6 +140,46 @@
         <source>Organisaatio:</source>
         <target>Organisaatio:</target>
       </trans-unit>
+      <trans-unit id="ad5ddd75e9071ee24e1b8dcf21c6b4779c242539" datatype="html">
+        <source><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>, <x id="INTERPOLATION_2"/> on suorittanut <x id="INTERPOLATION_3"/> </source>
+        <target><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>, <x id="INTERPOLATION_2"/> on suorittanut <x id="INTERPOLATION_3"/> </target>
+      </trans-unit>
+      <trans-unit id="c2aca3ce21f3e6fdac63cb5e75573e9e95664856" datatype="html">
+        <source>Arjen tietosuojakoulutuksen testin pistemäärällä</source>
+        <target>Arjen tietosuojakoulutuksen testin pistemäärällä</target>
+      </trans-unit>
+      <trans-unit id="33bf4b75222b04a22e4d190ea7730016d3d1f87f" datatype="html">
+        <source>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</source>
+        <target>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</target>
+      </trans-unit>
+      <trans-unit id="47e187136609e363092d9a2c8e92510144183b5a" datatype="html">
+        <source>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</source>
+        <target>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</target>
+      </trans-unit>
+      <trans-unit id="cca7621f5f07a0fc3b6d5fe11d9488a0f472a4c8" datatype="html">
+        <source>Helsingissä, <x id="INTERPOLATION"/></source>
+        <target>Helsingissä, <x id="INTERPOLATION"/></target>
+      </trans-unit>
+      <trans-unit id="4a45fc6ad0b2a5077301d4708b210f902fb35d2e" datatype="html">
+        <source>JUHTA asiantuntijaryhmän pj.</source>
+        <target>JUHTA asiantuntijaryhmän pj.</target>
+      </trans-unit>
+      <trans-unit id="650c1e765d83cd24d71a34fbfec36fd30e5f903d" datatype="html">
+        <source>VAHTI-pääsihteeri</source>
+        <target>VAHTI-pääsihteeri</target>
+      </trans-unit>
+      <trans-unit id="3b16f752c9a6878a08defe210ea554e5ffc88d0a" datatype="html">
+        <source>Kuntaliitto</source>
+        <target>Kuntaliitto</target>
+      </trans-unit>
+      <trans-unit id="760e09adc49ee2c2cac3a72345a27d11959c3c8f" datatype="html">
+        <source>Valtionvarainministeriö</source>
+        <target>Valtionvarainministeriö</target>
+      </trans-unit>
+      <trans-unit id="744ac5344b7b7c6f541f779609f310e694a8e9d0" datatype="html">
+        <source>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</source>
+        <target>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
