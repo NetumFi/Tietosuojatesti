@@ -180,6 +180,10 @@
         <source>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</source>
         <target>De gemensamma projekten genomförs förutom av JUHTA sakkunniggruppen av</target>
       </trans-unit>
+      <trans-unit id="1d21549ed75ba1932dc42fe87384b09f270955c5" datatype="html">
+        <source>Seuraavissa kysymyksissä oli vääriä vastauksia:</source>
+        <target>De följande frågorna hade fel svar:</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
