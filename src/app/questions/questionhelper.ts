@@ -13,7 +13,6 @@ export function calculateUserPoints(question: Question, answers: Answer[]) {
     .filter(option => answers.some(answer => answer.optionId === option.id && answer.checked))
     .map(option => option.correct ? 1 : -1)
     .reduce((sum, current) => sum + current, 0);
-  alert(points < 0);
   return points < 0 ? 0 : points;
 }
 
