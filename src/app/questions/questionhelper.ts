@@ -3,15 +3,18 @@ import { Answer, Option, Question } from './questions.model';
 export function calculateMaxPoints(questions: Question[]) {
   let total = 0;
   questions.forEach(question => total += question.choices
-    .map((option: Option) => !option.correct ? 0 : 1)
+    .map((option: Option) => option.correct ? 1 : 0)
     .reduce((sum, current) => sum + current, 0));
   return total;
 }
 
 export function calculateUserPoints(question: Question, answers: Answer[]) {
-  return question.choices
-    .filter((option: Option) => answers.some((answer: Answer) => answer.optionId === option.id && answer.checked))
-    .map((option: Option) => !option.correct ? -1 : 1).reduce((sum, current) => sum + current, 0);
+  const points = question.choices
+    .filter(option => answers.some(answer => answer.optionId === option.id && answer.checked))
+    .map(option => option.correct ? 1 : -1)
+    .reduce((sum, current) => sum + current, 0);
+  alert(points < 0);
+  return points < 0 ? 0 : points;
 }
 
 export function areAnswersCorrect(question: Question, answers: Answer[]) {
