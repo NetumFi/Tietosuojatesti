@@ -91,7 +91,7 @@ describe('calculateUserPoints', () => {
     expect(calculateUserPoints(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBe(1);
   });
 
-  it('should add -1 points for incorrect answer', () => {
+  it('should substract a point for incorrect answer', () => {
     const questionWithOnlyIncorrectOptions = {
       id: 'q1',
       index: 1,
@@ -103,12 +103,21 @@ describe('calculateUserPoints', () => {
           fi: 'Option 1',
           sv: 'Option 1',
           correct: false
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
         }
       ]
     };
-    const onlyIncorrectAnswers = [{ optionId: '001', checked: true, text: '' }];
+    const onlyIncorrectAnswers = [
+      { optionId: '001', checked: true},
+      { optionId: '002', checked: true}
+      ];
 
-    expect(calculateUserPoints(questionWithOnlyIncorrectOptions, onlyIncorrectAnswers)).toBe(-1);
+    expect(calculateUserPoints(questionWithOnlyIncorrectOptions, onlyIncorrectAnswers)).toBe(0);
   });
 
   it('should add no points for answer irrelevant to the question', () => {
@@ -149,6 +158,35 @@ describe('calculateUserPoints', () => {
     const noAnswers = [];
 
     expect(calculateUserPoints(questionWithOnlyCorrectOptions, noAnswers)).toBe(0);
+  });
+
+  it('should not return a negative amount of points for a question', () => {
+    const questionWithOneCorrectAndOneIncorrectAnswer = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2´',
+          sv: 'Option 2',
+          correct: false
+        }
+      ]
+    };
+    const incorrectAnswer = [
+      { optionId: '001', checked: false },
+      { optionId: '002', checked: true }
+      ];
+
+    expect(calculateUserPoints(questionWithOneCorrectAndOneIncorrectAnswer, incorrectAnswer)).toBe(0);
   });
 });
 
