@@ -184,6 +184,64 @@
         <source>Seuraavissa kysymyksissä oli vääriä vastauksia:</source>
         <target>Seuraavissa kysymyksissä oli vääriä vastauksia:</target>
       </trans-unit>
+      <trans-unit id="1d92466b6769fc6111332d7cd2327f22ad7877ea" datatype="html">
+        <source>Arjen tietosuojaa videokoulutukset ja nettitestit</source>
+        <target>Arjen tietosuojaa videokoulutukset ja nettitestit</target>
+      </trans-unit>
+      <trans-unit id="00b0ad41c2104f1c444855defadeaa49da5ab869" datatype="html">
+        <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</source>
+        <target>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</target>
+      </trans-unit>
+      <trans-unit id="7c2c59e38e17e5d107c273d6869f73bf5c30d504" datatype="html">
+        <source>Avoimena olevat koulutukset ja nettitestit:</source>
+        <target>Avoimena olevat koulutukset ja nettitestit:</target>
+      </trans-unit>
+      <trans-unit id="1b38faf1d8cbecce2140efd64e3541336b6e6064" datatype="html">
+        <source>20.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</source>
+        <target>20.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</target>
+      </trans-unit>
+      <trans-unit id="56d13db66b84c59371544d7b17725545c34b9c91" datatype="html">
+        <source>Suomenkielinen video (linkki)	         - julkaistu 20.6</source>
+        <target>Suomenkielinen video (linkki)	         - julkaistu 20.6</target>
+      </trans-unit>
+      <trans-unit id="f4d6b010c79c32da2ed8a3e67627dd461475795d" datatype="html">
+        <source><x id="START_LINK" ctype="x-a"/>Nettitesti<x id="CLOSE_LINK" ctype="x-a"/>    - julkaistu 20.6.</source>
+        <target><x id="START_LINK" ctype="x-a"/>Nettitesti<x id="CLOSE_LINK" ctype="x-a"/>    - julkaistu 20.6.</target>
+      </trans-unit>
+      <trans-unit id="9d64a690a2d1eae9b4831534ff39e3c28694a904" datatype="html">
+        <source>Suomeksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</source>
+        <target>Suomeksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</target>
+      </trans-unit>
+      <trans-unit id="8509046fb91ac1589fd05d34fbf607977d65952b" datatype="html">
+        <source>Ruotsiksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</source>
+        <target>Ruotsiksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</target>
+      </trans-unit>
+      <trans-unit id="673ca9c75406890fdc9f92366d1bba529fe2a2dd" datatype="html">
+        <source>Englanniksi tekstitetty video (linkki)	 - julkaistaan heinäkuun aikana</source>
+        <target>Englanniksi tekstitetty video (linkki)	 - julkaistaan heinäkuun aikana</target>
+      </trans-unit>
+      <trans-unit id="cd19d1c7eeb5bacd3e829455401f1433fa4a358a" datatype="html">
+        <source>Lisämateriaalia suomeksi (linkki)       - julkaistaan heinäkuun aikana</source>
+        <target>Lisämateriaalia suomeksi (linkki)       - julkaistaan heinäkuun aikana</target>
+      </trans-unit>
+      <trans-unit id="d7f04c021b465938bd37c11afb31fe58fdccda7f" datatype="html">
+        <source>Lisämateriaalia ruotsiksi (linkki)      - julkaistaan heinäkuun aikana</source>
+        <target>Lisämateriaalia ruotsiksi (linkki)      - julkaistaan heinäkuun aikana</target>
+      </trans-unit>
+      <trans-unit id="67358eddaab47bc3c628c249e52d7faee0cdb873" datatype="html">
+        <source>Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.</source>
+        <target>Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.</target>
+      </trans-unit>
+      <trans-unit id="ef0f4edf056bed60233570cb40b1e28c6fbd11b5" datatype="html">
+        <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) asettama asiantuntijaryhmä julkaisee vuoden 2017 aikana tietosuojaa ja tietoturvallisuutta edistäviä videokoulutuksia ja nettitestejä. Koulutusten toteuttamisessa ovat mukana lisäksi</source>
+        <target>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) asettama asiantuntijaryhmä julkaisee vuoden 2017 aikana tietosuojaa ja tietoturvallisuutta edistäviä videokoulutuksia ja nettitestejä. Koulutusten toteuttamisessa ovat mukana lisäksi</target>
+      </trans-unit>
+      <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
+        <source>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></source>
+        <target>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
