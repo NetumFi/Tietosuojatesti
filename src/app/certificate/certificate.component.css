@@ -2,3 +2,9 @@
   visibility: hidden;
   display: none;
 }
+
+@media print {
+  #certificate {
+    margin: 0;
+  }
+}
