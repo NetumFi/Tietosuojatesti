@@ -305,5 +305,63 @@ describe('areAnswersCorrect', () => {
     expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeTruthy();
   });
 
+  it('It should return false for only one correct answer checked (all answers correct)', () => {
+    const questionWithOnlyCorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: true
+        }
+      ]
+    };
+    const onlyCorrectAnswers = [{ optionId: '001', checked: true }, { optionId: '002', checked: false }];
+
+    expect(areAnswersCorrect(questionWithOnlyCorrectOptions, onlyCorrectAnswers)).toBeFalsy();
+  });
+
+  it('It should return false for all correct and incorrect answers checked', () => {
+    const questionWithTwoCorrectOneIncorrectOptions = {
+      id: 'q1',
+      index: 1,
+      fi: 'Question 1',
+      sv: 'Question 1',
+      choices: [
+        {
+          id: '001',
+          fi: 'Option 1',
+          sv: 'Option 1',
+          correct: true
+        },
+        {
+          id: '002',
+          fi: 'Option 2',
+          sv: 'Option 2',
+          correct: false
+        },
+        {
+          id: '003',
+          fi: 'Option 3',
+          sv: 'Option 3',
+          correct: true
+        }
+      ]
+    };
+    const allChecked = [{ optionId: '001', checked: true }, { optionId: '002', checked: true }, { optionId: '003', checked: true }];
+
+    expect(areAnswersCorrect(questionWithTwoCorrectOneIncorrectOptions, allChecked)).toBeFalsy();
+  });
+
 });
 

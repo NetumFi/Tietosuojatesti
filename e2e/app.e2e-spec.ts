@@ -9,6 +9,6 @@ describe('olx App', function() {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toContain('JUHTA');
+    expect(page.getParagraphText()).toContain('Arjen tietosuojaa');
   });
 });

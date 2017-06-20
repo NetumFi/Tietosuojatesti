@@ -18,9 +18,8 @@ export function calculateUserPoints(question: Question, answers: Answer[]) {
 
 export function areAnswersCorrect(question: Question, answers: Answer[]) {
   return question.choices
-    .filter(option => answers.some(answer => answer.optionId === option.id && answer.checked))
-    .map(option => !option.correct)
-    .length !== 0;
+    .filter(option => answers.some(answer => answer.optionId === option.id && answer.checked !== option.correct))
+    .length === 0;
 }
 
 export function pickQuestions(questions: Question[], amount): Question[] {
