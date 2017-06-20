@@ -6,6 +6,6 @@ export class OlxPage {
   }
 
   getParagraphText() {
-    return element(by.css('olx-root h3')).getText();
+    return element(by.css('olx-root h1')).getText();
   }
 }
