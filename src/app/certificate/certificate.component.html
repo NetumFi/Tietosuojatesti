@@ -1,31 +1,38 @@
-<div class="">
-  <button (click)="print('certificate')"><i class="fa fa-print"></i></button>
-  <button shareButton="linkedin"
+<div style="margin-top: 20px">
+  <div class="no-gutters row">
+    <button (click)="print('certificate')" class="mb-2" style="padding: 2px 5px 2px">
+      <i class="fa fa-print"></i>
+    </button>
+  </div>
+    <button shareButton="linkedin" class="mr-1"
           sbUrl="http://tietosuojatesti.herokuapp.com/fi"
           sbTitle="JUHTA tietosuojatesti">
-    <i class="fa fa-linkedin-square"></i>
-  </button>
-  <button shareButton="twitter"
+      <i class="fa fa-linkedin-square"></i>
+    </button>
+
+    <button shareButton="twitter" class="mr-1"
           sbUrl="http://tietosuojatesti.herokuapp.com/fi"
           sbTitle="JUHTA tietosuojatesti #tuki2018 #stöd2018"
           sbTags="#tuki2018 #stöd2018">
-    <i class="fa fa-twitter-square"></i></button>
-  <button shareButton="facebook"
+      <i class="fa fa-twitter-square"></i>
+    </button>
+
+    <button shareButton="facebook" class="mr-1"
           sbUrl="http://tietosuojatesti.herokuapp.com/fi"
           sbTitle="JUHTA tietosuojatesti"
           sbDescription="#tuki2018 #stöd2018"
           sbImage="http://tietosuojatesti.herokuapp.com/fi/assets/images/JUHTAlogo_5.png">
-    <i class="fa fa-facebook-square"></i></button>
+      <i class="fa fa-facebook-square"></i>
+    </button>
 </div>
 
 <div id="certificate">
   <div class="navbar-brand">
-    <img src="/fi/assets/images/JUHTAlogo_5.png" width="150" height="150" alt="" align="left">
     <img src="/fi/assets/images/JUHTApallot.png" height="150" alt="" align="right">
   </div>
   <div style="clear: both;"></div>
 
-  <div style="margin: 50px 50px 50px 50px;">
+  <div style="margin: 50px 50px 20px 50px;">
     <div style="text-align: center;">
       <h1 style="color: #316CAE" i18n>TODISTUS</h1>
 
@@ -46,8 +53,8 @@
 
     <p i18n>Helsingissä, {{date | date:'d.M.yyyy'}}</p>
 
-    <div style="height: 100px"></div>
 
+    <div style="min-height: 50px"></div>
     <table>
       <tr>
         <td style="min-width: 300px">Tuula Seppo</td>

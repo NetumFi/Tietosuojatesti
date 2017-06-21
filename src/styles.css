@@ -17,9 +17,6 @@
 }
 
 body {
-  background: url(/fi/assets/images/JUHTApallot.png) no-repeat 80% top;
-  background-size: 10%;
-
   font-family: "FranklinGothic", Helvetica, Arial, sans-serif;
 }
 
@@ -29,4 +26,9 @@ body {
 
 .olx-heading {
   color: #316CAE;
+}
+@media print {
+  body {
+    margin: 0;
+  }
 }
