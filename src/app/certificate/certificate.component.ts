@@ -26,15 +26,9 @@ export class CertificateComponent implements OnInit {
   }
 
   print(printSectionId: string) {
-    const innerContents = document.getElementById(printSectionId).innerHTML;
-    const popupWindow = window
-      .open('', '_blank', 'scrollbars=no,menubar=no,toolbar=no,location=no,status=no,titlebar=no');
-    popupWindow.document.open();
-    popupWindow.document
-      .write('<html><head><link rel="stylesheet" type="text/css" href="styles.css" /></head><body onload="window.print()">'
-        + innerContents
-        + '</html>');
-    popupWindow.document.close();
+
+    window.print();
+
   }
 
 }

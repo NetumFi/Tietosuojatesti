@@ -1,10 +1,29 @@
 #certificate {
-  visibility: hidden;
   display: none;
 }
 
+
+.myclass {
+  background-color: #316CAE;
+}
+
+h1 {
+  color: #316CAE;
+}
+
+
+h1::first-letter {
+  margin-top: 0;
+}
+h2 {
+  color: #316CAE;
+}
+
 @media print {
+
+
   #certificate {
+    display: block;
     margin: 0;
   }
 }

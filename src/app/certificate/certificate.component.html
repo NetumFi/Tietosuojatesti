@@ -1,42 +1,43 @@
-<div style="margin-top: 20px">
-  <div class="no-gutters row">
-    <button (click)="print('certificate')" class="mb-2" style="padding: 2px 5px 2px">
-      <i class="fa fa-print"></i>
-    </button>
+<div class="hidden-print">
+  <div style="margin-top: 20px">
+    <div class="no-gutters row">
+      <button (click)="print('certificate')" class="mb-2" style="padding: 2px 5px 2px">
+        <i class="fa fa-print"></i>
+      </button>
+    </div>
+      <button shareButton="linkedin" class="mr-1"
+            sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+            sbTitle="JUHTA tietosuojatesti">
+        <i class="fa fa-linkedin-square"></i>
+      </button>
+
+      <button shareButton="twitter" class="mr-1"
+            sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+            sbTitle="JUHTA tietosuojatesti #tuki2018 #stöd2018"
+            sbTags="#tuki2018 #stöd2018">
+        <i class="fa fa-twitter-square"></i>
+      </button>
+
+      <button shareButton="facebook" class="mr-1"
+            sbUrl="http://tietosuojatesti.herokuapp.com/fi"
+            sbTitle="JUHTA tietosuojatesti"
+            sbDescription="#tuki2018 #stöd2018"
+            sbImage="http://tietosuojatesti.herokuapp.com/fi/assets/images/JUHTAlogo_5.png">
+        <i class="fa fa-facebook-square"></i>
+      </button>
   </div>
-    <button shareButton="linkedin" class="mr-1"
-          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
-          sbTitle="JUHTA tietosuojatesti">
-      <i class="fa fa-linkedin-square"></i>
-    </button>
-
-    <button shareButton="twitter" class="mr-1"
-          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
-          sbTitle="JUHTA tietosuojatesti #tuki2018 #stöd2018"
-          sbTags="#tuki2018 #stöd2018">
-      <i class="fa fa-twitter-square"></i>
-    </button>
-
-    <button shareButton="facebook" class="mr-1"
-          sbUrl="http://tietosuojatesti.herokuapp.com/fi"
-          sbTitle="JUHTA tietosuojatesti"
-          sbDescription="#tuki2018 #stöd2018"
-          sbImage="http://tietosuojatesti.herokuapp.com/fi/assets/images/JUHTAlogo_5.png">
-      <i class="fa fa-facebook-square"></i>
-    </button>
 </div>
-
-<div id="certificate">
+<div id="certificate" class="visible-print-block">
   <div class="navbar-brand">
-    <img src="/fi/assets/images/JUHTApallot.png" height="150" alt="" align="right">
+    <img src="/fi/assets/images/JUHTApallot.png" height="50" alt="" align="right">
   </div>
   <div style="clear: both;"></div>
 
   <div style="margin: 50px 50px 20px 50px;">
-    <div style="text-align: center;">
-      <h1 style="color: #316CAE" i18n>TODISTUS</h1>
+    <div class="text-center">
+      <h1 i18n>TODISTUS</h1>
 
-      <h2 style="color: #316CAE" i18n>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</h2>
+      <h2 i18n>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</h2>
 
       <p i18n>{{user.title}} {{user.name}}, {{user.organization}} on suorittanut {{date | date:'d.M.yyyy'}} </p>
 
