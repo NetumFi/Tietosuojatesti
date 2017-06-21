@@ -3,7 +3,7 @@
     <div id="content" class="row">
       <div class="col-1"></div>
       <div class="col-10">
-          <div class="progress">
+          <div class="progress hidden-print">
             <div class="progress-bar progress-bar-success" role="progressbar" [attr.aria-valuenow]="progress | async" aria-valuemin="0" aria-valuemax ="100"
                  style="min-width: 2em;" [style.width]="((progress | async)) + '%'">
             </div>
