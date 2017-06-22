@@ -96,9 +96,9 @@
         <source>Sulje testi</source>
         <target>Sulje testi</target>
       </trans-unit>
-      <trans-unit id="68f75085e8aa2feced4c5b680cdaf66ecd771733" datatype="html">
-        <source>Aika jäljellä: <x id="INTERPOLATION"/></source>
-        <target>Aika jäljellä: <x id="INTERPOLATION"/></target>
+      <trans-unit id="17184ff047b19b92e058c32d58e03f798316a950" datatype="html">
+        <source>Aikaa jäljellä: <x id="INTERPOLATION"/></source>
+        <target>Aikaa jäljellä: <x id="INTERPOLATION"/></target>
       </trans-unit>
       <trans-unit id="e4aebeb6656fe6c10097ac42e4e1e8c8438579ca" datatype="html">
         <source>Tulosta</source>
