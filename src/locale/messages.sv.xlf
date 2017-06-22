@@ -50,18 +50,6 @@
         <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
         <target><x id="START_TAG_STRONG" ctype="x-strong"/>Svarsanvisningar<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
       </trans-unit>
-      <trans-unit id="9f603eebd8cfb5200100b6631b07a7fef2cc445a" datatype="html">
-        <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi ”Arjen tietosuoja” –videoon (linkki videoon). Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-        </source>
-        <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Du kommer att få 10 frågor om videon ”Informationsskydd i vardagen” som du sett (länk till videon). Välj rätt det svarsalternativ som du tycker är rätt, ett alternativ är alltid rätt men den kan även finnas flera.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Du får ett testresultat efter att du besvarat alla tio frågor. Ifall ditt resultat är tillräckligt bra får du en möjlighet att skriva ut ett intyg om att du klarat testen och att spara den på din egen dator. Ifall din organisation gett dig tilläggsinformation om avklarandet av testen ska du agera enligt de anvisningar du fått.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Om du inte klarar testen så kan du studera lite till och göra testen på nytt. Du har 10 minuter på dig att besvara testen.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-        </target>
-      </trans-unit>
       <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
         <source>Jatka testiin painamalla Seuraava.</source>
         <target>Fortsätt till testen genom att klicka på Följande</target>
@@ -172,8 +160,8 @@
         <source>Kuntaliitto</source>
         <target>Kommunförbundet</target>
       </trans-unit>
-      <trans-unit id="760e09adc49ee2c2cac3a72345a27d11959c3c8f" datatype="html">
-        <source>Valtionvarainministeriö</source>
+      <trans-unit id="8b284794fa23389de3460cf39e40d03cdc8875ef" datatype="html">
+        <source>Valtiovarainministeriö</source>
         <target>Finansministeriet</target>
       </trans-unit>
       <trans-unit id="744ac5344b7b7c6f541f779609f310e694a8e9d0" datatype="html">
@@ -196,40 +184,6 @@
         <source>Avoimena olevat koulutukset ja nettitestit:</source>
         <target>Tillgängliga utbildningar och webbtester:</target>
       </trans-unit>
-      <trans-unit id="1b38faf1d8cbecce2140efd64e3541336b6e6064" datatype="html">
-        <source>20.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</source>
-        <target>20.6. Dataskydd i vardagen - dataskydd åt alla<x id="LINE_BREAK" ctype="lb"/>
-          Målgrupp: samtliga anställda inom organisationen och medborgarna</target>
-      </trans-unit>
-      <trans-unit id="56d13db66b84c59371544d7b17725545c34b9c91" datatype="html">
-        <source>Suomenkielinen video (linkki)	         - julkaistu 20.6</source>
-        <target>Video på finska (länk)	         - publicerad 20.6.</target>
-      </trans-unit>
-      <trans-unit id="f4d6b010c79c32da2ed8a3e67627dd461475795d" datatype="html">
-        <source><x id="START_LINK" ctype="x-a"/>Nettitesti<x id="CLOSE_LINK" ctype="x-a"/>    - julkaistu 20.6.</source>
-        <target><x id="START_LINK" ctype="x-a"/>Webbtest<x id="CLOSE_LINK" ctype="x-a"/>    - publicerad 20.6.</target>
-      </trans-unit>
-      <trans-unit id="9d64a690a2d1eae9b4831534ff39e3c28694a904" datatype="html">
-        <source>Suomeksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</source>
-        <target>Video med finsk textning (länk) 	   - publiceras i juli</target>
-      </trans-unit>
-      <trans-unit id="8509046fb91ac1589fd05d34fbf607977d65952b" datatype="html">
-        <source>Ruotsiksi tekstitetty video (linkki)	   - julkaistaan heinäkuun aikana</source>
-        <target>Video med svensk textning (länk)	   - publiceras i juli</target>
-      </trans-unit>
-      <trans-unit id="673ca9c75406890fdc9f92366d1bba529fe2a2dd" datatype="html">
-        <source>Englanniksi tekstitetty video (linkki)	 - julkaistaan heinäkuun aikana</source>
-        <target>Video med engelsk textning (länk) 	 - publiceras i juli</target>
-      </trans-unit>
-      <trans-unit id="cd19d1c7eeb5bacd3e829455401f1433fa4a358a" datatype="html">
-        <source>Lisämateriaalia suomeksi (linkki)       - julkaistaan heinäkuun aikana</source>
-        <target>Tilläggsmaterial på finska (länk)        - publiceras i juli</target>
-      </trans-unit>
-      <trans-unit id="d7f04c021b465938bd37c11afb31fe58fdccda7f" datatype="html">
-        <source>Lisämateriaalia ruotsiksi (linkki)      - julkaistaan heinäkuun aikana</source>
-        <target>Tilläggsmaterial på svenska (länk)       - publiceras i juli</target>
-      </trans-unit>
       <trans-unit id="67358eddaab47bc3c628c249e52d7faee0cdb873" datatype="html">
         <source>Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.</source>
         <target>Ytterligare videon, läromedel och webbsidor publiceras under årets gång.</target>
@@ -241,6 +195,64 @@
       <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
         <source>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></source>
         <target>Respons: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></target>
+      </trans-unit>
+      <trans-unit id="dd51f7dc8cded7909e2c7c2bcac8e7f12dd33a68" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon<x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Du kommer att få 10 frågor om <x id="START_LINK" ctype="x-a"/>videon ”Informationsskydd i vardagen”<x id="CLOSE_LINK" ctype="x-a"/> som du sett. Välj rätt det svarsalternativ som du tycker är rätt, ett alternativ är alltid rätt men den kan även finnas flera.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Du får ett testresultat efter att du besvarat alla tio frågor. Ifall ditt resultat är åtminstone 75% får du en möjlighet att skriva ut ett intyg om att du klarat testen och att spara den på din egen dator. Ifall din organisation gett dig tilläggsinformation om avklarandet av testen ska du agera enligt de anvisningar du fått.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Om du inte klarar testen så kan du studera lite till och göra testen på nytt. Du har 10 minuter på dig att besvara testen.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="042c0277b8dc01415b6b10a9b9d02794e5df819c" datatype="html">
+        <source>22.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</source>
+        <target>22.6. Dataskydd i vardagen - dataskydd åt alla<x id="LINE_BREAK" ctype="lb"/>
+          Målgrupp: samtliga anställda inom organisationen och medborgarna</target>
+      </trans-unit>
+      <trans-unit id="e481530dc8c3d22be6e62ffa05630a9c09714be2" datatype="html">
+        <source>Suomenkielinen video</source>
+        <target>Video på finska</target>
+      </trans-unit>
+      <trans-unit id="b80b1c23cab3a249054fde10c7206dfa2bc3ed18" datatype="html">
+        <source>julkaistu</source>
+        <target>publicerad</target>
+      </trans-unit>
+      <trans-unit id="970dd4f6d4aa6edbf50f93bd63242b3a727d41ab" datatype="html">
+        <source>Nettitesti</source>
+        <target>Webbtest</target>
+      </trans-unit>
+      <trans-unit id="34ce5f01e213872fb26b53b43348956ab53a6214" datatype="html">
+        <source>julkaistu 22.6. (testiversio)</source>
+        <target>publicerad 22.6. (testversion)</target>
+      </trans-unit>
+      <trans-unit id="5ec377bdbf0392fe4c1e3c9f165cf7b21754f336" datatype="html">
+        <source>Lisämateriaalia suomeksi</source>
+        <target>Tilläggsmaterial på finska</target>
+      </trans-unit>
+      <trans-unit id="e0c6180497d939a99c2d906c2e79abadaeda8f85" datatype="html">
+        <source>julkaistaan heinäkuun aikana</source>
+        <target>publiceras i juli</target>
+      </trans-unit>
+      <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
+        <source>Suomeksi tekstitetty video</source>
+        <target>Video med finsk textning</target>
+      </trans-unit>
+      <trans-unit id="18edeb1f53738fbf60addb4cd50920036a9963a5" datatype="html">
+        <source>Ruotsiksi tekstitetty video</source>
+        <target>Video med svensk textning</target>
+      </trans-unit>
+      <trans-unit id="46282334448a7503193a5ffc754b2c4eb180c07f" datatype="html">
+        <source>Englanniksi tekstitetty video</source>
+        <target>Video med engelsk textning</target>
+      </trans-unit>
+      <trans-unit id="254174f023004c11d74d770f0aa98b0499083104" datatype="html">
+        <source>Lisämateriaalia ruotsiksi</source>
+        <target>Tilläggsmaterial på svenska</target>
       </trans-unit>
     </body>
   </file>
