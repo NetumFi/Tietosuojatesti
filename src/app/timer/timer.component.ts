@@ -56,7 +56,7 @@ export class TimerComponent implements OnInit, OnDestroy {
 
   toResultPage() {
     this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.resultsPageNumber }));
-    this.router.navigate(['/tulokset']);
+    this.router.navigate(['quiz/tulokset']);
   }
 
 }
