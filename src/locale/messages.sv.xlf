@@ -54,7 +54,7 @@
         <source>Jatka testiin painamalla Seuraava.</source>
         <target>Fortsätt till testen genom att klicka på Följande</target>
       </trans-unit>
-      <trans-unit id="2b3b8f04b5ff1362b2a6faa66240bb349466eaa5" datatype="html">
+      <trans-unit id="588b10a14532f52d22c03496a2f2affc4685a011" datatype="html">
         <source>
           Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
           pistettä ja olet läpäissyt testin!
@@ -68,7 +68,7 @@
           upprätthåll din kompetens genom att delta även i annan utbildning som erbjuds dig.
         </target>
       </trans-unit>
-      <trans-unit id="362ef69bc9820c3f8d0924e55c71d4d0e9e1119d" datatype="html">
+      <trans-unit id="021ca2d842d5e9bf7d8f2921afd3c8c115544671" datatype="html">
         <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
         <target>Du kan skriva ut ett intyg om att du klarat testen, och spara det på din egen dator om du vill.</target>
       </trans-unit>

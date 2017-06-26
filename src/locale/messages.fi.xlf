@@ -54,7 +54,7 @@
         <source>Jatka testiin painamalla Seuraava.</source>
         <target>Jatka testiin painamalla Seuraava.</target>
       </trans-unit>
-      <trans-unit id="2b3b8f04b5ff1362b2a6faa66240bb349466eaa5" datatype="html">
+      <trans-unit id="588b10a14532f52d22c03496a2f2affc4685a011" datatype="html">
         <source>
           Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
           pistettä ja olet läpäissyt testin!
@@ -68,7 +68,7 @@
           ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
         </target>
       </trans-unit>
-      <trans-unit id="362ef69bc9820c3f8d0924e55c71d4d0e9e1119d" datatype="html">
+      <trans-unit id="021ca2d842d5e9bf7d8f2921afd3c8c115544671" datatype="html">
         <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
         <target>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
       </trans-unit>
