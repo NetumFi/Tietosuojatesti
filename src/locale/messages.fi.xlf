@@ -254,6 +254,21 @@
         <source>Lisämateriaalia ruotsiksi</source>
         <target>Lisämateriaalia ruotsiksi</target>
       </trans-unit>
+      <trans-unit id="82be20abfe52bde4b1dc4b741a185db022695c37" datatype="html">
+        <source>linkedin-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
+        <note priority="1" from="description">from-linkedin-title</note>
+      </trans-unit>
+      <trans-unit id="0143fb2cfb31866da465a6dfd19e822845fd75de" datatype="html">
+        <source>twitter-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut? #tuki2018 #stöd2018</target>
+        <note priority="1" from="description">from-twitter-title</note>
+      </trans-unit>
+      <trans-unit id="b7a0887b67367ffc33d1234c45589181ae13a864" datatype="html">
+        <source>facebook-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
+        <note priority="1" from="description">from-facebook-title</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
