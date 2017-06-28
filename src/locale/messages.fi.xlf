@@ -254,6 +254,36 @@
         <source>Lisämateriaalia ruotsiksi</source>
         <target>Lisämateriaalia ruotsiksi</target>
       </trans-unit>
+      <trans-unit id="ced07b100a78b0f351e2a4ae7f8deac310a9b257" datatype="html">
+        <source>linkedin-url</source>
+        <target>http://arjentietosuoja.fi/fi</target>
+        <note priority="1" from="description">from-linkedin-url</note>
+      </trans-unit>
+      <trans-unit id="82be20abfe52bde4b1dc4b741a185db022695c37" datatype="html">
+        <source>linkedin-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
+        <note priority="1" from="description">from-linkedin-title</note>
+      </trans-unit>
+      <trans-unit id="50661edfbde3e9795b52271b0ce11a5f9e00af75" datatype="html">
+        <source>twitter-url</source>
+        <target>http://arjentietosuoja.fi/fi</target>
+        <note priority="1" from="description">from-twitter-url</note>
+      </trans-unit>
+      <trans-unit id="0143fb2cfb31866da465a6dfd19e822845fd75de" datatype="html">
+        <source>twitter-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut? #tuki2018 #stöd2018</target>
+        <note priority="1" from="description">from-twitter-title</note>
+      </trans-unit>
+      <trans-unit id="22e9a555dacb2e809cde6c015980f2eec681faec" datatype="html">
+        <source>facebook-url</source>
+        <target>http://arjentietosuoja.fi/fi</target>
+        <note priority="1" from="description">from-facebook-url</note>
+      </trans-unit>
+      <trans-unit id="b7a0887b67367ffc33d1234c45589181ae13a864" datatype="html">
+        <source>facebook-title</source>
+        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
+        <note priority="1" from="description">from-facebook-title</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
