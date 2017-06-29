@@ -284,6 +284,24 @@
         <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
         <note priority="1" from="description">from-facebook-title</note>
       </trans-unit>
+      <trans-unit id="7c9509bdc5f6dbdc310ed173a2266cef54523267" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Ilmoittautuminen JUHTA tietosuojan yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?
+            Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>. Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?
+            Ellet ole, ilmoittaudu <x id="START_LINK_1" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/> niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Ilmoittautuminen JUHTA tietosuojan yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?
+            Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>. Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?
+            Ellet ole, ilmoittaudu <x id="START_LINK_1" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/> niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
