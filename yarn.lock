@@ -3416,10 +3416,6 @@ nested-error-stacks@^1.0.0:
   dependencies:
     inherits "~2.0.1"
 
-ng2-sharebuttons@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/ng2-sharebuttons/-/ng2-sharebuttons-2.1.2.tgz#5fc460b6dbb411699934978411d65fa80f8e8e42"
-
 ngrx-store-freeze@^0.1.9:
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/ngrx-store-freeze/-/ngrx-store-freeze-0.1.9.tgz#b20f18f21fd5efc4e1b1e05f6f279674d0f70c81"
@@ -3431,6 +3427,10 @@ ngx-bootstrap@^1.6.6:
   resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-1.6.6.tgz#0057141cfbdd7e8a50e81bda735fad8e95acb0dd"
   dependencies:
     moment "2.18.1"
+
+ngx-sharebuttons@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-sharebuttons/-/ngx-sharebuttons-3.0.0.tgz#942a7610387523ffc9b78bc3b46868ea035ce0a8"
 
 no-case@^2.2.0:
   version "2.3.1"

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../user/user.model';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'olx-certificate',
@@ -19,16 +20,23 @@ export class CertificateComponent implements OnInit {
 
   date = new Date().toDateString();
 
-  constructor() {
+  text;
+
+  language = 'fi';
+
+  private TEXT_FI = 'Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?';
+  private TEXT_SV = 'Jag tittade på “Dataskydd i vardagen”- utbildningsvideon och klarade webbtesten – du då?';
+
+  constructor(private languageService: LanguageService) {
   }
 
   ngOnInit() {
+    this.language = this.languageService.getLanguage();
+    this.text = encodeURI(this.language === 'sv' ? this.TEXT_SV : this.TEXT_FI);
   }
 
   print(printSectionId: string) {
-
     window.print();
-
   }
 
 }

@@ -264,16 +264,6 @@
         <target state="translated">Jag tittade på “Dataskydd i vardagen”- utbildningsvideon och klarade webbtesten – Har du redan gjort den?</target>
         <note priority="1" from="description">from-linkedin-title</note>
       </trans-unit>
-      <trans-unit id="50661edfbde3e9795b52271b0ce11a5f9e00af75" datatype="html">
-        <source>twitter-url</source>
-        <target>http://arjentietosuoja.fi/sv</target>
-        <note priority="1" from="description">from-twitter-url</note>
-      </trans-unit>
-      <trans-unit id="0143fb2cfb31866da465a6dfd19e822845fd75de" datatype="html">
-        <source>twitter-title</source>
-        <target state="translated">Jag tittade på “Dataskydd i vardagen”- utbildningsvideon och klarade webbtesten – Har du redan gjort den? #tuki2018 #stöd2018</target>
-        <note priority="1" from="description">from-twitter-title</note>
-      </trans-unit>
       <trans-unit id="22e9a555dacb2e809cde6c015980f2eec681faec" datatype="html">
         <source>facebook-url</source>
         <target>http://arjentietosuoja.fi/sv</target>
