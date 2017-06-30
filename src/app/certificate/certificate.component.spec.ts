@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CertificateComponent } from './certificate.component';
-import { ShareButtonDirective, ShareButtonsService } from 'ngx-sharebuttons';
 import { FooterComponent } from '../footer/footer.component';
 import { LanguageService } from '../language.service';
 
@@ -13,15 +12,9 @@ describe('CertificateComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         CertificateComponent,
-        ShareButtonDirective,
         FooterComponent
       ],
-      providers: [
-        LanguageService,
-        { provide: ShareButtonsService, useValue: {
-          validateUrl: function() {}
-        } }
-        ]
+      providers: [LanguageService]
     })
     .compileComponents();
   }));
