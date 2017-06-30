@@ -24,7 +24,7 @@ describe('ResultComponent', () => {
       .and.callFake(() => Observable.of(
         {
           user: {name: 'John Doe', title: 'Reporter', organization: ''},
-          points: this.userPoints,
+          questionPoints: this.userPoints,
           maxPoints: 100
         }
       ));
@@ -33,7 +33,7 @@ describe('ResultComponent', () => {
 
   beforeEach(async(() => {
     mockStore = new MockStore();
-    mockStore.userPoints = 74;
+    mockStore.userPoints = [25, 25, 24];
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ],
       declarations: [
@@ -78,7 +78,7 @@ describe('ResultComponent', () => {
   }));
 
   it('should congratulate the user', fakeAsync(() => {
-    mockStore.userPoints = 75;
+    mockStore.userPoints = [25, 25, 25];
     fixture = TestBed.createComponent(ResultComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

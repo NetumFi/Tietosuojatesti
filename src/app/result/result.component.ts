@@ -34,10 +34,7 @@ export class ResultComponent {
     this.maxPoints = store.select(fromRoot.getQuestionsState).map(state => state.maxPoints);
 
     this.userPoints = store.select(fromRoot.getQuestionsState)
-      .mergeMap(state => state.questionPoints)
-      .reduce( (a, b) =>  a + b)
-      .do(points => console.log('points: ' + points) )
-      .map(points => 145);
+      .map(state => state.questionPoints.reduce((a, b) => a + b, 0));
 
     this.passed = this.userPoints
       .switchMap(userPoints => this.maxPoints.map(maxPoints => this.getPercentage(maxPoints, userPoints)))
