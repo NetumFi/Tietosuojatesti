@@ -20,7 +20,7 @@ import { Subscription } from 'rxjs/Subscription';
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.css']
 })
-export class QuestionsComponent implements OnInit, OnDestroy {
+export class QuestionsComponent implements OnInit {
 
   questions: Observable<Question[]>;
   question: Observable<Question>;
@@ -31,8 +31,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   index;
   hasNextQuestion = false;
   hasPreviousQuestion = false;
-
-  subscription: Subscription;
 
   constructor(
     private route: ActivatedRoute,
@@ -57,19 +55,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
   }
 
-  ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
-  }
-
   nextPage() {
-    // FIXME do the calculation as part of questions.AnsweredAction (in stead of take 1)
-    this.subscription = this.question
-      .take(1)
-      .map(question => calculateUserPoints(question, this.questionComponent.answers))
-      .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)));
-
     this.store.dispatch(new questions.AnsweredAction(this.index, this.questionComponent.answers));
 
     if (this.hasNextQuestion) {

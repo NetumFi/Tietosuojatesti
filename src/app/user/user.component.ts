@@ -46,7 +46,6 @@ export class UserComponent implements OnInit, OnDestroy {
 
   save() {
     this.store.dispatch(new user.DetailsAddedAction({name: this.name, title: this.title, organization: this.organization}));
-    this.store.dispatch(new user.PointsResetAction());
   }
 
 }
