@@ -5,27 +5,17 @@
         <i class="fa fa-print"></i>
       </button>
     </div>
-      <button shareButton="linkedin" class="mr-1"
-            sbUrl="linkedin-url"
-            i18n-sbUrl="from-linkedin-url"
-            sbTitle="linkedin-title"
-            i18n-sbTitle="from-linkedin-title">
-        <i class="fa fa-linkedin-square"></i>
-      </button>
+      <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://arjentietosuoja.fi/{{ language }}&title={{ text }}&summary={{ text }}&source=Juhta">
+        <i style="font-size: 36px" class="fa fa-linkedin-square"></i>
+      </a>
 
-      <a href="https://twitter.com/intent/tweet?url=http://arjentietosuoja.fi/{{ language }}&text={{ text }}&hashtags=tuki2018,st%C3%B6d2018">
+      <a target="_blank" href="https://twitter.com/intent/tweet?url=http://arjentietosuoja.fi/{{ language }}&text={{ text }}&hashtags=tuki2018,st%C3%B6d2018">
         <i style="font-size: 36px" class="fa fa-twitter-square"></i>
       </a>
 
-      <button shareButton="facebook" class="mr-1"
-            sbUrl="facebook-url"
-            i18n-sbUrl="from-facebook-url"
-            sbTitle="facebook-title"
-            i18n-sbTitle="from-facebook-title"
-            sbDescription="#tuki2018 #stöd2018"
-            sbImage="http://arjentietosuoja.fi/fi/assets/images/JUHTAlogo_pallot.png">
-        <i class="fa fa-facebook-square"></i>
-      </button>
+      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Farjentietosuoja.fi%2F{{ language }}&title={{ text }}&description={{ text }}&picture=http://arjentietosuoja.fi/fi/assets/images/JUHTAlogo_pallot.png">
+        <i style="font-size: 36px" class="fa fa-facebook-square"></i>
+      </a>
   </div>
 </div>
 <div id="certificate" class="visible-print-block" style="margin-top: -50px">

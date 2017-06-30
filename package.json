@@ -41,7 +41,6 @@
     "core-js": "^2.4.1",
     "express": "^4.15.2",
     "lodash": "^4.17.4",
-    "ngx-sharebuttons": "^3.0.0",
     "ngrx-store-freeze": "^0.1.9",
     "ngx-bootstrap": "^1.6.6",
     "reselect": "^3.0.1",
