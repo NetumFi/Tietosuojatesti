@@ -3,14 +3,14 @@ import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angul
 @Injectable()
 export class BackingUpFromResultsNotAllowedGuard implements CanActivate {
 
-  previousPageResults = false;
+  previousPageResultsOrUndefined = true;
 
   constructor() { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    const access = !this.previousPageResults || route.url.toString().indexOf('kysymykset') === -1;
+    const access = !this.previousPageResultsOrUndefined || route.url.toString().indexOf('kysymykset') === -1;
     if (access) {
-      this.previousPageResults = state.url.toString().indexOf('tulokset') !== -1;
+      this.previousPageResultsOrUndefined = state.url.toString().indexOf('tulokset') !== -1
     }
     return access;
   }
