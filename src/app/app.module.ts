@@ -17,7 +17,6 @@ import { StoreModule } from '@ngrx/store';
 
 import { reducer } from './reducers';
 import { CertificateComponent } from './certificate/certificate.component';
-import { ShareButtonsModule } from 'ngx-sharebuttons';
 import { AppRoutingModule } from './app-routing.module';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { HeaderBarComponent } from './header-bar/header-bar.component';
@@ -53,7 +52,6 @@ import { BackingUpFromResultsNotAllowedGuard } from './backing-up-from-results-n
     BrowserModule,
     FormsModule,
     HttpModule,
-    ShareButtonsModule.forRoot(),
     ButtonsModule.forRoot(),
     AppRoutingModule,
     StoreModule.provideStore(reducer),

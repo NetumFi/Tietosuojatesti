@@ -17,7 +17,7 @@
                      [maxPoints]="maxPoints | async">
     </olx-certificate>
   </div>
-  <button type="button" class="btn btn-primary mt-2 hidden-print" (click)="backToBeginning()" i18n>Sulje testi</button>
+  <button type="button" class="btn btn-primary mt-2 hidden-print" (click)="backToFrontPage()" i18n>Sulje testi</button>
 </div>
 
 <div *ngIf="!(passed | async)">
@@ -32,8 +32,8 @@
   </div>
   <div>
     <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Haluan kokeilla testiä uudelleen</button>
-    <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Opiskelen vielä lisää</button>
-    <button type="button" class="btn btn-primary" (click)="backToBeginning()" i18n>Sulje testi</button>
+    <button type="button" class="btn btn-primary" (click)="studyMore()" i18n>Opiskelen vielä lisää</button>
+    <button type="button" class="btn btn-primary" (click)="backToFrontPage()" i18n>Sulje testi</button>
   </div>
 </div>
 

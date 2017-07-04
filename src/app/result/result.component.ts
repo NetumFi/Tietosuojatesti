@@ -54,4 +54,15 @@ export class ResultComponent {
     this.router.navigate(['/quiz']);
   }
 
+  studyMore() {
+    window.location.href = 'http://vm.fi/documents/10623/4914009/Arjen+tietosuoja+-koulutusmateriaali/8d13c7db-0f52-44ee-954a-74f24feade73';
+  }
+
+  backToFrontPage() {
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
+    this.router.navigate(['/front']);
+  }
+
+
+
 }
