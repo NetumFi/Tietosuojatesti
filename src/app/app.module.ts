@@ -24,7 +24,7 @@ import { LanguageService } from './language.service';
 import { QuizComponent } from './quiz/quiz.component';
 import { FooterComponent } from './footer/footer.component';
 import { SummaryComponent } from './result/summary/summary.component';
-import { BackingUpFromResultsNotAllowedGuard } from './backing-up-from-results-not-allowed-guard';
+import { BackingUpGuard } from './backing-up-guard';
 
 
 @NgModule({
@@ -46,7 +46,7 @@ import { BackingUpFromResultsNotAllowedGuard } from './backing-up-from-results-n
   ],
   providers: [
     LanguageService,
-    BackingUpFromResultsNotAllowedGuard
+    BackingUpGuard
   ],
   imports: [
     BrowserModule,
