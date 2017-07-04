@@ -32,7 +32,8 @@ describe('QuestionsComponent', () => {
         {
           provide: Store, useClass: class {
             dispatch = jasmine.createSpy('dispatch');
-            select = jasmine.createSpy('select').and.callFake(() => Observable.of( { pickedQuestions: getMockedQuestions(1) } ));
+            select = jasmine.createSpy('select').and.callFake(() => Observable
+              .of( { pickedQuestions: getMockedQuestions(1), allAnswers: [] } ));
           }
         }
       ]

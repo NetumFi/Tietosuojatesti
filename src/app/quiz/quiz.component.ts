@@ -30,6 +30,7 @@ export class QuizComponent implements OnInit, OnDestroy {
       .map(data => data.json())
       .subscribe(loadedQuestions => {
         this.store.dispatch(new questions.LoadedAction(loadedQuestions));
+        this.store.dispatch(new questions.InitializedAction());
       }));
     this.subscriptions.push(this.store.select(fromRoot.getQuestionsState)
       .map(state => state.pickedQuestions.length)

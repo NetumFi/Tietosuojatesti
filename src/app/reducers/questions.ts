@@ -8,6 +8,7 @@ export interface State {
   answers: boolean[]; // index should match pickedQuestions
   questionPoints: number[]; // -- " --
   maxPoints: number;
+  allAnswers: Answer[];
 }
 
 export const initialState: State = {
@@ -15,7 +16,8 @@ export const initialState: State = {
   pickedQuestions: [],
   answers: [],
   questionPoints: [],
-  maxPoints: 0
+  maxPoints: 0,
+  allAnswers: []
 };
 
 export function reducer(state = initialState, action: questions.Actions): State {
@@ -27,7 +29,8 @@ export function reducer(state = initialState, action: questions.Actions): State 
         pickedQuestions: [],
         answers: [],
         questionPoints: [],
-        maxPoints: 0
+        maxPoints: 0,
+        allAnswers: []
       };
     }
     case questions.INITIALIZED: {
@@ -38,7 +41,8 @@ export function reducer(state = initialState, action: questions.Actions): State 
         pickedQuestions: pickedQuestions,
         answers: [],
         questionPoints: [],
-        maxPoints: maxPoints
+        maxPoints: maxPoints,
+        allAnswers: []
       };
     }
     case questions.ANSWERED: {
@@ -49,12 +53,18 @@ export function reducer(state = initialState, action: questions.Actions): State 
       const points = calculateUserPoints(state.pickedQuestions[questionIndex], action.answers);
       const newPointsState = [...state.questionPoints];
       newPointsState[questionIndex] = points;
+      // all previous answers filtered out from new state and new answers added
+      const newAllAnswersState = state.allAnswers
+        .filter(existingAnswer => !action.answers.some(newAnswer => existingAnswer.optionId === newAnswer.optionId));
+      action.answers.forEach(replacingAnswer => newAllAnswersState.push(replacingAnswer));
+
       const newState = {
         allQuestions: state.allQuestions,
         pickedQuestions: state.pickedQuestions,
         answers: newAnswerState,
         questionPoints: newPointsState,
-        maxPoints: state.maxPoints
+        maxPoints: state.maxPoints,
+        allAnswers: newAllAnswersState
       };
       return newState;
     }

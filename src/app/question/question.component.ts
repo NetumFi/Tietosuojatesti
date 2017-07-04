@@ -11,9 +11,11 @@ export class QuestionComponent implements OnInit, OnChanges {
 
   @Input()
   question: Question;
-  language;
 
+  @Input()
   answers: Answer[];
+
+  language;
 
   constructor(private languageService: LanguageService) {}
 
@@ -22,7 +24,11 @@ export class QuestionComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    this.answers = this.question.choices.map(option => { return { optionId: option.id, checked: false }; } );
+    if (this.answers.length === 0) {
+      this.answers = this.question.choices.map(option => {
+        return {optionId: option.id, checked: false};
+      });
+    }
   }
 
 }

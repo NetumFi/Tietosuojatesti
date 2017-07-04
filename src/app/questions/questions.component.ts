@@ -1,15 +1,13 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Question } from './questions.model';
+import { Answer, Question } from './questions.model';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/take';
-import { calculateUserPoints } from './questionhelper';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
-import * as user from '../actions/user';
 import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { QuestionComponent } from '../question/question.component';
@@ -20,10 +18,14 @@ import { Subscription } from 'rxjs/Subscription';
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.css']
 })
-export class QuestionsComponent implements OnInit {
+export class QuestionsComponent implements OnInit, OnDestroy {
 
   questions: Observable<Question[]>;
   question: Observable<Question>;
+
+  answersOfSelectedQuestion: Observable<Answer[]>;
+
+  subscriptions: Subscription[] = [];
 
   @ViewChild(QuestionComponent)
   private questionComponent: QuestionComponent;
@@ -53,6 +55,11 @@ export class QuestionsComponent implements OnInit {
           .map(questions => questions[this.index]);
       });
 
+    this.subscriptions.push(this.store.select(fromRoot.getQuestionsState).map(state => state.allAnswers).subscribe(allAnswers => {
+      this.answersOfSelectedQuestion = this.question
+        .map(q => allAnswers.filter(answer => q.choices.some(option => answer.optionId === option.id)));
+    }));
+
   }
 
   nextPage() {
@@ -65,6 +72,10 @@ export class QuestionsComponent implements OnInit {
       this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
       this.router.navigate(['/quiz/tulokset']);
     }
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.forEach(s => s.unsubscribe());
   }
 
 }
