@@ -25,7 +25,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
   answersOfSelectedQuestion: Observable<Answer[]>;
 
-  subscriptions: Subscription[] = [];
+  subscription: Subscription;
 
   @ViewChild(QuestionComponent)
   private questionComponent: QuestionComponent;
@@ -55,10 +55,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .map(questions => questions[this.index]);
       });
 
-    this.subscriptions.push(this.store.select(fromRoot.getQuestionsState).map(state => state.allAnswers).subscribe(allAnswers => {
+    this.subscription = this.store.select(fromRoot.getQuestionsState).map(state => state.allAnswers).subscribe(allAnswers => {
       this.answersOfSelectedQuestion = this.question
         .map(q => allAnswers.filter(answer => q.choices.some(option => answer.optionId === option.id)));
-    }));
+    });
 
   }
 
@@ -75,7 +75,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscriptions.forEach(s => s.unsubscribe());
+    this.subscription.unsubscribe();
   }
 
 }
