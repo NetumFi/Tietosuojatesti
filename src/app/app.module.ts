@@ -24,6 +24,7 @@ import { LanguageService } from './language.service';
 import { QuizComponent } from './quiz/quiz.component';
 import { FooterComponent } from './footer/footer.component';
 import { SummaryComponent } from './result/summary/summary.component';
+import { BackingUpGuard } from './backing-up-guard';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { SummaryComponent } from './result/summary/summary.component';
     SummaryComponent
   ],
   providers: [
-    LanguageService
+    LanguageService,
+    BackingUpGuard
   ],
   imports: [
     BrowserModule,

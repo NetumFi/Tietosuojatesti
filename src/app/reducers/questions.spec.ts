@@ -8,7 +8,9 @@ describe('reducer: questionsReducer', () => {
       allQuestions: [],
       pickedQuestions: [],
       answers: [],
-      maxPoints: 0
+      maxPoints: 0,
+      questionPoints: [],
+      allAnswers: []
     };
 
     const payload = getMockedQuestions(50);
@@ -17,7 +19,9 @@ describe('reducer: questionsReducer', () => {
       allQuestions: payload,
       pickedQuestions: [],
       answers: [],
-      maxPoints: 0
+      maxPoints: 0,
+      questionPoints: [],
+      allAnswers: []
     });
   });
 
@@ -26,7 +30,9 @@ describe('reducer: questionsReducer', () => {
       allQuestions: getMockedQuestions(50),
       pickedQuestions: [],
       answers: [],
-      maxPoints: 0
+      maxPoints: 0,
+      questionPoints: [],
+      allAnswers: []
     };
     const stateAfter: fromQuestions.State = fromQuestions.reducer(originalState, new InitializedAction());
 
@@ -44,7 +50,9 @@ describe('reducer: questionsReducer', () => {
       allQuestions: [],
       pickedQuestions: getMockedQuestions(1),
       answers: [],
-      maxPoints: 0
+      maxPoints: 0,
+      questionPoints: [],
+      allAnswers: []
     };
 
     const action = new AnsweredAction(0, [

@@ -3,11 +3,14 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
-import * as user from '../actions/user';
 import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { User } from '../user/user.model';
 import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/reduce';
+import 'rxjs/add/operator/mergeMap';
+import 'rxjs/add/operator/do';
 
 @Component({
   selector: 'olx-result',
@@ -28,8 +31,10 @@ export class ResultComponent {
     private store: Store<fromRoot.State>
   ) {
     this.user = store.select(fromRoot.getUserState).map(state => state.user);
-    this.userPoints = store.select(fromRoot.getUserState).map(state => state.points);
     this.maxPoints = store.select(fromRoot.getQuestionsState).map(state => state.maxPoints);
+
+    this.userPoints = store.select(fromRoot.getQuestionsState)
+      .map(state => state.questionPoints.reduce((a, b) => a + b, 0));
 
     this.passed = this.userPoints
       .switchMap(userPoints => this.maxPoints.map(maxPoints => this.getPercentage(maxPoints, userPoints)))
@@ -44,14 +49,8 @@ export class ResultComponent {
     return userPoints * 100 / maxPoints;
   }
 
-  resetQuiz() {
-    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
-    this.store.dispatch(new user.PointsResetAction());
-    this.store.dispatch(new questions.InitializedAction());
-  }
-
   backToBeginning() {
-    this.resetQuiz();
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
     this.router.navigate(['/quiz']);
   }
 
@@ -60,7 +59,7 @@ export class ResultComponent {
   }
 
   backToFrontPage() {
-    this.resetQuiz();
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 1 }));
     this.router.navigate(['/front']);
   }
 

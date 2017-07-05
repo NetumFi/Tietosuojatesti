@@ -1,15 +1,13 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Question } from './questions.model';
+import { Answer, Question } from './questions.model';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/take';
-import { calculateUserPoints } from './questionhelper';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
-import * as user from '../actions/user';
 import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { QuestionComponent } from '../question/question.component';
@@ -25,14 +23,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
   questions: Observable<Question[]>;
   question: Observable<Question>;
 
+  answersOfSelectedQuestion: Observable<Answer[]>;
+
+  subscription: Subscription;
+
   @ViewChild(QuestionComponent)
   private questionComponent: QuestionComponent;
 
   index;
   hasNextQuestion = false;
   hasPreviousQuestion = false;
-
-  subscription: Subscription;
 
   constructor(
     private route: ActivatedRoute,
@@ -55,21 +55,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
           .map(questions => questions[this.index]);
       });
 
-  }
+    this.subscription = this.store.select(fromRoot.getQuestionsState).map(state => state.allAnswers).subscribe(allAnswers => {
+      this.answersOfSelectedQuestion = this.question
+        .map(q => allAnswers.filter(answer => q.choices.some(option => answer.optionId === option.id)));
+    });
 
-  ngOnDestroy() {
-    if (this.subscription) {
-      this.subscription.unsubscribe();
-    }
   }
 
   nextPage() {
-    // FIXME do the calculation as part of questions.AnsweredAction (in stead of take 1)
-    this.subscription = this.question
-      .take(1)
-      .map(question => calculateUserPoints(question, this.questionComponent.answers))
-      .subscribe(userPoints => this.store.dispatch(new user.PointsAddedAction(userPoints)));
-
     this.store.dispatch(new questions.AnsweredAction(this.index, this.questionComponent.answers));
 
     if (this.hasNextQuestion) {
@@ -79,6 +72,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
       this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
       this.router.navigate(['/quiz/tulokset']);
     }
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

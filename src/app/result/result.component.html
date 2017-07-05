@@ -1,8 +1,8 @@
-<div *ngIf="(passed | async)">
+<div *ngIf="passed | async">
 
   <div class="hidden-print">
     <div i18n >
-      Onneksi olkoon {{(user | async)?.name}}, sait {{(userPoints | async)}} / {{(maxPoints | async)}}
+      Onneksi olkoon {{(user | async)?.name}}, sait {{ userPoints | async }} / {{ maxPoints | async }}
       pistettä ja olet läpäissyt testin!
       Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
       ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
@@ -23,7 +23,7 @@
 <div *ngIf="!(passed | async)">
   <br/>
   <div i18n>
-    Testituloksesi {{(userPoints | async)}} / {{(maxPoints | async)}} pistettä ei valitettavasti riittänyt testin
+    Testituloksesi {{ userPoints | async }} / {{ maxPoints | async }} pistettä ei valitettavasti riittänyt testin
     läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
     jonka saat esille Opiskelen vielä lisää -painikkeella.
   </div>

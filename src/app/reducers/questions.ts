@@ -1,19 +1,23 @@
-import { Question } from '../questions/questions.model';
-import { areAnswersCorrect, calculateMaxPoints, pickQuestions } from '../questions/questionhelper';
+import { Answer, Question } from '../questions/questions.model';
+import { areAnswersCorrect, calculateMaxPoints, calculateUserPoints, pickQuestions } from '../questions/questionhelper';
 import * as questions from '../actions/questions';
 
 export interface State {
   allQuestions: Question[];
   pickedQuestions: Question[];
   answers: boolean[]; // index should match pickedQuestions
+  questionPoints: number[]; // -- " --
   maxPoints: number;
+  allAnswers: Answer[];
 }
 
 export const initialState: State = {
   allQuestions: [],
   pickedQuestions: [],
   answers: [],
-  maxPoints: 0
+  questionPoints: [],
+  maxPoints: 0,
+  allAnswers: []
 };
 
 export function reducer(state = initialState, action: questions.Actions): State {
@@ -24,7 +28,9 @@ export function reducer(state = initialState, action: questions.Actions): State 
         allQuestions: questions,
         pickedQuestions: [],
         answers: [],
-        maxPoints: 0
+        questionPoints: [],
+        maxPoints: 0,
+        allAnswers: []
       };
     }
     case questions.INITIALIZED: {
@@ -34,7 +40,9 @@ export function reducer(state = initialState, action: questions.Actions): State 
         allQuestions: state.allQuestions,
         pickedQuestions: pickedQuestions,
         answers: [],
-        maxPoints: maxPoints
+        questionPoints: [],
+        maxPoints: maxPoints,
+        allAnswers: []
       };
     }
     case questions.ANSWERED: {
@@ -42,11 +50,21 @@ export function reducer(state = initialState, action: questions.Actions): State 
       const answer = areAnswersCorrect(state.pickedQuestions[questionIndex], action.answers);
       const newAnswerState = [...state.answers];
       newAnswerState[questionIndex] = answer;
+      const points = calculateUserPoints(state.pickedQuestions[questionIndex], action.answers);
+      const newPointsState = [...state.questionPoints];
+      newPointsState[questionIndex] = points;
+      // all previous answers filtered out from new state and new answers added
+      const newAllAnswersState = state.allAnswers
+        .filter(existingAnswer => !action.answers.some(newAnswer => existingAnswer.optionId === newAnswer.optionId));
+      action.answers.forEach(replacingAnswer => newAllAnswersState.push(replacingAnswer));
+
       const newState = {
         allQuestions: state.allQuestions,
         pickedQuestions: state.pickedQuestions,
         answers: newAnswerState,
-        maxPoints: state.maxPoints
+        questionPoints: newPointsState,
+        maxPoints: state.maxPoints,
+        allAnswers: newAllAnswersState
       };
       return newState;
     }

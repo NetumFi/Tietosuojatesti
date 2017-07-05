@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
+import * as questions from '../actions/questions';
 import * as user from '../actions/user';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -33,6 +34,7 @@ export class UserComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 2 }));
+    this.store.dispatch(new questions.InitializedAction());
   }
 
   ngOnDestroy() {
@@ -46,7 +48,6 @@ export class UserComponent implements OnInit, OnDestroy {
 
   save() {
     this.store.dispatch(new user.DetailsAddedAction({name: this.name, title: this.title, organization: this.organization}));
-    this.store.dispatch(new user.PointsResetAction());
   }
 
 }
