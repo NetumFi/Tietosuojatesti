@@ -26,6 +26,8 @@ export class ResultComponent {
 
   passed: Observable<boolean>;
 
+  uuid: string = UUID.UUID();
+
   constructor(
     private router: Router,
     private store: Store<fromRoot.State>
@@ -64,7 +66,7 @@ export class ResultComponent {
   }
 
   imageUrlNotCached(url) {
-    return url + '?' + UUID.UUID();
+    return url + '?' + this.uuid;
   }
 
 }
