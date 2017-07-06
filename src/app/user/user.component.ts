@@ -43,6 +43,7 @@ export class UserComponent implements OnInit, OnDestroy {
 
   nextPage() {
     this.save();
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: 3 }));
     this.router.navigate(['/quiz/kysymykset/', 1]);
   }
 

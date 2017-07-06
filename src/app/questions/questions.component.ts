@@ -64,12 +64,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
   nextPage() {
     this.store.dispatch(new questions.AnsweredAction(this.index, this.questionComponent.answers));
-
+    this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
     if (this.hasNextQuestion) {
-      this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 3 }));
       this.router.navigate(['/quiz/kysymykset', this.index + 2]);
     } else {
-      this.store.dispatch(new pages.ChangedPageAction({ pageNumber: this.index + 4 }));
       this.router.navigate(['/quiz/tulokset']);
     }
   }
