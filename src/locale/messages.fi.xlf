@@ -54,7 +54,7 @@
         <source>Jatka testiin painamalla Seuraava.</source>
         <target>Jatka testiin painamalla Seuraava.</target>
       </trans-unit>
-      <trans-unit id="588b10a14532f52d22c03496a2f2affc4685a011" datatype="html">
+      <trans-unit id="1bca949052b34fcaf63f72f58d93bcf0e702c8a7" datatype="html">
         <source>
           Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
           pistettä ja olet läpäissyt testin!
@@ -72,7 +72,7 @@
         <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
         <target>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
       </trans-unit>
-      <trans-unit id="2c22b44262e2ef5a07d6ad99ecb7480fbcfe8ad8" datatype="html">
+      <trans-unit id="b229dbff48ce64acf72c0689f72b9579f79e6683" datatype="html">
         <source>
           Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
           läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
