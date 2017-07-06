@@ -1,5 +1,5 @@
 <div *ngIf="passed | async">
-
+  <img [src]="imageUrlNotCached('/fi/assets/images/passed.png')">
   <div class="hidden-print">
     <div i18n >
       Onneksi olkoon {{(user | async)?.name}}, sait {{ userPoints | async }} / {{ maxPoints | async }}
@@ -21,6 +21,7 @@
 </div>
 
 <div *ngIf="!(passed | async)">
+  <img [src]="imageUrlNotCached('/fi/assets/images/failed.png')">
   <br/>
   <div i18n>
     Testituloksesi {{ userPoints | async }} / {{ maxPoints | async }} pistettä ei valitettavasti riittänyt testin
