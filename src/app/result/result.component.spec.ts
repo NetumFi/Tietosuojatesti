@@ -114,6 +114,22 @@ describe('ResultComponent', () => {
     }));
   });
 
+  describe('getImageUrlNotCached', () => {
+    it('return value contains the given url at the beginning of the string', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.imageUrlNotCached('URL').indexOf('URL?')).toEqual(0);
+    }));
+
+    it('url is unique in different instances', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      fixture = TestBed.createComponent(ResultComponent);
+      const component2 = fixture.componentInstance;
+      expect(component.imageUrlNotCached('URL')).not.toEqual(component2.imageUrlNotCached('URL'));
+    }));
+  });
+
 });
 
 

@@ -3,9 +3,9 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../reducers';
 import * as pages from '../actions/pages';
-import * as questions from '../actions/questions';
 import { Observable } from 'rxjs/Observable';
 import { User } from '../user/user.model';
+import { UUID } from 'angular2-uuid';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/reduce';
@@ -25,6 +25,8 @@ export class ResultComponent {
   maxPoints: Observable<number>;
 
   passed: Observable<boolean>;
+
+  uuid: string = UUID.UUID();
 
   constructor(
     private router: Router,
@@ -63,6 +65,8 @@ export class ResultComponent {
     this.router.navigate(['/front']);
   }
 
-
+  imageUrlNotCached(url) {
+    return url + '?' + this.uuid;
+  }
 
 }
