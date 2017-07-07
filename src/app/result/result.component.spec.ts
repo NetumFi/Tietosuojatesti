@@ -115,6 +115,12 @@ describe('ResultComponent', () => {
   });
 
   describe('getImageUrlNotCached', () => {
+    it('return value contains the given url', fakeAsync(() => {
+      fixture = TestBed.createComponent(ResultComponent);
+      component = fixture.componentInstance;
+      expect(component.imageUrlNotCached('URL')).toContain('URL?');
+    }));
+
     it('url is unique in different instances', fakeAsync(() => {
       fixture = TestBed.createComponent(ResultComponent);
       component = fixture.componentInstance;
