@@ -234,9 +234,9 @@
         <source>Lisämateriaalia suomeksi</source>
         <target>Tilläggsmaterial på finska</target>
       </trans-unit>
-      <trans-unit id="e0c6180497d939a99c2d906c2e79abadaeda8f85" datatype="html">
-        <source>julkaistaan heinäkuun aikana</source>
-        <target>publiceras i juli</target>
+      <trans-unit id="2a657c9d10682a09641345b1e4806cf93ca571b6" datatype="html">
+        <source>julkaistaan elokuun aikana</source>
+        <target>publiceras i augusti</target>
       </trans-unit>
       <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
         <source>Suomeksi tekstitetty video</source>
