@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1bca949052b34fcaf63f72f58d93bcf0e702c8a7" datatype="html">
+        <source>
+      Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
+      pistettä ja olet läpäissyt testin!
+      Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
+      ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
+    </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="021ca2d842d5e9bf7d8f2921afd3c8c115544671" datatype="html">
+        <source>
+      Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
+    </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9c7fdb302016ee2dd674f29703425719040db684" datatype="html">
+        <source>Sulje testi</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="b229dbff48ce64acf72c0689f72b9579f79e6683" datatype="html">
+        <source>
+    Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
+    läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
+    jonka saat esille Opiskelen vielä lisää -painikkeella.
+  </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="877b88822c17dd590017aaadcebff1a6c078bdfe" datatype="html">
+        <source>Haluan kokeilla testiä uudelleen</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="bd94ba0c1827bfa0cc26cea336da26c57086a7e1" datatype="html">
+        <source>Opiskelen vielä lisää</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="a835cfce98204908d07c884d5381f40ee218e7f4" datatype="html">
+        <source>Seuraava</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="e772cd98fc1c19aae76e47a3f908ca260bcc97e8" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9afabbb14cfa5ae038417e186c3c6bb21f4abb59" datatype="html">
+        <source>
+    <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    <x id="START_PARAGRAPH" ctype="x-p"/>
+      Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
+      Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
+      Muista myös sulkea käyttämäsi www-selain.
+    <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    <x id="START_PARAGRAPH" ctype="x-p"/>
+      Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
+      Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+    <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+  </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9e30dbe2985887e725143f484378db2feebc8e4e" datatype="html">
+        <source>Nimi:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="bc11aaed58ebc308ea086da8f37dc23f5769c90e" datatype="html">
+        <source>Tehtävänimike:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="0af951cb1d6acd0cd378c575501f6c71aac20813" datatype="html">
+        <source>Organisaatio:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
+        <source>
+      <x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/>
+    </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="dd51f7dc8cded7909e2c7c2bcac8e7f12dd33a68" datatype="html">
+        <source>
+      <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon<x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+      <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+      <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+    </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
+        <source>Jatka testiin painamalla Seuraava.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="1d92466b6769fc6111332d7cd2327f22ad7877ea" datatype="html">
+        <source>
+          Arjen tietosuojaa videokoulutukset ja nettitestit
+        </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="00b0ad41c2104f1c444855defadeaa49da5ab869" datatype="html">
+        <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7c2c59e38e17e5d107c273d6869f73bf5c30d504" datatype="html">
+        <source>Avoimena olevat koulutukset ja nettitestit:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="84c8d7e4fb28a02d7dcd7ec6054dbfe11951fa50" datatype="html">
+        <source>Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="e481530dc8c3d22be6e62ffa05630a9c09714be2" datatype="html">
+        <source>Suomenkielinen video</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="b80b1c23cab3a249054fde10c7206dfa2bc3ed18" datatype="html">
+        <source>julkaistu</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="970dd4f6d4aa6edbf50f93bd63242b3a727d41ab" datatype="html">
+        <source>Nettitesti</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="34ce5f01e213872fb26b53b43348956ab53a6214" datatype="html">
+        <source>julkaistu 22.6. (testiversio)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5ec377bdbf0392fe4c1e3c9f165cf7b21754f336" datatype="html">
+        <source>Lisämateriaalia suomeksi</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="18edeb1f53738fbf60addb4cd50920036a9963a5" datatype="html">
+        <source>Ruotsiksi tekstitetty video</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="46282334448a7503193a5ffc754b2c4eb180c07f" datatype="html">
+        <source>Englanniksi tekstitetty video</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="254174f023004c11d74d770f0aa98b0499083104" datatype="html">
+        <source>Lisämateriaalia ruotsiksi</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="2a657c9d10682a09641345b1e4806cf93ca571b6" datatype="html">
+        <source>julkaistaan elokuun aikana</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="42c7954549faa1deaa0ec5885c692e51f4ebb6d3" datatype="html">
+        <source>
+          <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Ilmoittautuminen JUHTA tietosuojan osoitusvelvollisuutta edistäviin yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+            Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="589bff58601b3ca1e22b9432ef8c5afa7b8d0a39" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+            Ellet ole, ilmoittaudu <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>
+            niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="92703587e6d9294aada8a386e599e4ad422610fb" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+            Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
+            <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="42761e096b41a3f071cfe455e4294b5380d6c775" datatype="html">
+        <source>
+          Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.
+        </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ef0f4edf056bed60233570cb40b1e28c6fbd11b5" datatype="html">
+        <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) asettama asiantuntijaryhmä julkaisee vuoden 2017 aikana tietosuojaa ja tietoturvallisuutta edistäviä videokoulutuksia ja nettitestejä. Koulutusten toteuttamisessa ovat mukana lisäksi</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
+        <source>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="17184ff047b19b92e058c32d58e03f798316a950" datatype="html">
+        <source>
+  Aikaa jäljellä: <x id="INTERPOLATION"/>
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="d6f9804e2f3c65212b273a203e1b33c0115144c8" datatype="html">
+        <source>TODISTUS</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="35a98eb5f299498ce9f98eeab920f2ca4b80c3f6" datatype="html">
+        <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="ad5ddd75e9071ee24e1b8dcf21c6b4779c242539" datatype="html">
+        <source><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>, <x id="INTERPOLATION_2"/> on suorittanut <x id="INTERPOLATION_3"/> </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="c2aca3ce21f3e6fdac63cb5e75573e9e95664856" datatype="html">
+        <source>Arjen tietosuojakoulutuksen testin pistemäärällä</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="33bf4b75222b04a22e4d190ea7730016d3d1f87f" datatype="html">
+        <source>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="47e187136609e363092d9a2c8e92510144183b5a" datatype="html">
+        <source>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="cca7621f5f07a0fc3b6d5fe11d9488a0f472a4c8" datatype="html">
+        <source>Helsingissä, <x id="INTERPOLATION"/></source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="4a45fc6ad0b2a5077301d4708b210f902fb35d2e" datatype="html">
+        <source>JUHTA asiantuntijaryhmän pj.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="650c1e765d83cd24d71a34fbfec36fd30e5f903d" datatype="html">
+        <source>VAHTI-pääsihteeri</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3b16f752c9a6878a08defe210ea554e5ffc88d0a" datatype="html">
+        <source>Kuntaliitto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8b284794fa23389de3460cf39e40d03cdc8875ef" datatype="html">
+        <source>Valtiovarainministeriö</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="744ac5344b7b7c6f541f779609f310e694a8e9d0" datatype="html">
+        <source>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="1d21549ed75ba1932dc42fe87384b09f270955c5" datatype="html">
+        <source>Seuraavissa kysymyksissä oli vääriä vastauksia:</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

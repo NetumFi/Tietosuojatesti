@@ -274,21 +274,59 @@
         <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
         <note priority="1" from="description">from-facebook-title</note>
       </trans-unit>
-      <trans-unit id="7c9509bdc5f6dbdc310ed173a2266cef54523267" datatype="html">
+      <trans-unit id="42c7954549faa1deaa0ec5885c692e51f4ebb6d3" datatype="html">
         <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Ilmoittautuminen JUHTA tietosuojan yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Ilmoittautuminen JUHTA tietosuojan osoitusvelvollisuutta edistäviin yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+          Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Ilmoittautuminen JUHTA tietosuojan osoitusvelvollisuutta edistäviin yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+          Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="589bff58601b3ca1e22b9432ef8c5afa7b8d0a39" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+          Ellet ole, ilmoittaudu <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>
+          niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
+          Ellet ole, ilmoittaudu <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>
+          niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="42761e096b41a3f071cfe455e4294b5380d6c775" datatype="html">
+        <source>
+          Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.
+        </source>
+        <target>
+          Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.
+        </target>
+      </trans-unit>
+      <trans-unit id="84c8d7e4fb28a02d7dcd7ec6054dbfe11951fa50" datatype="html">
+        <source>
+          Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset
+        </source>
+        <target>
+          Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
+          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset
+        </target>
+      </trans-unit>
+      <trans-unit id="92703587e6d9294aada8a386e599e4ad422610fb" datatype="html">
+        <source>
           <x id="START_PARAGRAPH" ctype="x-p"/>
-            Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?
-            Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>. Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?
-            Ellet ole, ilmoittaudu <x id="START_LINK_1" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/> niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.
+          Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
+          <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
           <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Ilmoittautuminen JUHTA tietosuojan yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>
-            Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?
-            Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>. Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?
-            Ellet ole, ilmoittaudu <x id="START_LINK_1" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/> niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.
+          Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
+          <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
           <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
