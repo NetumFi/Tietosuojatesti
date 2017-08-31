@@ -325,8 +325,8 @@
         </source>
         <target>
           <x id="START_PARAGRAPH" ctype="x-p"/>
-          Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
-          <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
+          Materialet (videoinspelningar, presentationer, hemuppgifter) hittar du
+          <x id="START_LINK" ctype="x-a"/>här<x id="CLOSE_LINK" ctype="x-a"/>.
           <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
