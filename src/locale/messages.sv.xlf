@@ -226,17 +226,13 @@
         <source>Nettitesti</source>
         <target>Webbtest</target>
       </trans-unit>
-      <trans-unit id="34ce5f01e213872fb26b53b43348956ab53a6214" datatype="html">
-        <source>julkaistu 22.6. (testiversio)</source>
-        <target>publicerad 22.6. (testversion)</target>
-      </trans-unit>
       <trans-unit id="5ec377bdbf0392fe4c1e3c9f165cf7b21754f336" datatype="html">
         <source>Lisämateriaalia suomeksi</source>
         <target>Tilläggsmaterial på finska</target>
       </trans-unit>
-      <trans-unit id="2a657c9d10682a09641345b1e4806cf93ca571b6" datatype="html">
-        <source>julkaistaan elokuun aikana</source>
-        <target>publiceras i augusti</target>
+      <trans-unit id="995a0e29293658d9f487908f779c95bbed085e1e" datatype="html">
+        <source>julkaistaan syyskuun aikana</source>
+        <target>publiceras i september</target>
       </trans-unit>
       <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
         <source>Suomeksi tekstitetty video</source>
@@ -283,7 +279,7 @@
         <target>
           <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Anmälan till JUHTA samprojekt kring dataskydd (videor + webbtester + workshoppar)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
           <x id="START_PARAGRAPH" ctype="x-p"/>Har din organisation (organisation inom statsförvaltningen eller kommun) anmält sig som deltagare i ett samprojekt?<x id="LINE_BREAK" ctype="lb"/>
-          Om inte, hinner du ännu anmäla dig <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          Om inte, hinner du ännu anmäla dig <x id="START_LINK" ctype="x-a"/>här<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
       </trans-unit>
       <trans-unit id="589bff58601b3ca1e22b9432ef8c5afa7b8d0a39" datatype="html">

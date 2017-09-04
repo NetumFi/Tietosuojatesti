@@ -226,17 +226,13 @@
         <source>Nettitesti</source>
         <target>Nettitesti</target>
       </trans-unit>
-      <trans-unit id="34ce5f01e213872fb26b53b43348956ab53a6214" datatype="html">
-        <source>julkaistu 22.6. (testiversio)</source>
-        <target>julkaistu 22.6. (testiversio)</target>
-      </trans-unit>
       <trans-unit id="5ec377bdbf0392fe4c1e3c9f165cf7b21754f336" datatype="html">
         <source>Lisämateriaalia suomeksi</source>
         <target>Lisämateriaalia suomeksi</target>
       </trans-unit>
-      <trans-unit id="2a657c9d10682a09641345b1e4806cf93ca571b6" datatype="html">
-        <source>julkaistaan elokuun aikana</source>
-        <target>julkaistaan elokuun aikana</target>
+      <trans-unit id="995a0e29293658d9f487908f779c95bbed085e1e" datatype="html">
+        <source>julkaistaan syyskuun aikana</source>
+        <target>julkaistaan syyskuun aikana</target>
       </trans-unit>
       <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
         <source>Suomeksi tekstitetty video</source>
