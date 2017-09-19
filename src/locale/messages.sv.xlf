@@ -237,8 +237,8 @@
       <trans-unit id="6c2ef0ff2287e9af836745084b3674061a3f714c" datatype="html">
         <source>Johdon ja esimiesten koulutusvideo<x id="LINE_BREAK" ctype="lb"/>
           Kohderyhmä: johto ja esimiehet</source>
-        <target>Utbildningsvideo för ledningen och cheferna<x id="LINE_BREAK" ctype="lb"/>
-          Målgrupp: ledningen och cheferna</target>
+        <target>Utbildningsvideon för ledningen och förmännen<x id="LINE_BREAK" ctype="lb"/>
+          Målgrupp: Ledningen och förmännen</target>
       </trans-unit>
       <trans-unit id="f81297c85b5e8d0bcd34e157ffb69ac7488e635d" datatype="html">
         <source>tulossa</source>
