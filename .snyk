@@ -26,3 +26,6 @@ patch:
         patched: '2017-06-16T02:58:02.812Z'
     - '@angular/cli > webpack-dev-server > compression > debug > ms':
         patched: '2017-06-16T02:58:02.812Z'
+  'npm:debug:20170905':
+    - '@angular/cli > webpack-dev-server > serve-index > debug':
+        patched: '2017-09-29T02:58:14.160Z'
