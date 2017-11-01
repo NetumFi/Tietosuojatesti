@@ -230,19 +230,15 @@
         <source>Lisämateriaalia suomeksi</source>
         <target>Lisämateriaalia suomeksi</target>
       </trans-unit>
-      <trans-unit id="995a0e29293658d9f487908f779c95bbed085e1e" datatype="html">
-        <source>julkaistaan syyskuun aikana</source>
-        <target>julkaistaan syyskuun aikana</target>
+      <trans-unit id="7b3f20c050c3b7dc5a85062535ed2d8f17945301" datatype="html">
+        <source>julkaistaan marraskuun aikana</source>
+        <target>julkaistaan marraskuun aikana</target>
       </trans-unit>
       <trans-unit id="6c2ef0ff2287e9af836745084b3674061a3f714c" datatype="html">
         <source>Johdon ja esimiesten koulutusvideo<x id="LINE_BREAK" ctype="lb"/>
           Kohderyhmä: johto ja esimiehet</source>
         <target>Johdon ja esimiesten koulutusvideo<x id="LINE_BREAK" ctype="lb"/>
           Kohderyhmä: johto ja esimiehet</target>
-      </trans-unit>
-      <trans-unit id="f81297c85b5e8d0bcd34e157ffb69ac7488e635d" datatype="html">
-        <source>tulossa</source>
-        <target>tulossa</target>
       </trans-unit>
       <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
         <source>Suomeksi tekstitetty video</source>
