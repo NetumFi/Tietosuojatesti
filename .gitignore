@@ -16,6 +16,9 @@
 *.launch
 .settings/
 
+# IDE - VisualStudio
+.vs/
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
