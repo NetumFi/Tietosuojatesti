@@ -21,12 +21,17 @@ body {
 }
 
 #content {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .olx-heading {
   color: #316CAE;
 }
+
+.margin-left-20 {
+  margin-left: -15px;
+}
+
 @media print {
   body {
     margin: 0;
