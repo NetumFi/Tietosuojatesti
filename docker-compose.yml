@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+
+  web:
+    image: nginx
+    volumes:
+     - ./dist:/usr/share/nginx/html:ro
+    ports:
+     - "88:80"

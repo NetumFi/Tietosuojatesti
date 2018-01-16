@@ -2,335 +2,901 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="fi" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="35a98eb5f299498ce9f98eeab920f2ca4b80c3f6" datatype="html">
-        <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</source>
-        <target>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</target>
-      </trans-unit>
-      <trans-unit id="e772cd98fc1c19aae76e47a3f908ca260bcc97e8" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
-      </trans-unit>
-      <trans-unit id="9afabbb14cfa5ae038417e186c3c6bb21f4abb59" datatype="html">
-        <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-            Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
-            Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
-            Muista myös sulkea käyttämäsi www-selain.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-            Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
-            Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-        </source>
-        <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-            Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen.
-            Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen.
-            Muista myös sulkea käyttämäsi www-selain.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-            Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi.
-            Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-        </target>
-      </trans-unit>
-      <trans-unit id="a835cfce98204908d07c884d5381f40ee218e7f4" datatype="html">
-        <source>Seuraava</source>
-        <target>Seuraava</target>
-      </trans-unit>
-      <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
-        <source><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
-        <target><x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></target>
-      </trans-unit>
-      <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
-        <source>Jatka testiin painamalla Seuraava.</source>
-        <target>Jatka testiin painamalla Seuraava.</target>
-      </trans-unit>
       <trans-unit id="1bca949052b34fcaf63f72f58d93bcf0e702c8a7" datatype="html">
         <source>
-          Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
-          pistettä ja olet läpäissyt testin!
-          Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
-          ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
+          Onneksi olkoon<x id="INTERPOLATION"/>, sait
+          <x id="INTERPOLATION_1"/>
+          /
+          <x id="INTERPOLATION_2"/>
+          pistettä ja olet läpäissyt testin! Sinulla on nyt tarvittavat perustiedot tietosuojan osalta, ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
         </source>
         <target>
-          Onneksi olkoon <x id="INTERPOLATION"/>, sait <x id="INTERPOLATION_1"/> / <x id="INTERPOLATION_2"/>
-          pistettä ja olet läpäissyt testin!
-          Sinulla on nyt tarvittavat perustiedot tietosuojan osalta,
-          ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
+          Onneksi olkoon<x id="INTERPOLATION"/>, sait
+          <x id="INTERPOLATION_1"/>
+          /
+          <x id="INTERPOLATION_2"/>
+          pistettä ja olet läpäissyt testin! Sinulla on nyt tarvittavat perustiedot tietosuojan osalta, ylläpidä osaamistasi osallistumalla myös muihin sinulle tarjottaviin koulutuksiin.
         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="021ca2d842d5e9bf7d8f2921afd3c8c115544671" datatype="html">
-        <source>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</source>
-        <target>Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.</target>
-      </trans-unit>
-      <trans-unit id="b229dbff48ce64acf72c0689f72b9579f79e6683" datatype="html">
         <source>
-          Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
-          läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-          jonka saat esille Opiskelen vielä lisää -painikkeella.
+          Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
         </source>
         <target>
-          Testituloksesi <x id="INTERPOLATION"/> / <x id="INTERPOLATION_1"/> pistettä ei valitettavasti riittänyt testin
-          läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin,
-          jonka saat esille Opiskelen vielä lisää -painikkeella.
+          Voit tulostaa ja samalla tallentaa omalle tietokoneellesi testin läpäisyn osoittavan todistuksen.
         </target>
-      </trans-unit>
-      <trans-unit id="877b88822c17dd590017aaadcebff1a6c078bdfe" datatype="html">
-        <source>Haluan kokeilla testiä uudelleen</source>
-        <target>Haluan kokeilla testiä uudelleen</target>
-      </trans-unit>
-      <trans-unit id="bd94ba0c1827bfa0cc26cea336da26c57086a7e1" datatype="html">
-        <source>Opiskelen vielä lisää</source>
-        <target>Opiskelen vielä lisää</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="9c7fdb302016ee2dd674f29703425719040db684" datatype="html">
         <source>Sulje testi</source>
         <target>Sulje testi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="17184ff047b19b92e058c32d58e03f798316a950" datatype="html">
-        <source>Aikaa jäljellä: <x id="INTERPOLATION"/></source>
-        <target>Aikaa jäljellä: <x id="INTERPOLATION"/></target>
+      <trans-unit id="b229dbff48ce64acf72c0689f72b9579f79e6683" datatype="html">
+        <source>
+          Testituloksesi
+          <x id="INTERPOLATION"/>
+          /
+          <x id="INTERPOLATION_1"/>
+          pistettä ei valitettavasti riittänyt testin läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin, jonka saat esille Opiskelen vielä lisää -painikkeella.
+        </source>
+        <target>
+          Testituloksesi
+          <x id="INTERPOLATION"/>
+          /
+          <x id="INTERPOLATION_1"/>
+          pistettä ei valitettavasti riittänyt testin läpäisemiseen. Suosittelemme katsomaan videon uudelleen sekä tutustumaan sen yhteydessä julkaistuun lisämateriaaliin, jonka saat esille Opiskelen vielä lisää -painikkeella.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="e4aebeb6656fe6c10097ac42e4e1e8c8438579ca" datatype="html">
-        <source>Tulosta</source>
-        <target>Tulosta</target>
+      <trans-unit id="877b88822c17dd590017aaadcebff1a6c078bdfe" datatype="html">
+        <source>Haluan kokeilla testiä uudelleen</source>
+        <target>Haluan kokeilla testiä uudelleen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="d6f9804e2f3c65212b273a203e1b33c0115144c8" datatype="html">
-        <source>TODISTUS</source>
-        <target>TODISTUS</target>
+      <trans-unit id="bd94ba0c1827bfa0cc26cea336da26c57086a7e1" datatype="html">
+        <source>Opiskelen vielä lisää</source>
+        <target>Opiskelen vielä lisää</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/result.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="abfed936d7768e2f8a0e02d608ae38d2c6c63c8a" datatype="html">
-        <source><x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</source>
-        <target><x id="INTERPOLATION"/> on suorittanut <x id="INTERPOLATION_1"/> Arjen tietosuojakoulutuksen testin pistemäärällä</target>
+      <trans-unit id="a835cfce98204908d07c884d5381f40ee218e7f4" datatype="html">
+        <source>Seuraava</source>
+        <target>Seuraava</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/questions/questions.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/intro/intro.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="b5834b189987c7ef6c05328920ee72e1cecc039f" datatype="html">
-        <source>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</source>
-        <target>Omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan. Toimi myös koulutuksessa annettujen ohjeiden mukaisesti.</target>
+      <trans-unit id="e772cd98fc1c19aae76e47a3f908ca260bcc97e8" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto<x id="CLOSE_TAG_STRONG" ctype="x-strong"/></source>
+        <target><x id="START_TAG_STRONG" ctype="x-strong"/>Johdanto
+          <x id="CLOSE_TAG_STRONG" ctype="x-strong"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/intro/intro.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9afabbb14cfa5ae038417e186c3c6bb21f4abb59" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+          Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen. Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen. Muista myös sulkea käyttämäsi www-selain.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+          Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi. Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </source>
+        <target>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Tervetuloa Julkisen hallinnon tietohallinnon neuvottelukunnan (JUHTA) toteuttamaan Arjen tietosuoja nettitestiin!
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Testi pohjautuu Arjen tietosuoja -videoon ja siihen liittyvään tukimateriaaliin.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+          Nettitesti-palvelu ei tallenna mitään vastaajaan liittyviä tietoja talteen. Mikäli käytät yhteiskäyttöistä tietokonetta, suljethan testin sen tehtyäsi sivulla olevaa Sulje-painiketta käyttäen. Muista myös sulkea käyttämäsi www-selain.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>
+          Voit kysyä lisätietoja testistä tai antaa palautetta sähköpostitse osoitteeseen arjen.tietosuoja@vm.fi. Huomaa! Emme erikseen kerro tai kommentoi yksittäisiä kysymyksiä tai oikeita vastauksia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Pääset nyt eteenpäin napsauttamalla Seuraava, jonka jälkeen saat lisätietoa testin suorittamisesta ennen kuin testi alkaa.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jatka testiin painamalla Seuraava
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/intro/intro.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="9e30dbe2985887e725143f484378db2feebc8e4e" datatype="html">
         <source>Nimi:</source>
         <target>Nimi:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="bc11aaed58ebc308ea086da8f37dc23f5769c90e" datatype="html">
         <source>Tehtävänimike:</source>
         <target>Tehtävänimike:</target>
-       </trans-unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="0af951cb1d6acd0cd378c575501f6c71aac20813" datatype="html">
         <source>Organisaatio:</source>
         <target>Organisaatio:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="ad5ddd75e9071ee24e1b8dcf21c6b4779c242539" datatype="html">
-        <source><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>, <x id="INTERPOLATION_2"/> on suorittanut <x id="INTERPOLATION_3"/> </source>
-        <target><x id="INTERPOLATION"/> <x id="INTERPOLATION_1"/>, <x id="INTERPOLATION_2"/> on suorittanut <x id="INTERPOLATION_3"/> </target>
-      </trans-unit>
-      <trans-unit id="c2aca3ce21f3e6fdac63cb5e75573e9e95664856" datatype="html">
-        <source>Arjen tietosuojakoulutuksen testin pistemäärällä</source>
-        <target>Arjen tietosuojakoulutuksen testin pistemäärällä</target>
-      </trans-unit>
-      <trans-unit id="33bf4b75222b04a22e4d190ea7730016d3d1f87f" datatype="html">
-        <source>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</source>
-        <target>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</target>
-      </trans-unit>
-      <trans-unit id="47e187136609e363092d9a2c8e92510144183b5a" datatype="html">
-        <source>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</source>
-        <target>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</target>
-      </trans-unit>
-      <trans-unit id="cca7621f5f07a0fc3b6d5fe11d9488a0f472a4c8" datatype="html">
-        <source>Helsingissä, <x id="INTERPOLATION"/></source>
-        <target>Helsingissä, <x id="INTERPOLATION"/></target>
-      </trans-unit>
-      <trans-unit id="4a45fc6ad0b2a5077301d4708b210f902fb35d2e" datatype="html">
-        <source>JUHTA asiantuntijaryhmän pj.</source>
-        <target>JUHTA asiantuntijaryhmän pj.</target>
-      </trans-unit>
-      <trans-unit id="650c1e765d83cd24d71a34fbfec36fd30e5f903d" datatype="html">
-        <source>VAHTI-pääsihteeri</source>
-        <target>VAHTI-pääsihteeri</target>
-      </trans-unit>
-      <trans-unit id="3b16f752c9a6878a08defe210ea554e5ffc88d0a" datatype="html">
-        <source>Kuntaliitto</source>
-        <target>Kuntaliitto</target>
-      </trans-unit>
-      <trans-unit id="8b284794fa23389de3460cf39e40d03cdc8875ef" datatype="html">
-        <source>Valtiovarainministeriö</source>
-        <target>Valtiovarainministeriö</target>
-      </trans-unit>
-      <trans-unit id="744ac5344b7b7c6f541f779609f310e694a8e9d0" datatype="html">
-        <source>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</source>
-        <target>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</target>
-      </trans-unit>
-      <trans-unit id="1d21549ed75ba1932dc42fe87384b09f270955c5" datatype="html">
-        <source>Seuraavissa kysymyksissä oli vääriä vastauksia:</source>
-        <target>Seuraavissa kysymyksissä oli vääriä vastauksia:</target>
-      </trans-unit>
-      <trans-unit id="1d92466b6769fc6111332d7cd2327f22ad7877ea" datatype="html">
-        <source>Arjen tietosuojaa videokoulutukset ja nettitestit</source>
-        <target>Arjen tietosuojaa videokoulutukset ja nettitestit</target>
-      </trans-unit>
-      <trans-unit id="00b0ad41c2104f1c444855defadeaa49da5ab869" datatype="html">
-        <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</source>
-        <target>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</target>
-      </trans-unit>
-      <trans-unit id="7c2c59e38e17e5d107c273d6869f73bf5c30d504" datatype="html">
-        <source>Avoimena olevat koulutukset ja nettitestit:</source>
-        <target>Avoimena olevat koulutukset ja nettitestit:</target>
-      </trans-unit>
-      <trans-unit id="67358eddaab47bc3c628c249e52d7faee0cdb873" datatype="html">
-        <source>Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.</source>
-        <target>Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.</target>
-      </trans-unit>
-      <trans-unit id="ef0f4edf056bed60233570cb40b1e28c6fbd11b5" datatype="html">
-        <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) asettama asiantuntijaryhmä julkaisee vuoden 2017 aikana tietosuojaa ja tietoturvallisuutta edistäviä videokoulutuksia ja nettitestejä. Koulutusten toteuttamisessa ovat mukana lisäksi</source>
-        <target>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) asettama asiantuntijaryhmä julkaisee vuoden 2017 aikana tietosuojaa ja tietoturvallisuutta edistäviä videokoulutuksia ja nettitestejä. Koulutusten toteuttamisessa ovat mukana lisäksi</target>
-      </trans-unit>
-      <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
-        <source>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></source>
-        <target>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></target>
+      <trans-unit id="8cc768fe71d77dfb6a39f946953a9f40bc900c80" datatype="html">
+        <source>
+          <x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet
+          <x id="CLOSE_TAG_STRONG" ctype="x-strong"/>
+        </source>
+        <target>
+          <x id="START_TAG_STRONG" ctype="x-strong"/>Vastausohjeet
+          <x id="CLOSE_TAG_STRONG" ctype="x-strong"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="dd51f7dc8cded7909e2c7c2bcac8e7f12dd33a68" datatype="html">
         <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon<x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi
+          <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon
+          <x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon<x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Sinulle esitetään kymmenen kysymystä liittyen katsomaasi
+          <x id="START_LINK" ctype="x-a"/>”Arjen tietosuoja” –videoon
+          <x id="CLOSE_LINK" ctype="x-a"/>. Valitse mielestäsi kysymykseen liittyvät oikeat vaihtoehdot, niitä on aina vähintään yksi, mutta niitä voi olla useampia.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Vastattuasi kaikkiin kymmeneen kysymyksiin saat testituloksen. Mikäli testituloksesi on riittävän hyvä, vähintään 75%, saat mahdollisuuden tulostaa testin läpäisemisen osoittavan todistuksen sekä tallentaa sen omalle tietokoneellesi talteen. Mikäli olet saanut organisaatioltasi lisätietoja testin läpäisemisen osoittamisen osalta, toimi annettujen ohjeiden mukaisesti.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="START_PARAGRAPH" ctype="x-p"/>Jos testisi ei mennyt läpi, voit opiskella lisää tai voit kokeilla testiä uudelleen. Sinulla on 10 minuuttia aikaa vastata testiin.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="042c0277b8dc01415b6b10a9b9d02794e5df819c" datatype="html">
-        <source>22.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</source>
-        <target>22.6.  Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset</target>
+      <trans-unit id="7580a52f3d81caa0ea632fe2bead470a98ac02e9" datatype="html">
+        <source>Jatka testiin painamalla Seuraava.</source>
+        <target>Jatka testiin painamalla Seuraava.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="e481530dc8c3d22be6e62ffa05630a9c09714be2" datatype="html">
-        <source>Suomenkielinen video</source>
-        <target>Suomenkielinen video</target>
+      <trans-unit id="6cea060dfa648e56dd5fe7f17a7d322946b75a56" datatype="html">
+        <source>
+          Arjen tietosuojaa videokoulutukset ja nettitestit
+        </source>
+        <target>
+          Arjen tietosuojaa videokoulutukset ja nettitestit
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="b80b1c23cab3a249054fde10c7206dfa2bc3ed18" datatype="html">
-        <source>julkaistu</source>
-        <target>julkaistu</target>
+      <trans-unit id="0ec716a0398f43c6afc448eca263d5b2a031016b" datatype="html">
+        <source>Arjentietosuoja.fi tueksi edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</source>
+        <target>Arjentietosuoja.fi tueksi edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d2fb4fddbdb02b39c2bf86f77d515b0e07a8b2f0" datatype="html">
+        <source>
+          Mistä on kyse?
+        </source>
+        <target>
+          Mistä on kyse?
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e740487f1aa56c2b405abb3cb502526a7164b43" datatype="html">
+        <source>Arjentietosuoja.fi auttaa organisaatioita valmistautumaan 25.5.2018 sovellettavaksi tulevaan tietosuojalainsäädäntöön.
+          <x id="START_LINK" ctype="x-a"/>(EU-yleinen tietosuoja-asetus 2016/679 http://www.privacy-regulation.eu/fi/index.htm)
+          <x id="CLOSE_LINK" ctype="x-a"/>. Asetus tuo rekisterinpitäjille ja henkilötietojen käsittelijöille uusia vastuita ja velvoitteita.
+        </source>
+        <target>Arjentietosuoja.fi auttaa organisaatioita valmistautumaan 25.5.2018 sovellettavaksi tulevaan tietosuojalainsäädäntöön.
+          <x id="START_LINK" ctype="x-a"/>(EU-yleinen tietosuoja-asetus 2016/679 http://www.privacy-regulation.eu/fi/index.htm)
+          <x id="CLOSE_LINK" ctype="x-a"/>. Asetus tuo rekisterinpitäjille ja henkilötietojen käsittelijöille uusia vastuita ja velvoitteita.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96e2bef08f355ceebd62870b99f9b6431fcc95ab" datatype="html">
+        <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) ja julkisen hallinnon digitaalisen turvallisuuden johtoryhmä (VAHTI) järjestävät 2017 – 2018 kaksi tietosuojan yhteishanketta. Yhteishankkeeseen osallistumalla organisaatio saa hyvät valmiudet tulevan tietosuojalainsäädännön tuomiin muutoksiin. Yhteishankkeissa tuotetaan tietosuojakoulutusvideoita, nettitestejä ja järjestetään työpajatilaisuuksia. Työpajoissa käsitellään tietosuoja-asetukseen eri osa-alueita, riskienhallintaa ja tietoturvallisuutta julkishallinnonnäkökulmasta. Tarkempaa tietoa työpajoista ja niiden materiaalit ovat
+          <x id="START_LINK" ctype="x-a"/>tietosuojanyhteishankkeiden verkkosivulla vm.fissä (http://vm.fi/tietosuojan-yhteishankkeet)
+          <x id="CLOSE_LINK" ctype="x-a"/>.
+        </source>
+        <target>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) ja julkisen hallinnon digitaalisen turvallisuuden johtoryhmä (VAHTI) järjestävät 2017 – 2018 kaksi tietosuojan yhteishanketta. Yhteishankkeeseen osallistumalla organisaatio saa hyvät valmiudet tulevan tietosuojalainsäädännön tuomiin muutoksiin. Yhteishankkeissa tuotetaan tietosuojakoulutusvideoita, nettitestejä ja järjestetään työpajatilaisuuksia. Työpajoissa käsitellään tietosuoja-asetukseen eri osa-alueita, riskienhallintaa ja tietoturvallisuutta julkishallinnonnäkökulmasta. Tarkempaa tietoa työpajoista ja niiden materiaalit ovat
+          <x id="START_LINK" ctype="x-a"/>tietosuojanyhteishankkeiden verkkosivulla vm.fissä (http://vm.fi/tietosuojan-yhteishankkeet)
+          <x id="CLOSE_LINK" ctype="x-a"/>.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="86cd979e02c1763ac8b412cb4d9918bb4512ceb5" datatype="html">
+        <source>
+          Materiaalit ja tilaisuudet ovat maksuttomia.
+          <x id="LINE_BREAK" ctype="lb"/>
+          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
+          <x id="CLOSE_LINK" ctype="x-a"/>
+        </source>
+        <target>
+          Materiaalit ja tilaisuudet ovat maksuttomia.
+          <x id="LINE_BREAK" ctype="lb"/>
+          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
+          <x id="CLOSE_LINK" ctype="x-a"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14a4f08edbb83cde14df3a41b76460df92c8339c" datatype="html">
+        <source>
+          Tietosuojakoulutusvideot
+        </source>
+        <target>
+          Tietosuojakoulutusvideot
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6cd1cee05124a637f1f08da921fb9d7162a98ef1" datatype="html">
+        <source>Arjen tietosuojaa - tietosuojaa meille kaikille</source>
+        <target>Arjen tietosuojaa - tietosuojaa meille kaikille</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="588cd12f725db14956dc805c0c5f3ff941c5ba37" datatype="html">
+        <source>(video också på svenska)</source>
+        <target>(video också på svenska)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="46737bb1b2d70d22c85d350ff4258402b06c7526" datatype="html">
+        <source>(video also in english)</source>
+        <target>(video also in english)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="90829bbc4fc8ae6b80747c884c8cedac8b55b8af" datatype="html">
+        <source>Kenelle:</source>
+        <target>Kenelle:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dd79e4f129be715ce5f76c15af2e69af072ac3dc" datatype="html">
+        <source>Organisaation kaikki työntekijät sekä kansalaiset
+        </source>
+        <target>Organisaation kaikki työntekijät sekä kansalaiset
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f7ca38144b7aed7eb65e1d23d891bc7641e56afc" datatype="html">
+        <source>Sisältö:</source>
+        <target>Sisältö:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ce06cad7b9e4747c886e98df9ee47e715bf25a13" datatype="html">
+        <source>Sisältää perustietoa henkilötietojen käsittelystä
+        </source>
+        <target>Sisältää perustietoa henkilötietojen käsittelystä
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6c65a8299497ddd182d1ad1f045221ff72ba6f4c" datatype="html">
+        <source>Lisämateriaali:</source>
+        <target>Lisämateriaali:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ead7fb563d0f3716d625dfe4c1035ca725f129fb" datatype="html">
+        <source>Kooste videon tieto-osuuksista</source>
+        <target>Kooste videon tieto-osuuksista</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0eb471f8ee40bfa8eb8fefa59bffab4752c27385" datatype="html">
+        <source>Osaamisen testaus:</source>
+        <target>Osaamisen testaus:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="970dd4f6d4aa6edbf50f93bd63242b3a727d41ab" datatype="html">
         <source>Nettitesti</source>
         <target>Nettitesti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="5ec377bdbf0392fe4c1e3c9f165cf7b21754f336" datatype="html">
-        <source>Lisämateriaalia suomeksi</source>
-        <target>Lisämateriaalia suomeksi</target>
+      <trans-unit id="ddccffeebd01cfabe2a38815e0af06e10e70a1fe" datatype="html">
+        <source>Johdon ja esimiesten koulutusvideo</source>
+        <target>Johdon ja esimiesten koulutusvideo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="7b3f20c050c3b7dc5a85062535ed2d8f17945301" datatype="html">
-        <source>julkaistaan marraskuun aikana</source>
-        <target>julkaistaan marraskuun aikana</target>
+      <trans-unit id="7f44ccffae1abdae597eb2712e0faeb899876679" datatype="html">
+        <source>Johdolle ja esimiehille
+        </source>
+        <target>Johdolle ja esimiehille
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="6c2ef0ff2287e9af836745084b3674061a3f714c" datatype="html">
-        <source>Johdon ja esimiesten koulutusvideo<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: johto ja esimiehet</source>
-        <target>Johdon ja esimiesten koulutusvideo<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: johto ja esimiehet</target>
+      <trans-unit id="42cfabe5aaddc70be2571a32a94b2f069b0b3cbb" datatype="html">
+        <source>Uudistunut tietosuojalainsäädäntö, uudet velvoitteet, riskienhallinta, tietosuojavastaava, hankinnat, sopimukset, tietojen luovuttaminen, seuraamukset, osoitusvelvollisuus ja johdon huoneentaulu
+        </source>
+        <target>Uudistunut tietosuojalainsäädäntö, uudet velvoitteet, riskienhallinta, tietosuojavastaava, hankinnat, sopimukset, tietojen luovuttaminen, seuraamukset, osoitusvelvollisuus ja johdon huoneentaulu
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="d86feca4cd377d8ca28d08451c37563da68b586a" datatype="html">
-        <source>Suomeksi tekstitetty video</source>
-        <target>Suomeksi tekstitetty video</target>
+      <trans-unit id="5088beafd585ea1a01192d83549ddbc24fe1a397" datatype="html">
+        <source>Kooste videon tieto-osuuksista
+        </source>
+        <target>Kooste videon tieto-osuuksista
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="18edeb1f53738fbf60addb4cd50920036a9963a5" datatype="html">
-        <source>Ruotsiksi tekstitetty video</source>
-        <target>Ruotsiksi tekstitetty video</target>
+      <trans-unit id="209817a29d3aee7dc6dbabfefa4211bcc1d08d8d" datatype="html">
+        <source>Tietosuojaa henkilötietoja käsitteleville –video</source>
+        <target>Tietosuojaa henkilötietoja käsitteleville –video</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="46282334448a7503193a5ffc754b2c4eb180c07f" datatype="html">
-        <source>Englanniksi tekstitetty video</source>
-        <target>Englanniksi tekstitetty video</target>
+      <trans-unit id="d37335c25f2b59a39bd1cdb334d3477bb734bbf6" datatype="html">
+        <source>(video också på svenska kommer)</source>
+        <target>(video också på svenska kommer)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="254174f023004c11d74d770f0aa98b0499083104" datatype="html">
-        <source>Lisämateriaalia ruotsiksi</source>
-        <target>Lisämateriaalia ruotsiksi</target>
+      <trans-unit id="781584df3fc4507cf017d6c28d67a01b117ddc07" datatype="html">
+        <source>Henkilötietoja käsittelevät henkilöt
+        </source>
+        <target>Henkilötietoja käsittelevät henkilöt
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="ced07b100a78b0f351e2a4ae7f8deac310a9b257" datatype="html">
-        <source>linkedin-url</source>
-        <target>http://arjentietosuoja.fi/fi</target>
-        <note priority="1" from="description">from-linkedin-url</note>
+      <trans-unit id="b8a754dea67762d6300031a03b86ac5ad8995419" datatype="html">
+        <source>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.
+        </source>
+        <target>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="82be20abfe52bde4b1dc4b741a185db022695c37" datatype="html">
-        <source>linkedin-title</source>
-        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
-        <note priority="1" from="description">from-linkedin-title</note>
+      <trans-unit id="b57afd3325ca685f2b4dcdda061da224e002a37f" datatype="html">
+        <source>Osa 1.</source>
+        <target>Osa 1.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="22e9a555dacb2e809cde6c015980f2eec681faec" datatype="html">
-        <source>facebook-url</source>
-        <target>http://arjentietosuoja.fi/fi</target>
-        <note priority="1" from="description">from-facebook-url</note>
+      <trans-unit id="9550817d023be4d95adc3a7f2a4b5ad0dd258b47" datatype="html">
+        <source>Tietosuojaperiaatteet, ohjeistus henkilötietojen käsittelijöille, tietosuojavastaava, henkilötietojen käsittely
+        </source>
+        <target>Tietosuojaperiaatteet, ohjeistus henkilötietojen käsittelijöille, tietosuojavastaava, henkilötietojen käsittely
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="b7a0887b67367ffc33d1234c45589181ae13a864" datatype="html">
-        <source>facebook-title</source>
-        <target state="translated">Minä katsoin Arjen tietosuojaa -koulutusvideon ja läpäisin nettitestin – oletko jo kokeillut?</target>
-        <note priority="1" from="description">from-facebook-title</note>
+      <trans-unit id="1cee0160e8520e66566c71a1af1bdc6b16680b85" datatype="html">
+        <source>Osa 2.</source>
+        <target>Osa 2.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="42c7954549faa1deaa0ec5885c692e51f4ebb6d3" datatype="html">
+      <trans-unit id="084b847cf0a6457f903042ba2c26651ad1761ec4" datatype="html">
+        <source>Sisäänrakennettu ja oletusarvoinen tietosuoja, osoitusvelvollisuus, hankinnat ja sopimukset
+        </source>
+        <target>Sisäänrakennettu ja oletusarvoinen tietosuoja, osoitusvelvollisuus, hankinnat ja sopimukset
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="06a83bfbd5d69af0309f4a054e669cf1039fbfd3" datatype="html">
+        <source>Osa 3.</source>
+        <target>Osa 3.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5a547471d46fca1556dcd341bcfb690006a72e36" datatype="html">
+        <source>Suostumusmenettely, tietoturva ja riskienhallinta, riskiperusteinen lähestymistapa, vaikutustenarviointi
+        </source>
+        <target>Suostumusmenettely, tietoturva ja riskienhallinta, riskiperusteinen lähestymistapa, vaikutustenarviointi
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32b788dea4b2e3e13dadbde7a3bac0cead93bf37" datatype="html">
+        <source>Osa 4.</source>
+        <target>Osa 4.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a832bf15b805cf35ef40c8421a731c8713e8948" datatype="html">
+        <source>Rekisteröidyn informoiminen ja yhteisrekisteri
+        </source>
+        <target>Rekisteröidyn informoiminen ja yhteisrekisteri
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d8d7996a0eae3e9e6bc1b14f9263222534eda7ab" datatype="html">
+        <source>Osa 5.</source>
+        <target>Osa 5.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17821bec546b9349b83cfe163ec28148e4b7e14f" datatype="html">
+        <source>Rekisteröidyn oikeuksien toteuttaminen, jatkuva laadunparantaminen (PDCA-malli), osaamisen kehittäminen ja ylläpito, RACI-vastuunjakomatriisi, MMKT-toimintamalli
+        </source>
+        <target>Rekisteröidyn oikeuksien toteuttaminen, jatkuva laadunparantaminen (PDCA-malli), osaamisen kehittäminen ja ylläpito, RACI-vastuunjakomatriisi, MMKT-toimintamalli
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a0ad1cee0ab9fe8a1c1d8fde04f946a1f6936a2b" datatype="html">
+        <source>Osa 6.</source>
+        <target>Osa 6.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8f8fa9174eaf6fa7bbfe68c2d6c6cef26e0e59e6" datatype="html">
+        <source>Anonymisointi, pseudonymisointi, säilytys ja arkistointi, hävittäminen, MMKT-toimintamalli
+        </source>
+        <target>Anonymisointi, pseudonymisointi, säilytys ja arkistointi, hävittäminen, MMKT-toimintamalli
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="66837dbc4f58bed77f0ca1e961b01465719304d0" datatype="html">
+        <source>Lisämateraali:</source>
+        <target>Lisämateraali:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76538d9d7c680dc4c05ca9cb9f7a62fc5677b8a8" datatype="html">
+        <source>tulossa
+        </source>
+        <target>tulossa
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1db46b3d017c7caf0e2ea0a2013deccf7c3e48ee" datatype="html">
+        <source>Täyspitkä versio:</source>
+        <target>Täyspitkä versio:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b25b9379d9632a03890ddb772aaa6c7bff9036c" datatype="html">
+        <source>https://vimeo.com/250133179/9dc258be2e</source>
+        <target>https://vimeo.com/250133179/9dc258be2e</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8b33e318481d50aa16350788765255f03cb87a8f" datatype="html">
+        <source>Osa 1:</source>
+        <target>Osa 1:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187161402c1c5455cf909b49cc731b86eb0e7589" datatype="html">
+        <source>https://vimeo.com/250116359/9191a0ecd9</source>
+        <target>https://vimeo.com/250116359/9191a0ecd9</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0578d30e81fbc7d3196bb120f5111ba79e558e1" datatype="html">
+        <source>Osa 2:</source>
+        <target>Osa 2:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bb6436fcef5fbe90b890ca876e5f48d42fcf926b" datatype="html">
+        <source>https://vimeo.com/250117329/d034a3bd62</source>
+        <target>https://vimeo.com/250117329/d034a3bd62</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3f3d545ebbce11c80f5e36149987d12a8fd57226" datatype="html">
+        <source>Osa 3:</source>
+        <target>Osa 3:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1580688befbd08508c300db19e280156416b5bfe" datatype="html">
+        <source>https://vimeo.com/250119008/f298dd58c1</source>
+        <target>https://vimeo.com/250119008/f298dd58c1</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e3470a65eedc2c0ad224e5c133794f7aab5a009a" datatype="html">
+        <source>Osa 4:</source>
+        <target>Osa 4:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="56a035eb5a9ed9791ecdce69c945f8dd301e1ab5" datatype="html">
+        <source>https://vimeo.com/250119755/96f9a83a83</source>
+        <target>https://vimeo.com/250119755/96f9a83a83</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="04e013b34c6b6ec738b8107b83c2e81c2efa5132" datatype="html">
+        <source>Osa 5:</source>
+        <target>Osa 5:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="356b09d9121728b073791781d3615b5678ae0d85" datatype="html">
+        <source>https://vimeo.com/250121080/2745f6600e</source>
+        <target>https://vimeo.com/250121080/2745f6600e</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b8e74614a37fb6f49638c46c4826225efa1da00" datatype="html">
+        <source>Osa 6:</source>
+        <target>Osa 6:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7dac7932c3b2abf4adaf8348bd77e38256bf8492" datatype="html">
+        <source>https://vimeo.com/250122823/c820691187</source>
+        <target>https://vimeo.com/250122823/c820691187</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="98effb1998a7010992585c59413aaca17f7fa8ac" datatype="html">
+        <source>Twitterissä löydät meidän hashtageilla #tuki2018 #stöd2018</source>
+        <target>Twitterissä löydät meidän hashtageilla #tuki2018 #stöd2018</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0aa872112d41bd037896df4783991412ed9d225b" datatype="html">
+        <source>Yhteishankkeiden toteuttamisessa ovat mukana:</source>
+        <target>Yhteishankkeiden toteuttamisessa ovat mukana:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
+        <source>Palaute:<x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi
+          <x id="CLOSE_LINK" ctype="x-a"/>
+        </source>
+        <target>Palaute:<x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi
+          <x id="CLOSE_LINK" ctype="x-a"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/front-page/front-page.component.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17184ff047b19b92e058c32d58e03f798316a950" datatype="html">
         <source>
-          <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Ilmoittautuminen JUHTA tietosuojan osoitusvelvollisuutta edistäviin yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
-          Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          Aikaa jäljellä:
+          <x id="INTERPOLATION"/>
         </source>
         <target>
-          <x id="START_HEADING_LEVEL5" ctype="x-h5"/>Ilmoittautuminen JUHTA tietosuojan osoitusvelvollisuutta edistäviin yhteishankkeisiin (videot + nettitestit + työpajat)<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5"/>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Onko organisaatiosi (valtionhallinnon organisaatio tai kunta) ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
-          Ellei ole, voit vielä ilmoittautua <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          Aikaa jäljellä:
+          <x id="INTERPOLATION"/>
         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/timer/timer.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="589bff58601b3ca1e22b9432ef8c5afa7b8d0a39" datatype="html">
+      <trans-unit id="d6f9804e2f3c65212b273a203e1b33c0115144c8" datatype="html">
+        <source>TODISTUS</source>
+        <target>TODISTUS</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="35a98eb5f299498ce9f98eeab920f2ca4b80c3f6" datatype="html">
+        <source>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</source>
+        <target>Arjen tietosuojakoulutus – tietosuojan perusteet kaikille</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ad5ddd75e9071ee24e1b8dcf21c6b4779c242539" datatype="html">
         <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
-          Ellet ole, ilmoittaudu <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>
-          niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="INTERPOLATION"/>
+          <x id="INTERPOLATION_1"/>,
+          <x id="INTERPOLATION_2"/>
+          on suorittanut
+          <x id="INTERPOLATION_3"/>
         </source>
         <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>Oletko asiantuntijana ilmoittautunut yhteishankkeen osallistujaksi?<x id="LINE_BREAK" ctype="lb"/>
-          Ellet ole, ilmoittaudu <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>
-          niin saat lisätietoa ja materiaalia työpajoista ja muista tukimateriaaleista.<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+          <x id="INTERPOLATION"/>
+          <x id="INTERPOLATION_1"/>,
+          <x id="INTERPOLATION_2"/>
+          on suorittanut
+          <x id="INTERPOLATION_3"/>
         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="42761e096b41a3f071cfe455e4294b5380d6c775" datatype="html">
-        <source>
-          Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.
-        </source>
-        <target>
-          Lisää videoita, oppimateriaalia ja nettitestejä julkaistaan vuoden 2017 kuluessa.
-        </target>
+      <trans-unit id="c2aca3ce21f3e6fdac63cb5e75573e9e95664856" datatype="html">
+        <source>Arjen tietosuojakoulutuksen testin pistemäärällä</source>
+        <target>Arjen tietosuojakoulutuksen testin pistemäärällä</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="84c8d7e4fb28a02d7dcd7ec6054dbfe11951fa50" datatype="html">
-        <source>
-          Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset
-        </source>
-        <target>
-          Arjen tietosuojaa – tietosuojaa meille kaikille<x id="LINE_BREAK" ctype="lb"/>
-          Kohderyhmä: organisaation kaikki työntekijät sekä kansalaiset
-        </target>
+      <trans-unit id="33bf4b75222b04a22e4d190ea7730016d3d1f87f" datatype="html">
+        <source>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</source>
+        <target>Testi osoittaa, että omaat tarvittavat perustiedot siitä, mitä tietosuojalla tarkoitetaan.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
       </trans-unit>
-      <trans-unit id="92703587e6d9294aada8a386e599e4ad422610fb" datatype="html">
-        <source>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-          Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
-          <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+      <trans-unit id="47e187136609e363092d9a2c8e92510144183b5a" datatype="html">
+        <source>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</source>
+        <target>Toimi koulutuksessa annettujen ohjeiden mukaisesti, noudata sinulle annettuja ohjeita sekä huolehdi osaamisesi säännöllisestä ylläpidosta.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cca7621f5f07a0fc3b6d5fe11d9488a0f472a4c8" datatype="html">
+        <source>Helsingissä,
+          <x id="INTERPOLATION"/>
         </source>
-        <target>
-          <x id="START_PARAGRAPH" ctype="x-p"/>
-          Voit tutustua tuotettuihin materiaaleihin (videotallenteet, esitysmateriaalit, kotitehtävät)
-          <x id="START_LINK" ctype="x-a"/>tästä<x id="CLOSE_LINK" ctype="x-a"/>.
-          <x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+        <target>Helsingissä,
+          <x id="INTERPOLATION"/>
         </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4a45fc6ad0b2a5077301d4708b210f902fb35d2e" datatype="html">
+        <source>JUHTA asiantuntijaryhmän pj.</source>
+        <target>JUHTA asiantuntijaryhmän pj.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="650c1e765d83cd24d71a34fbfec36fd30e5f903d" datatype="html">
+        <source>VAHTI-pääsihteeri</source>
+        <target>VAHTI-pääsihteeri</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b16f752c9a6878a08defe210ea554e5ffc88d0a" datatype="html">
+        <source>Kuntaliitto</source>
+        <target>Kuntaliitto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8b284794fa23389de3460cf39e40d03cdc8875ef" datatype="html">
+        <source>Valtiovarainministeriö</source>
+        <target>Valtiovarainministeriö</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/certificate/certificate.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="744ac5344b7b7c6f541f779609f310e694a8e9d0" datatype="html">
+        <source>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</source>
+        <target>Yhteishankkeiden toteuttamisessa ovat mukana JUHTA-asiantuntijaryhmän lisäksi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1d21549ed75ba1932dc42fe87384b09f270955c5" datatype="html">
+        <source>Seuraavissa kysymyksissä oli vääriä vastauksia:</source>
+        <target>Seuraavissa kysymyksissä oli vääriä vastauksia:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/result/summary/summary.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
