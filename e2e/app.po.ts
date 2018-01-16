@@ -1,4 +1,4 @@
-import { browser, element, by } from 'protractor';
+import {browser, by, element} from 'protractor';
 
 export class OlxPage {
   navigateTo() {
@@ -6,6 +6,6 @@ export class OlxPage {
   }
 
   getParagraphText() {
-    return element(by.css('olx-root h1')).getText();
+    return element(by.css('olx-root h2')).getText();
   }
 }
