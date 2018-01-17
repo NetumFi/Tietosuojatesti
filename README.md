@@ -6,9 +6,11 @@
 Deploys to [tietosuojatesti.herokuapp.com/](http://tietosuojatesti.herokuapp.com/fi)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+
 ## Prepare
 
-Run `npm install`
+To build the project yarn is needed. Install it with `npm install yarn --global` or `brew update && brew install yarn`.
+To install packages use `yarn install`
 
 ## Development server
 
@@ -33,7 +35,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## i18n
 
-Run `npm run i18n` to generate XLIFF. 
+Run `yarn i18n` to generate XLIFF. 
 
 ## Further help
 
