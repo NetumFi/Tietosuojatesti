@@ -451,6 +451,18 @@
           <x id="INTERPOLATION"/>
         </target>
       </trans-unit>
+      <trans-unit id="05e3886b3bfae29645a0927e5d2b17eaf2f118d1" datatype="html">
+        <source>
+          <x id="START_ITALIC_TEXT" ctype="x-i"/>
+          <x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+          Tulosta
+        </source>
+        <target>
+          <x id="START_ITALIC_TEXT" ctype="x-i"/>
+          <x id="CLOSE_ITALIC_TEXT" ctype="x-i"/>
+          Tulosta
+        </target>
+      </trans-unit>
       <trans-unit id="d6f9804e2f3c65212b273a203e1b33c0115144c8" datatype="html">
         <source>TODISTUS</source>
         <target>TODISTUS</target>
