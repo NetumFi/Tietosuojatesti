@@ -99,9 +99,11 @@
               </source>
         <target/>
       </trans-unit>
-      <trans-unit id="0ec716a0398f43c6afc448eca263d5b2a031016b" datatype="html">
-        <source>Arjentietosuoja.fi tueksi edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja
-                tietoturvallisuuden osaamista. Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita.</source>
+      <trans-unit id="d68f43816b6f238f86ec5aca6177c057a15f0050" datatype="html">
+        <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita. 
+			  Arjentietosuoja.fi on laadittu edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. 
+			  Tältä sivulta löydät mm. tietosuojakoulutusvideot ja nettitestin.
+			  </source>
         <target/>
       </trans-unit>
       <trans-unit id="d2fb4fddbdb02b39c2bf86f77d515b0e07a8b2f0" datatype="html">
@@ -119,7 +121,7 @@
               </source>
         <target/>
       </trans-unit>
-      <trans-unit id="96e2bef08f355ceebd62870b99f9b6431fcc95ab" datatype="html">
+      <trans-unit id="16123c6aec2b8158dfad5f00393ac0585bb5e65a" datatype="html">
         <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) ja julkisen hallinnon digitaalisen
                 turvallisuuden johtoryhmä (VAHTI) järjestävät 2017 – 2018 kaksi tietosuojan yhteishanketta.
                 Yhteishankkeeseen
@@ -130,12 +132,12 @@
                 <x id="START_LINK" ctype="x-a"/>tietosuojanyhteishankkeiden
                   verkkosivulla
                   vm.fissä (http://vm.fi/tietosuojan-yhteishankkeet)<x id="CLOSE_LINK" ctype="x-a"/>.
+				  Materiaalit ja tilaisuudet ovat maksuttomia.
               </source>
         <target/>
       </trans-unit>
-      <trans-unit id="86cd979e02c1763ac8b412cb4d9918bb4512ceb5" datatype="html">
+      <trans-unit id="2f0bcf751b3e34fa4d1b8eedb6b2daaf6b8857ae" datatype="html">
         <source>
-                Materiaalit ja tilaisuudet ovat maksuttomia.<x id="LINE_BREAK" ctype="lb"/>
                 <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan
                   (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
               </source>
@@ -174,8 +176,11 @@
         <source>Sisältö:</source>
         <target/>
       </trans-unit>
-      <trans-unit id="ce06cad7b9e4747c886e98df9ee47e715bf25a13" datatype="html">
+      <trans-unit id="3b4b6324f487687a43cc98299f17a4cd506ec765" datatype="html">
         <source>Sisältää perustietoa henkilötietojen käsittelystä
+				  <x id="START_UNORDERED_LIST" ctype="x-ul"/>
+				  <x id="START_LIST_ITEM" ctype="x-li"/>perustietoa tietosuojasta, henkilötietojen käsittelystä ja tietoturvallisuudesta<x id="CLOSE_LIST_ITEM" ctype="x-li"/>
+				  <x id="CLOSE_UNORDERED_LIST" ctype="x-ul"/>
                   </source>
         <target/>
       </trans-unit>
@@ -357,16 +362,16 @@
         <source>https://vimeo.com/250122823/c820691187</source>
         <target/>
       </trans-unit>
-      <trans-unit id="98effb1998a7010992585c59413aaca17f7fa8ac" datatype="html">
-        <source>Twitterissä löydät meidän hashtageilla #tuki2018 #stöd2018</source>
+      <trans-unit id="b1ccff9ed43aad4fa47323eb5285738865bb81e6" datatype="html">
+        <source>Twitterissä löydät meidät tunnisteilla #arjentietosuoja #tuki2018 #stöd2018</source>
         <target/>
       </trans-unit>
       <trans-unit id="0aa872112d41bd037896df4783991412ed9d225b" datatype="html">
         <source>Yhteishankkeiden toteuttamisessa ovat mukana:</source>
         <target/>
       </trans-unit>
-      <trans-unit id="c4e851303007f5eb10af585fa69096a4aa932597" datatype="html">
-        <source>Palaute: <x id="START_LINK" ctype="x-a"/>arjen.tietosuoja@vm.fi<x id="CLOSE_LINK" ctype="x-a"/></source>
+      <trans-unit id="a8c2008ec71cf0d2028f95aba54cf7bc2676e997" datatype="html">
+        <source>Palaute:</source>
         <target/>
       </trans-unit>
       <trans-unit id="17184ff047b19b92e058c32d58e03f798316a950" datatype="html">
