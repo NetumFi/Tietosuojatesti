@@ -151,7 +151,7 @@
           Dataskydd i vardagen videoutbildningar och webbtester
         </target>
       </trans-unit>
-      <trans-unit id="d68f43816b6f238f86ec5aca6177c057a15f0050" datatype="html">
+      <trans-unit id="3f9c82ad4bfd15778807116a2e1b799e77d25a82" datatype="html">
         <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita. Arjentietosuoja.fi on laadittu edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. Tältä sivulta löydät mm. tietosuojakoulutusvideot ja nettitestin.
         </source>
         <target>Välkommen att studera dataskydds- och datasäkerhetsfrågor. Webbplatsen Dataskydd i vardagen (arjentietosuoja.fi/sv) har upprättats för att främja och utveckla kompetensen inom dataskydd och datasäkerhet för personalen inom den offentliga förvaltningen. På webbplatsen hittar du bl.a. utbildningsvideor om dataskydd och ett webbtest.</target>
@@ -181,10 +181,10 @@
         </source>
         <target>Delegationen för informationsförvaltningen inom den offentliga förvaltningen (JUHTA) och ledningsgruppen för digital säkerhet inom den offentliga förvaltningen (VAHTI) ordnar 2017–2018 två samprojekt kring dataskydd. Genom att delta i samprojektet får organisationen goda färdigheter inför de förändringar den kommande dataskyddslagstiftningen för med sig. I samprojektet publiceras utbildningsvideor om dataskydd och webbtester och det ordnas workshopar.  I workshoparna behandlas dataskyddsförordningens olika delområden, riskhantering och datasäkerhet ur den offentliga förvaltningens synvinkel. Närmare information om workshoparna och materialet i dem finns på
           <x id="START_LINK" ctype="x-a"/>webbplatsen för samprojekt inom dataskydd på vm.fi (http://vm.fi/tietosuojan-yhteishankkeet)
-          <x id="CLOSE_LINK" ctype="x-a"/>. Materiaalit ja tilaisuudet ovat maksuttomia.
+          <x id="CLOSE_LINK" ctype="x-a"/>. Materialet och evenemangen är gratis.
         </target>
       </trans-unit>
-      <trans-unit id="2f0bcf751b3e34fa4d1b8eedb6b2daaf6b8857ae" datatype="html">
+      <trans-unit id="bc775bcc7a804c8f3e7a8816fe3020b961ee5ed7" datatype="html">
         <source>
           <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
           <x id="CLOSE_LINK" ctype="x-a"/>

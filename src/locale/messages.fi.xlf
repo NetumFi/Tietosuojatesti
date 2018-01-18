@@ -154,7 +154,7 @@
           Arjen tietosuojaa videokoulutukset ja nettitestit
         </target>
       </trans-unit>
-      <trans-unit id="d68f43816b6f238f86ec5aca6177c057a15f0050" datatype="html">
+      <trans-unit id="3f9c82ad4bfd15778807116a2e1b799e77d25a82" datatype="html">
         <source>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita. Arjentietosuoja.fi on laadittu edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. Tältä sivulta löydät mm. tietosuojakoulutusvideot ja nettitestin.
         </source>
         <target>Tervetuloa opiskelemaan tietosuoja- ja tietoturva-asioita. Arjentietosuoja.fi on laadittu edistämään ja kehittämään julkisen hallinnon henkilöstön tietosuojan ja tietoturvallisuuden osaamista. Tältä sivulta löydät mm. tietosuojakoulutusvideot ja nettitestin.</target>
@@ -187,7 +187,7 @@
           <x id="CLOSE_LINK" ctype="x-a"/>. Materiaalit ja tilaisuudet ovat maksuttomia.
         </target>
       </trans-unit>
-      <trans-unit id="2f0bcf751b3e34fa4d1b8eedb6b2daaf6b8857ae" datatype="html">
+      <trans-unit id="bc775bcc7a804c8f3e7a8816fe3020b961ee5ed7" datatype="html">
         <source>
           <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
           <x id="CLOSE_LINK" ctype="x-a"/>
