@@ -137,11 +137,10 @@
               </source>
         <target/>
       </trans-unit>
-      <trans-unit id="bc775bcc7a804c8f3e7a8816fe3020b961ee5ed7" datatype="html">
+      <trans-unit id="a1867d5ba0b221adaf849a6987437fb214b1d72c" datatype="html">
         <source>
                 <x id="START_LINK" ctype="x-a"/>Ilmoittaudu
-                  mukaan
-                  (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
+                  mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
               </source>
         <target/>
       </trans-unit>
@@ -306,6 +305,10 @@
       <trans-unit id="76538d9d7c680dc4c05ca9cb9f7a62fc5677b8a8" datatype="html">
         <source>tulossa
                   </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="99cbdfd412646636c262dc290b895d34cb63a207" datatype="html">
+        <source>Videon voi katsoa joko kokonaisuudessaan (kesto 44:08) tai 6:ssa eri osassa.</source>
         <target/>
       </trans-unit>
       <trans-unit id="1db46b3d017c7caf0e2ea0a2013deccf7c3e48ee" datatype="html">

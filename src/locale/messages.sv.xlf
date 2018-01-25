@@ -171,7 +171,7 @@
         </source>
         <target>Arjentietosuoja.fi/sv hjälper organisationer att förbereda sig på dataskyddslagstiftningen som ska tillämpas från och med den 25 maj 2018.
           <x id="START_LINK" ctype="x-a"/>(EU:s dataskyddsförordning 2016/679 http://www.privacy-regulation.eu/sv/index.htm)
-          <x id="CLOSE_LINK" ctype="x-a"/>. ). Förordningen för med sig nya typer av ansvar och förpliktelser för registeransvariga och personer som behandlar personuppgifter.
+          <x id="CLOSE_LINK" ctype="x-a"/>. Förordningen för med sig nya typer av ansvar och förpliktelser för registeransvariga och personer som behandlar personuppgifter.
         </target>
       </trans-unit>
       <trans-unit id="16123c6aec2b8158dfad5f00393ac0585bb5e65a" datatype="html">
@@ -184,14 +184,13 @@
           <x id="CLOSE_LINK" ctype="x-a"/>. Materialet och evenemangen är gratis.
         </target>
       </trans-unit>
-      <trans-unit id="bc775bcc7a804c8f3e7a8816fe3020b961ee5ed7" datatype="html">
+      <trans-unit id="a1867d5ba0b221adaf849a6987437fb214b1d72c" datatype="html">
         <source>
-          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
-          <x id="CLOSE_LINK" ctype="x-a"/>
+          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu
+          mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
         </source>
         <target>
-          <x id="START_LINK" ctype="x-a"/>Anmäl dig till projektet (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
-          <x id="CLOSE_LINK" ctype="x-a"/>
+          <x id="START_LINK" ctype="x-a"/>Anmäl dig till projektet (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
         </target>
       </trans-unit>
       <trans-unit id="14a4f08edbb83cde14df3a41b76460df92c8339c" datatype="html">
@@ -244,7 +243,7 @@
       </trans-unit>
       <trans-unit id="6c65a8299497ddd182d1ad1f045221ff72ba6f4c" datatype="html">
         <source>Lisämateriaali:</source>
-        <target>Ytterligare material::</target>
+        <target>Ytterligare material:</target>
       </trans-unit>
       <trans-unit id="ead7fb563d0f3716d625dfe4c1035ca725f129fb" datatype="html">
         <source>Kooste videon tieto-osuuksista</source>
@@ -295,10 +294,8 @@
         </target>
       </trans-unit>
       <trans-unit id="b8a754dea67762d6300031a03b86ac5ad8995419" datatype="html">
-        <source>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.
-        </source>
-        <target>Videon kan ses antingen i sin helhet, innehåller alla sex avsnitt (längd 44:08), eller i delar.
-        </target>
+        <source>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.</source>
+        <target>Videon kan ses antingen i sin helhet, innehåller alla sex avsnitt (längd 44:08), eller i delar.</target>
       </trans-unit>
       <trans-unit id="b57afd3325ca685f2b4dcdda061da224e002a37f" datatype="html">
         <source>Osa 1.</source>
@@ -369,6 +366,10 @@
         </source>
         <target>på kommande
         </target>
+      </trans-unit>
+      <trans-unit id="99cbdfd412646636c262dc290b895d34cb63a207" datatype="html">
+        <source>Videon voi katsoa joko kokonaisuudessaan (kesto 44:08) tai 6:ssa eri osassa.</source>
+        <target>Videon kan ses antingen i sin helhet (längd 44:08) eller i sex olika delar.</target>
       </trans-unit>
       <trans-unit id="1db46b3d017c7caf0e2ea0a2013deccf7c3e48ee" datatype="html">
         <source>Täyspitkä versio:</source>

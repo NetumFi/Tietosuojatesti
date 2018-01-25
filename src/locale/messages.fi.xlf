@@ -187,14 +187,13 @@
           <x id="CLOSE_LINK" ctype="x-a"/>. Materiaalit ja tilaisuudet ovat maksuttomia.
         </target>
       </trans-unit>
-      <trans-unit id="bc775bcc7a804c8f3e7a8816fe3020b961ee5ed7" datatype="html">
+      <trans-unit id="a1867d5ba0b221adaf849a6987437fb214b1d72c" datatype="html">
         <source>
-          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
-          <x id="CLOSE_LINK" ctype="x-a"/>
+          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu
+          mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
         </source>
         <target>
-          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)
-          <x id="CLOSE_LINK" ctype="x-a"/>
+          <x id="START_LINK" ctype="x-a"/>Ilmoittaudu mukaan (http://vm.fi/tietosuojan-yhteishankkeet#Ilmoittaudu)<x id="CLOSE_LINK" ctype="x-a"/>
         </target>
       </trans-unit>
       <trans-unit id="14a4f08edbb83cde14df3a41b76460df92c8339c" datatype="html">
@@ -298,10 +297,8 @@
         </target>
       </trans-unit>
       <trans-unit id="b8a754dea67762d6300031a03b86ac5ad8995419" datatype="html">
-        <source>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.
-        </source>
-        <target>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.
-        </target>
+        <source>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.</source>
+        <target>Videon voi katsoa joko kokonaisuudessaan, sisältää kaikki 6 osiota (kesto 44:08) tai osissa.</target>
       </trans-unit>
       <trans-unit id="b57afd3325ca685f2b4dcdda061da224e002a37f" datatype="html">
         <source>Osa 1.</source>
@@ -372,6 +369,10 @@
         </source>
         <target>tulossa
         </target>
+      </trans-unit>
+      <trans-unit id="99cbdfd412646636c262dc290b895d34cb63a207" datatype="html">
+        <source>Videon voi katsoa joko kokonaisuudessaan (kesto 44:08) tai 6:ssa eri osassa.</source>
+        <target>Videon voi katsoa joko kokonaisuudessaan (kesto 44:08) tai 6:ssa eri osassa.</target>
       </trans-unit>
       <trans-unit id="1db46b3d017c7caf0e2ea0a2013deccf7c3e48ee" datatype="html">
         <source>Täyspitkä versio:</source>
