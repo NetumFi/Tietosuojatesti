@@ -174,6 +174,10 @@
           <x id="CLOSE_LINK" ctype="x-a"/>. Förordningen för med sig nya typer av ansvar och förpliktelser för registeransvariga och personer som behandlar personuppgifter.
         </target>
       </trans-unit>
+      <trans-unit id="126611be6738099d0c517bd02df62d6d2d8b7638" datatype="html">
+        <source>http://www.privacy-regulation.eu/fi/index.htm</source>
+        <target>http://www.privacy-regulation.eu/sv/index.htm</target>
+      </trans-unit>
       <trans-unit id="16123c6aec2b8158dfad5f00393ac0585bb5e65a" datatype="html">
         <source>Julkisen hallinnon tietohallinnon neuvottelukunta (JUHTA) ja julkisen hallinnon digitaalisen turvallisuuden johtoryhmä (VAHTI) järjestävät 2017 – 2018 kaksi tietosuojan yhteishanketta. Yhteishankkeeseen osallistumalla organisaatio saa hyvät valmiudet tulevan tietosuojalainsäädännön tuomiin muutoksiin. Yhteishankkeissa tuotetaan tietosuojakoulutusvideoita, nettitestejä ja järjestetään työpajatilaisuuksia. Työpajoissa käsitellään tietosuoja-asetukseen eri osa-alueita, riskienhallintaa ja tietoturvallisuutta julkishallinnonnäkökulmasta. Tarkempaa tietoa työpajoista ja niiden materiaalit ovat
           <x id="START_LINK" ctype="x-a"/>tietosuojanyhteishankkeiden verkkosivulla vm.fissä (http://vm.fi/tietosuojan-yhteishankkeet)
