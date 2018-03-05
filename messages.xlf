@@ -158,6 +158,10 @@
         <source>Arjen tietosuojaa - tietosuojaa meille kaikille</source>
         <target/>
       </trans-unit>
+      <trans-unit id="a637e380bbf0af8eda366a489986ea52488130d7" datatype="html">
+        <source>(tekstitetty suomeksi)</source>
+        <target/>
+      </trans-unit>
       <trans-unit id="588cd12f725db14956dc805c0c5f3ff941c5ba37" datatype="html">
         <source>(video
                 också på svenska)</source>
