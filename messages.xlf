@@ -225,18 +225,17 @@
                   </source>
         <target/>
       </trans-unit>
-      <trans-unit id="5088beafd585ea1a01192d83549ddbc24fe1a397" datatype="html">
-        <source>Kooste videon tieto-osuuksista
-                  </source>
-        <target/>
-      </trans-unit>
       <trans-unit id="209817a29d3aee7dc6dbabfefa4211bcc1d08d8d" datatype="html">
         <source>Tietosuojaa henkilötietoja käsitteleville
                 –video</source>
         <target/>
       </trans-unit>
-      <trans-unit id="d37335c25f2b59a39bd1cdb334d3477bb734bbf6" datatype="html">
-        <source>(video också på svenska kommer)</source>
+      <trans-unit id="44d19d80f34394b694c370d126dad0664cc7653b" datatype="html">
+        <source>Video suomenkielinen tekstitys</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3816a2aa5c981fc3db205fe382fd9f610842481e" datatype="html">
+        <source>Video också på svenska</source>
         <target/>
       </trans-unit>
       <trans-unit id="781584df3fc4507cf017d6c28d67a01b117ddc07" datatype="html">
@@ -303,15 +302,6 @@
       </trans-unit>
       <trans-unit id="8f8fa9174eaf6fa7bbfe68c2d6c6cef26e0e59e6" datatype="html">
         <source>Anonymisointi, pseudonymisointi, säilytys ja arkistointi, hävittäminen, MMKT-toimintamalli
-                  </source>
-        <target/>
-      </trans-unit>
-      <trans-unit id="66837dbc4f58bed77f0ca1e961b01465719304d0" datatype="html">
-        <source>Lisämateraali:</source>
-        <target/>
-      </trans-unit>
-      <trans-unit id="76538d9d7c680dc4c05ca9cb9f7a62fc5677b8a8" datatype="html">
-        <source>tulossa
                   </source>
         <target/>
       </trans-unit>
